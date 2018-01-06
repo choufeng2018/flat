@@ -1,0 +1,5 @@
+# 设置使用哪个环境的配置文件（生产 OR 开发）
+spring:
+  profiles:
+    active: dev
+

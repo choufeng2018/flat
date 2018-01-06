@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.StreetMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.Street">
+    <id column="s_id" jdbcType="VARCHAR" property="sId" />
+    <result column="s_name" jdbcType="VARCHAR" property="sName" />
+    <result column="c_id" jdbcType="VARCHAR" property="cId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    s_id, s_name, c_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_street
+    where s_id = #{sId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_street
+    where s_id = #{sId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.Street">
+    insert into tb_street (s_id, s_name, c_id
+      )
+    values (#{sId,jdbcType=VARCHAR}, #{sName,jdbcType=VARCHAR}, #{cId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.Street">
+    insert into tb_street
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sId != null">
+        s_id,
+      </if>
+      <if test="sName != null">
+        s_name,
+      </if>
+      <if test="cId != null">
+        c_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sId != null">
+        #{sId,jdbcType=VARCHAR},
+      </if>
+      <if test="sName != null">
+        #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="cId != null">
+        #{cId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.Street">
+    update tb_street
+    <set>
+      <if test="sName != null">
+        s_name = #{sName,jdbcType=VARCHAR},
+      </if>
+      <if test="cId != null">
+        c_id = #{cId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where s_id = #{sId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.Street">
+    update tb_street
+    set s_name = #{sName,jdbcType=VARCHAR},
+      c_id = #{cId,jdbcType=VARCHAR}
+    where s_id = #{sId,jdbcType=VARCHAR}
+  </update>
+
+</mapper>

@@ -1,0 +1,64 @@
+server:
+  port: 8081
+  #context-path: /online
+
+spring:
+  datasource:
+      name: testdb
+      url: jdbc:mysql://127.0.0.1:3306/flat?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      # 使用druid数据库连接池
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat,wall,log4j
+      # 配置初始化大小、最小、最大
+      initialSize: 1
+      maxActive: 20
+      minIdle: 1
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      # 这里建议配置为TRUE，防止取到的连接不可用
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      # 这里配置提交方式，默认就是TRUE，可以不用配置
+      defaultAutoCommit: true
+      # 验证连接有效与否的SQL，不同的数据配置不同
+      validationQuery: select 1 from dual
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connectProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSourceStat: true
+  mvc:
+    throw-exception-if-no-handler-found: true    #开启异常捕获
+
+# Mybatis 映射文件自动扫描配置
+mybatis:
+  mapperLocations: classpath:mapper/*.xml        #mapper文件的位置
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印执行的sql语句
+
+
+# LOGGING 日志配置
+logging:
+  path: /var/logs
+  file: myapp.log
+ # config: # location of config file (default classpath:logback.xml for logback)
+  level.*: DEBUG # levels for loggers, e.g. "logging.level.org.springframework=DEBUG" (TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF)
+
+
+# pagehelper  分页助手
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
