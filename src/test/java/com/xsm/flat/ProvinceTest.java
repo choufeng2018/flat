@@ -4,6 +4,7 @@ package com.xsm.flat;
 import com.xsm.flat.dao.ProvinceMapper;
 import com.xsm.flat.entity.City;
 import com.xsm.flat.entity.Province;
+import com.xsm.flat.entity.Street;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,14 @@ public class ProvinceTest {
                  ) {
                 System.out.println(city.getcName());
 
+                for (Street street: city.getStreets()
+                     ) {
+                    System.out.println(street.getsName());
+                }
+
             }
         }
     }
+
+
 }

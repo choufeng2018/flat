@@ -9,6 +9,12 @@
   <sql id="Base_Column_List">
     s_id, s_name, c_id
   </sql>
+  <select id="selectByCId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_street
+    where c_id = #{cId,jdbcType=VARCHAR}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

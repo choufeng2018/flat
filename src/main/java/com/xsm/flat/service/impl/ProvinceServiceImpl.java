@@ -15,10 +15,15 @@ import java.util.List;
 @Transactional
 public class ProvinceServiceImpl implements ProvinceService {
 
-
+    @Autowired
+    ProvinceMapper provinceMapper;
+    @Autowired
+    CityMapper cityMapper;
+    @Autowired
+    StreetMapper streetMapper;
 
     @Override
     public List<Province> getProvinces() {
-        return null;
+        return provinceMapper.selectProvince();
     }
 }

@@ -1,11 +1,23 @@
 package com.xsm.flat.entity;
 
+import java.util.List;
+
 public class City {
     private String cId;
 
     private String cName;
 
     private String pId;
+
+    private List<Street> streets;
+
+    public List<Street> getStreets() {
+        return streets;
+    }
+
+    public void setStreets(List<Street> streets) {
+        this.streets = streets;
+    }
 
     public String getcId() {
         return cId;

@@ -6,6 +6,9 @@
     <result column="c_name" jdbcType="VARCHAR" property="cName" />
     <result column="p_id" jdbcType="VARCHAR" property="pId" />
   </resultMap>
+  <resultMap id="BaseResultMapWithOther" extends="BaseResultMap" type="com.xsm.flat.entity.City">
+    <collection column="c_id" property="streets" javaType="java.util.List" select="com.xsm.flat.dao.StreetMapper.selectByCId"/>
+  </resultMap>
   <sql id="Base_Column_List">
     c_id, c_name, p_id
   </sql>
