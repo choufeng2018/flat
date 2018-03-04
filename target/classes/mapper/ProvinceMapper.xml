@@ -17,6 +17,7 @@
     from tb_province
     where p_id = #{pId,jdbcType=VARCHAR}
   </select>
+  <!--地理位置：查询出所有省-->
   <select id="selectProvince" resultMap="BaseResultMapWithOther">
     select
     <include refid="Base_Column_List" />

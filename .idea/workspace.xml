@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/FlatApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/FlatApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/config/CorsConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/config/CorsConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/xsm/flat/ProvinceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/xsm/flat/ProvinceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/FlatApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/FlatApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/config/CorsConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/config/CorsConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/CityMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProvinceMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProvinceMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/StreetMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StreetMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/xsm/flat/ProvinceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/xsm/flat/ProvinceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="$PROJECT_DIR$/target/classes/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/CityMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/CityMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/ProvinceMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/ProvinceMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/StreetMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/StreetMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,11 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProvinceMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProvinceMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProvinceMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -131,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/StreetMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/City.java" />
         <option value="$PROJECT_DIR$/target/test-classes/com/xsm/flat/ProvinceTest.class" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/Position.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/FlatApplication.java" />
@@ -142,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProvinceMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/StreetMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CityMapper.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -570,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518157348037</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[增加]完善省市级联">
+      <created>1520148281481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1520148281481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -675,12 +681,39 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[增加]省市县级联功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="[增加]省市县级联功能" />
+    <MESSAGE value="[增加]完善省市级联" />
+    <option name="LAST_COMMIT_MESSAGE" value="[增加]完善省市级联" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,13 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1278">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1085,6 +1111,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding />
         </state>
       </provider>
