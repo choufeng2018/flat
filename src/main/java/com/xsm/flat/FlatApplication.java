@@ -25,14 +25,14 @@ import java.util.Collection;
 @ServletComponentScan(basePackages = { "com.xsm.flat.servlet" })// Druid 支持,扫描自己编写的servlet和filter
 public class FlatApplication extends SpringBootServletInitializer{
 
-	@Bean
-	public FilterRegistrationBean jwtFilter() {
-		FilterRegistrationBean rbean = new FilterRegistrationBean();
-	//	rbean.setFilter(new JwtFilter());
-	//	rbean.addUrlPatterns("/*");// 过滤需要验证权限的链接
-
-		return rbean;
-	}
+//	@Bean
+//	public FilterRegistrationBean jwtFilter() {
+//		FilterRegistrationBean rbean = new FilterRegistrationBean();
+//	//	rbean.setFilter(new JwtFilter());
+//	//	rbean.addUrlPatterns("/*");// 过滤需要验证权限的链接
+//
+//		return rbean;
+//	}
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {

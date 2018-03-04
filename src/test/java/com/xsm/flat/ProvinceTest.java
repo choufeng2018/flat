@@ -1,7 +1,9 @@
 package com.xsm.flat;
 
 
+import com.xsm.flat.dao.CityMapper;
 import com.xsm.flat.dao.ProvinceMapper;
+import com.xsm.flat.dao.StreetMapper;
 import com.xsm.flat.entity.City;
 import com.xsm.flat.entity.Province;
 import com.xsm.flat.entity.Street;
@@ -24,23 +26,37 @@ public class ProvinceTest {
     @Autowired
     ProvinceMapper provinceMapper;
 
+    @Autowired
+    private CityMapper cityMapper;
+
+    @Autowired
+    private StreetMapper streetMapper;
+
     @Test
     public void selectUserById(){
+        String pro ="";
+        String str ="";
+        String citys ="";
         List<Province> provinceList = provinceMapper.selectProvince();
         for (Province province: provinceList
              ) {
-            System.out.println(province.getpName());
-            for (City city: province.getCities()
-                 ) {
-                System.out.println(city.getcName());
+                    pro = province.getpName() + pro;
 
-                for (Street street: city.getStreets()
+            List<City> cityList = cityMapper.selectByPId(province.getpId());
+            for (City city: cityList
+                 ) {
+
+                citys = city.getcName() + citys;
+                List<Street> streetList = streetMapper.selectByCId(city.getcId());
+
+                for (Street street: streetList
                      ) {
-                    System.out.println(street.getsName());
+                    str = street.getsName()+str;
                 }
 
             }
         }
+        System.out.println("省："+pro+"\n"+"市："+citys+"\n"+"街道："+str);
     }
 
 

@@ -10,10 +10,10 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@Configuration
+//@Configuration
 public class CorsConfig {
 
-	@Bean
+//	@Bean
 	public FilterRegistrationBean corsFilter() {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
@@ -33,7 +33,7 @@ public class CorsConfig {
 		return bean;
 	}
 	
-	@Bean
+//	@Bean
 	public WebMvcConfigurer mvcConfigurer() {
 		return new WebMvcConfigurerAdapter() {
 			@Override

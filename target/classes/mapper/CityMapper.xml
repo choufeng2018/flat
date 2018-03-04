@@ -18,7 +18,8 @@
     from tb_city
     where c_id = #{cId,jdbcType=VARCHAR}
   </select>
-  <select id="selectByPId" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <!--地理位置：按省ID查询出所有城市-->
+  <select id="selectByPId" parameterType="java.lang.String" resultMap="BaseResultMapWithOther">
     select
     <include refid="Base_Column_List" />
     from tb_city
