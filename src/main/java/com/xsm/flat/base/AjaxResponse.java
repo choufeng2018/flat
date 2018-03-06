@@ -19,7 +19,7 @@ public class AjaxResponse {
 
 	private Boolean success;
 
-    private Object result;
+    private Object data;
     
     private final String SUCCESS_STATE="200";
     
@@ -37,22 +37,22 @@ public class AjaxResponse {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public Object getResult() {
-		return result;
+	public Object getData() {
+		return data;
 	}
-	public void setResult(Object result) {
-		this.result = result;
+	public void setData(Object data) {
+		this.data = data;
 	}
 	
 	/**
      * 成功提示
-     * @param message
-     * @param result
+     * @param success
+     * @param data //后端数据
      */
-    public void  setSuccessMessage(Boolean success, List result){
+    public void  setSuccessMessage(Boolean success, List data){
     	this.setState(SUCCESS_STATE);
         this.setSuccess(success);
-        this.setResult(result);
+        this.setData(data);
     }
     
     /**
@@ -63,7 +63,7 @@ public class AjaxResponse {
     public void  setErrorMessage(String message, Object result){
     	this.setState(ERROR_STATE);
         this.setMessage(message);
-        this.setResult(result);
+        this.setData(result);
     }
     
 }
