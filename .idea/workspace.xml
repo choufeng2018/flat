@@ -4,9 +4,6 @@
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/base/AjaxResponse.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/base/AjaxResponse.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,7 +19,7 @@
       <file leaf-file-name="PositionController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="-18">
               <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding />
             </state>
@@ -463,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520148703005</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[add]前后端统一数据格式">
+      <created>1520337392547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1520337392547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -600,7 +604,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[增加]省市县级联功能" />
     <MESSAGE value="[增加]完善省市级联" />
-    <option name="LAST_COMMIT_MESSAGE" value="[增加]完善省市级联" />
+    <MESSAGE value="[add]前后端统一数据格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]前后端统一数据格式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -987,7 +992,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="-18">
           <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding />
         </state>
