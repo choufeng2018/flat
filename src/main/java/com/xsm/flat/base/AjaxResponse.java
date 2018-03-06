@@ -1,10 +1,23 @@
 package com.xsm.flat.base;
 
+import java.util.List;
+import java.util.Map;
+
 public class AjaxResponse {
 
 	private String state;
 
     private String message ;
+
+	public Boolean getSuccess() {
+		return success;
+	}
+
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
+
+	private Boolean success;
 
     private Object result;
     
@@ -36,9 +49,9 @@ public class AjaxResponse {
      * @param message
      * @param result
      */
-    public void  setSuccessMessage(String message, Object result){
+    public void  setSuccessMessage(Boolean success, List result){
     	this.setState(SUCCESS_STATE);
-        this.setMessage(message);
+        this.setSuccess(success);
         this.setResult(result);
     }
     
