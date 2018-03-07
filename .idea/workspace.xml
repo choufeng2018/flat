@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/base/AjaxResponse.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/base/AjaxResponse.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PositionController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PositionController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="337">
+              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,25 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AjaxResponse.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AjaxResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+            <state relative-caret-position="684">
+              <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,8 +149,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,8 +196,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -486,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520337415497</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[add]PCSinterface is unobstructed">
+      <created>1520339196164</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1520339196164</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -547,7 +540,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Jelastic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21060605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -624,7 +617,8 @@
     <MESSAGE value="[增加]省市县级联功能" />
     <MESSAGE value="[增加]完善省市级联" />
     <MESSAGE value="[add]前后端统一数据格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]前后端统一数据格式" />
+    <MESSAGE value="[add]PCSinterface is unobstructed" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]PCSinterface is unobstructed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,38 +984,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2934">
           <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="684">
+          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/base/AjaxResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        <state relative-caret-position="337">
+          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
           </folding>
         </state>
       </provider>
