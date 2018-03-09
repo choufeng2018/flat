@@ -4202,3 +4202,6 @@ Verify the connector's configuration, identify and stop any process that's liste
 2018-03-07 19:19:39.112  INFO 5636 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
 2018-03-07 19:19:39.465  INFO 5636 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
 2018-03-07 19:19:39.483  INFO 5636 --- [restartedMain] com.xsm.flat.FlatApplication             : Started FlatApplication in 11.222 seconds (JVM running for 15.34)
+2018-03-07 19:26:24.224  INFO 5636 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Wed Mar 07 19:19:29 CST 2018]; root of context hierarchy
+2018-03-07 19:26:24.228  INFO 5636 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-07 19:26:24.228  INFO 5636 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
