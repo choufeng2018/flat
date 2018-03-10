@@ -1,8 +1,10 @@
 # flat
 
-#### 爱家公寓后台管理
+#### 项目介绍
 
-前后端分离，前端项目请见 `rcs-admin`
+爱家公寓后台管理
+
+前后端分离，前端项目请见 [rcs-admin](https://github.com/fikyair/rcs-admin)
 
 #### 项目技术栈：
 - springboot
