@@ -10,4 +10,7 @@ import java.util.List;
 public interface ProvinceService {
 
     public List<Province> getProvinces();
+
+    public List<Province> getProvincesByPName(String pName);
+
 }

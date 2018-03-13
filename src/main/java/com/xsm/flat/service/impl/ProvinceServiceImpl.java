@@ -24,6 +24,13 @@ public class ProvinceServiceImpl implements ProvinceService {
 
     @Override
     public List<Province> getProvinces() {
+
         return provinceMapper.selectProvince();
+    }
+
+    @Override
+    public List<Province> getProvincesByPName(String pName) {
+
+        return provinceMapper.selectProvinceByPName(pName);
     }
 }

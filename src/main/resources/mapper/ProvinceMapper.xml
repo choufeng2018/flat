@@ -8,6 +8,9 @@
   <resultMap id="BaseResultMapWithOther" extends="BaseResultMap" type="com.xsm.flat.entity.Province">
     <collection column="p_id" property="cities" javaType="java.util.List" select="com.xsm.flat.dao.CityMapper.selectByPId"/>
   </resultMap>
+<!--  <resultMap id="BaseResultMapWithOtherPName" extends="BaseResultMap" type="com.xsm.flat.entity.Province" >
+    <collection property=""
+  </resultMap>-->
   <sql id="Base_Column_List">
     p_id, p_name
   </sql>
@@ -22,6 +25,13 @@
     select
     <include refid="Base_Column_List" />
     from tb_province
+  </select>
+  <!--地理位置：根据pName查出对应数据-->
+  <select id="selectProvinceByPName" resultMap="BaseResultMapWithOther">
+    select
+    <include refid="Base_Column_List" />
+    from tb_province
+    where p_name = #{pName,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from tb_province

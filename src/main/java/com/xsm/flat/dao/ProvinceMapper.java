@@ -21,4 +21,6 @@ public interface ProvinceMapper {
 
     List<Province> selectProvince();
 
+    List<Province> selectProvinceByPName(String pName);
+
 }
