@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/CityService.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/controller/PositionController.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/CityMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/CityMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/ProvinceMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/ProvinceMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/ProvinceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/ProvinceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/ProvinceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/ProvinceServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProvinceMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProvinceMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -591,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520845534038</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[add]渲染rent区域城市部分">
+      <created>1520929341682</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1520929341682</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -730,7 +729,8 @@
     <MESSAGE value="[增加]完善省市级联" />
     <MESSAGE value="[add]前后端统一数据格式" />
     <MESSAGE value="[add]PCSinterface is unobstructed" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]PCSinterface is unobstructed" />
+    <MESSAGE value="[add]渲染rent区域城市部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]渲染rent区域城市部分" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
