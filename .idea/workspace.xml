@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/CityServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/controller/PositionController.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/controller/PositionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/dao/CityMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/dao/CityMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xsm/flat/service/CityService.class" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/service/CityService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/xsm/flat/service/impl/CityServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/CityMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/CityMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/CityService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/CityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/CityMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/CityMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/CityMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -636,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520940461361</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[add]页面渲染街道数据">
+      <created>1521019857273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1521019857273</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -776,7 +775,8 @@
     <MESSAGE value="[add]前后端统一数据格式" />
     <MESSAGE value="[add]PCSinterface is unobstructed" />
     <MESSAGE value="[add]渲染rent区域城市部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]渲染rent区域城市部分" />
+    <MESSAGE value="[add]页面渲染街道数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]页面渲染街道数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

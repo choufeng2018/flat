@@ -4462,3 +4462,7 @@ Consider defining a bean of type 'com.xsm.flat.service.CityService' in your conf
 2018-03-14 17:28:48.969  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-03-14 17:28:49.017  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
 2018-03-14 17:28:49.143  INFO 11796 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-14 17:59:19.996  INFO 11796 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Wed Mar 14 17:27:23 CST 2018]; root of context hierarchy
+2018-03-14 17:59:20.009  INFO 11796 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-14 17:59:20.013  INFO 11796 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-14 17:59:20.022  INFO 11796 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
