@@ -22,6 +22,6 @@ public interface CityMapper {
 
     List<City> selectByPId(@Param("pId") String pId);
 
-    List<City> selectByPName(@Param("pId") String pName);
+    List<City> selectByCName(@Param("cName") String cName);
 
 }

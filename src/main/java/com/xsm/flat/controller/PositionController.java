@@ -20,6 +20,9 @@ public class PositionController {
     @Autowired
     private ProvinceService provinceService;
 
+    @Autowired
+    private CityService cityService;
+
     @RequestMapping(value = "/query", method = RequestMethod.GET)
     public AjaxResponse queryProvince() {
 
@@ -37,6 +40,15 @@ public class PositionController {
         List<Province> proList = provinceService.getProvincesByPName(pName);
         AjaxResponse Ares = new AjaxResponse();
         Ares.setSuccessMessage(true,proList);
+        return Ares;
+    }
+
+    @RequestMapping(value = "/queryByCname/{cName}", method = RequestMethod.GET)
+    public AjaxResponse queryByCname(@PathVariable("cName") String cName){
+
+        List<City> cityList = cityService.getCities(cName);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,cityList);
         return Ares;
     }
 

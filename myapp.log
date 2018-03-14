@@ -4307,3 +4307,158 @@ Consider defining a bean of type 'com.xsm.flat.service.CityService' in your conf
 2018-03-13 10:44:11.872  INFO 5990 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-03-13 10:44:11.908  INFO 5990 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
 2018-03-13 10:44:12.063  INFO 5990 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-13 19:40:43.371  INFO 5990 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b03c71: startup date [Tue Mar 13 10:33:57 CST 2018]; root of context hierarchy
+2018-03-13 19:40:43.374  INFO 5990 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-13 19:40:43.375  INFO 5990 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-13 19:40:43.384  INFO 5990 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-13 19:51:33.820  INFO 21799 --- [restartedMain] com.xsm.flat.FlatApplication             : Starting FlatApplication on xsm with PID 21799 (/home/xsm/IdeaProjects/flat/target/classes started by xsm in /home/xsm/IdeaProjects/flat)
+2018-03-13 19:51:33.822  INFO 21799 --- [restartedMain] com.xsm.flat.FlatApplication             : The following profiles are active: dev
+2018-03-13 19:51:34.052  INFO 21799 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Tue Mar 13 19:51:34 CST 2018]; root of context hierarchy
+2018-03-13 19:51:37.077  INFO 21799 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-13 19:51:37.101  INFO 21799 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-13 19:51:37.103  INFO 21799 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-03-13 19:51:37.215  INFO 21799 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-13 19:51:37.215  INFO 21799 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3176 ms
+2018-03-13 19:51:37.457  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-13 19:51:37.460  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.xsm.flat.servlet.DruidStatViewServlet' to [/druid/*]
+2018-03-13 19:51:37.466  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-13 19:51:37.467  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-13 19:51:37.467  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-13 19:51:37.467  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-13 19:51:37.468  INFO 21799 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-03-13 19:51:38.666  INFO 21799 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Tue Mar 13 19:51:34 CST 2018]; root of context hierarchy
+2018-03-13 19:51:38.750  INFO 21799 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/query],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryProvince()
+2018-03-13 19:51:38.752  INFO 21799 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByPname/{pName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByPname(java.lang.String)
+2018-03-13 19:51:38.755  INFO 21799 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-13 19:51:38.756  INFO 21799 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-13 19:51:38.795  INFO 21799 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-13 19:51:38.796  INFO 21799 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-13 19:51:38.834  INFO 21799 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2018-03-13 19:51:38.871  INFO 21799 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-13 19:51:39.616  INFO 21799 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-13 19:51:39.691  INFO 21799 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-13 19:51:39.694  INFO 21799 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-13 19:51:39.700  INFO 21799 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-13 19:51:39.824  INFO 21799 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-13 19:51:39.846  INFO 21799 --- [restartedMain] com.xsm.flat.FlatApplication             : Started FlatApplication in 6.918 seconds (JVM running for 7.763)
+2018-03-13 19:51:48.486  INFO 21799 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-13 19:51:48.487  INFO 21799 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-13 19:51:48.582  INFO 21799 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 95 ms
+2018-03-13 19:51:48.919  INFO 21799 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-13 20:57:06.113  INFO 21799 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Tue Mar 13 19:51:34 CST 2018]; root of context hierarchy
+2018-03-13 20:57:06.119  INFO 21799 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-13 20:57:06.119  INFO 21799 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-13 20:57:06.127  INFO 21799 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-13 21:07:56.711  INFO 24145 --- [restartedMain] com.xsm.flat.FlatApplication             : Starting FlatApplication on xsm with PID 24145 (/home/xsm/IdeaProjects/flat/target/classes started by xsm in /home/xsm/IdeaProjects/flat)
+2018-03-13 21:07:56.716  INFO 24145 --- [restartedMain] com.xsm.flat.FlatApplication             : The following profiles are active: dev
+2018-03-13 21:07:57.269  INFO 24145 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b03c71: startup date [Tue Mar 13 21:07:57 CST 2018]; root of context hierarchy
+2018-03-13 21:08:00.983  INFO 24145 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-13 21:08:01.036  INFO 24145 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-13 21:08:01.041  INFO 24145 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-03-13 21:08:01.178  INFO 24145 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-13 21:08:01.178  INFO 24145 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3941 ms
+2018-03-13 21:08:01.426  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-13 21:08:01.429  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.xsm.flat.servlet.DruidStatViewServlet' to [/druid/*]
+2018-03-13 21:08:01.435  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-13 21:08:01.436  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-13 21:08:01.436  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-13 21:08:01.436  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-13 21:08:01.436  INFO 24145 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-03-13 21:08:03.169  INFO 24145 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b03c71: startup date [Tue Mar 13 21:07:57 CST 2018]; root of context hierarchy
+2018-03-13 21:08:03.298  INFO 24145 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/query],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryProvince()
+2018-03-13 21:08:03.300  INFO 24145 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByPname/{pName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByPname(java.lang.String)
+2018-03-13 21:08:03.300  INFO 24145 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByCname/{cName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByCname(java.lang.String)
+2018-03-13 21:08:03.303  INFO 24145 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-13 21:08:03.304  INFO 24145 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-13 21:08:03.345  INFO 24145 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-13 21:08:03.345  INFO 24145 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-13 21:08:03.371  INFO 24145 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2018-03-13 21:08:03.411  INFO 24145 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-13 21:08:04.004  INFO 24145 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-13 21:08:04.077  INFO 24145 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-13 21:08:04.079  INFO 24145 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-13 21:08:04.085  INFO 24145 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-13 21:08:04.180  INFO 24145 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-13 21:08:04.188  INFO 24145 --- [restartedMain] com.xsm.flat.FlatApplication             : Started FlatApplication in 9.702 seconds (JVM running for 10.841)
+2018-03-13 21:08:08.496  INFO 24145 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-13 21:08:08.497  INFO 24145 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-13 21:08:08.531  INFO 24145 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-03-13 21:08:08.703  INFO 24145 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-13 21:08:58.575  INFO 24145 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b03c71: startup date [Tue Mar 13 21:07:57 CST 2018]; root of context hierarchy
+2018-03-13 21:08:58.580  INFO 24145 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-13 21:08:58.581  INFO 24145 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-13 21:08:58.596  INFO 24145 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-14 09:48:06.534  INFO 4593 --- [restartedMain] com.xsm.flat.FlatApplication             : Starting FlatApplication on xsm with PID 4593 (/home/xsm/IdeaProjects/flat/target/classes started by xsm in /home/xsm/IdeaProjects/flat)
+2018-03-14 09:48:06.537  INFO 4593 --- [restartedMain] com.xsm.flat.FlatApplication             : The following profiles are active: dev
+2018-03-14 09:48:06.834  INFO 4593 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d95b2aa: startup date [Wed Mar 14 09:48:06 CST 2018]; root of context hierarchy
+2018-03-14 09:48:10.326  INFO 4593 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-14 09:48:10.354  INFO 4593 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-14 09:48:10.356  INFO 4593 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-03-14 09:48:10.555  INFO 4593 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-14 09:48:10.556  INFO 4593 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3732 ms
+2018-03-14 09:48:11.135  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-14 09:48:11.159  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.xsm.flat.servlet.DruidStatViewServlet' to [/druid/*]
+2018-03-14 09:48:11.210  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-14 09:48:11.216  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-14 09:48:11.216  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-14 09:48:11.219  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-14 09:48:11.220  INFO 4593 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-03-14 09:48:12.704  INFO 4593 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d95b2aa: startup date [Wed Mar 14 09:48:06 CST 2018]; root of context hierarchy
+2018-03-14 09:48:12.967  INFO 4593 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByPname/{pName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByPname(java.lang.String)
+2018-03-14 09:48:12.969  INFO 4593 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByCname/{cName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByCname(java.lang.String)
+2018-03-14 09:48:12.972  INFO 4593 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/query],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryProvince()
+2018-03-14 09:48:12.980  INFO 4593 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-14 09:48:12.981  INFO 4593 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-14 09:48:13.053  INFO 4593 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-14 09:48:13.054  INFO 4593 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-14 09:48:13.101  INFO 4593 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2018-03-14 09:48:13.165  INFO 4593 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-14 09:48:14.145  INFO 4593 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-14 09:48:14.236  INFO 4593 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-14 09:48:14.238  INFO 4593 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-14 09:48:14.244  INFO 4593 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-14 09:48:14.317  INFO 4593 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-14 09:48:14.324  INFO 4593 --- [restartedMain] com.xsm.flat.FlatApplication             : Started FlatApplication in 8.435 seconds (JVM running for 11.397)
+2018-03-14 09:49:21.607  INFO 4593 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-14 09:49:21.608  INFO 4593 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-14 09:49:21.635  INFO 4593 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-03-14 09:49:21.772  INFO 4593 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-14 10:16:04.822  INFO 4593 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d95b2aa: startup date [Wed Mar 14 09:48:06 CST 2018]; root of context hierarchy
+2018-03-14 10:16:04.835  INFO 4593 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-14 10:16:04.836  INFO 4593 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-03-14 10:16:04.849  INFO 4593 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-03-14 17:27:22.784  INFO 11796 --- [restartedMain] com.xsm.flat.FlatApplication             : Starting FlatApplication on xsm with PID 11796 (/home/xsm/IdeaProjects/flat/target/classes started by xsm in /home/xsm/IdeaProjects/flat)
+2018-03-14 17:27:22.824  INFO 11796 --- [restartedMain] com.xsm.flat.FlatApplication             : The following profiles are active: dev
+2018-03-14 17:27:23.554  INFO 11796 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Wed Mar 14 17:27:23 CST 2018]; root of context hierarchy
+2018-03-14 17:27:30.301  INFO 11796 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-14 17:27:30.319  INFO 11796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-14 17:27:30.321  INFO 11796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-03-14 17:27:30.441  INFO 11796 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-14 17:27:30.441  INFO 11796 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6898 ms
+2018-03-14 17:27:30.862  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-14 17:27:30.864  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.xsm.flat.servlet.DruidStatViewServlet' to [/druid/*]
+2018-03-14 17:27:30.869  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-14 17:27:30.870  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-14 17:27:30.870  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-14 17:27:30.870  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-14 17:27:30.870  INFO 11796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-03-14 17:27:32.246  INFO 11796 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2315cc90: startup date [Wed Mar 14 17:27:23 CST 2018]; root of context hierarchy
+2018-03-14 17:27:32.339  INFO 11796 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByPname/{pName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByPname(java.lang.String)
+2018-03-14 17:27:32.341  INFO 11796 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByCname/{cName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByCname(java.lang.String)
+2018-03-14 17:27:32.341  INFO 11796 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/query],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryProvince()
+2018-03-14 17:27:32.344  INFO 11796 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-14 17:27:32.345  INFO 11796 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-14 17:27:32.379  INFO 11796 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-14 17:27:32.379  INFO 11796 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-14 17:27:32.403  INFO 11796 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2018-03-14 17:27:32.430  INFO 11796 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-14 17:27:33.068  INFO 11796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-14 17:27:33.147  INFO 11796 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-14 17:27:33.149  INFO 11796 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-03-14 17:27:33.155  INFO 11796 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-03-14 17:27:33.239  INFO 11796 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-14 17:27:33.250  INFO 11796 --- [restartedMain] com.xsm.flat.FlatApplication             : Started FlatApplication in 12.667 seconds (JVM running for 16.492)
+2018-03-14 17:28:48.968  INFO 11796 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-14 17:28:48.969  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-14 17:28:49.017  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2018-03-14 17:28:49.143  INFO 11796 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited

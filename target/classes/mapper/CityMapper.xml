@@ -18,12 +18,19 @@
     from tb_city
     where c_id = #{cId,jdbcType=VARCHAR}
   </select>
-  <!--地理位置：按省ID查询出所有城市-->
+  <!--地理位置：按省市ID查询出所有城市-->
   <select id="selectByPId" parameterType="java.lang.String" resultMap="BaseResultMapWithOther">
     select
     <include refid="Base_Column_List" />
     from tb_city
     where p_id = #{pId,jdbcType=VARCHAR}
+  </select>
+  <!--地理位置：按cName查询出所有街道-->
+  <select id="selectByCName" parameterType="java.lang.String" resultMap="BaseResultMapWithOther">
+    select
+    <include refid="Base_Column_List" />
+    from tb_city
+    where c_name = #{cName,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from tb_city
