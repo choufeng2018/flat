@@ -20,4 +20,10 @@ public class UserServiceImpl implements UserService{
     public List<User> getUsers() {
         return userMapper.selectAll();
     }
+
+    @Override
+    public int updateUser(User user) {
+        return userMapper.updateByPrimaryKey(user);
+    }
+
 }

@@ -65,5 +65,10 @@ public class AjaxResponse {
         this.setMessage(message);
         this.setData(result);
     }
+
+	public void  setSuccessMessageUpdate(){
+		this.setState(SUCCESS_STATE);
+		this.setMessage(message);
+	}
     
 }
