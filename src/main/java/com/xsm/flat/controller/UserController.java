@@ -30,13 +30,13 @@ public class UserController {
     }
 
     /**
-     * admin，用户信息表管理，根据uId更新相应记录
+     * admin，用户信息表管理，更新相应记录
      * @param user
      * @return
      */
     @ResponseBody
-    @RequestMapping(value = "/updateUserById/{uId}", method = RequestMethod.POST)
-    public  AjaxResponse updateUserById(User user) {
+    @RequestMapping(value = "/updateUser", method = RequestMethod.POST)
+    public  AjaxResponse updateUser(User user) {
 
         userService.updateUser(user);
         AjaxResponse res = new AjaxResponse();

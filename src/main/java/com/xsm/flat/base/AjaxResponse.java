@@ -66,9 +66,14 @@ public class AjaxResponse {
         this.setData(result);
     }
 
+	/**
+	 * 更新数据成功
+	 */
 	public void  setSuccessMessageUpdate(){
 		this.setState(SUCCESS_STATE);
-		this.setMessage(message);
+		this.setMessage("更新数据成功");
+		this.setSuccess(true);
+		this.setData("null");
 	}
     
 }
