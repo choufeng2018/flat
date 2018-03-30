@@ -86,6 +86,9 @@
         <table tableName="tb_street" domainObjectName="Street"
                enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
+        <table tableName="tb_user" domainObjectName="User"
+               enableCountByExample ='false' enableUpdateByExample ='false'
+               enableSelectByExample='false'  enableDeleteByExample="false"/>
     </context>
 
 </generatorConfiguration>
