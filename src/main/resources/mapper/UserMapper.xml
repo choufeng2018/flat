@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.User">
+    <id column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="u_name" jdbcType="VARCHAR" property="uName" />
+    <result column="u_pwd" jdbcType="VARCHAR" property="uPwd" />
+    <result column="u_nickname" jdbcType="VARCHAR" property="uNickname" />
+    <result column="u_phone" jdbcType="VARCHAR" property="uPhone" />
+    <result column="token" jdbcType="VARCHAR" property="token" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    u_id, u_name, u_pwd, u_nickname, u_phone, token
+  </sql>
+  <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_user
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_user
+    where u_id = #{uId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_user
+    where u_id = #{uId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.User">
+    insert into tb_user (u_id, u_name, u_pwd, 
+      u_nickname, u_phone, token
+      )
+    values (#{uId,jdbcType=VARCHAR}, #{uName,jdbcType=VARCHAR}, #{uPwd,jdbcType=VARCHAR}, 
+      #{uNickname,jdbcType=VARCHAR}, #{uPhone,jdbcType=VARCHAR}, #{token,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.User">
+    insert into tb_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="uId != null">
+        u_id,
+      </if>
+      <if test="uName != null">
+        u_name,
+      </if>
+      <if test="uPwd != null">
+        u_pwd,
+      </if>
+      <if test="uNickname != null">
+        u_nickname,
+      </if>
+      <if test="uPhone != null">
+        u_phone,
+      </if>
+      <if test="token != null">
+        token,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="uId != null">
+        #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="uName != null">
+        #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPwd != null">
+        #{uPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="uNickname != null">
+        #{uNickname,jdbcType=VARCHAR},
+      </if>
+      <if test="uPhone != null">
+        #{uPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        #{token,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.User">
+    update tb_user
+    <set>
+      <if test="uName != null">
+        u_name = #{uName,jdbcType=VARCHAR},
+      </if>
+      <if test="uPwd != null">
+        u_pwd = #{uPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="uNickname != null">
+        u_nickname = #{uNickname,jdbcType=VARCHAR},
+      </if>
+      <if test="uPhone != null">
+        u_phone = #{uPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        token = #{token,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where u_id = #{uId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.User">
+    update tb_user
+    set u_name = #{uName,jdbcType=VARCHAR},
+      u_pwd = #{uPwd,jdbcType=VARCHAR},
+      u_nickname = #{uNickname,jdbcType=VARCHAR},
+      u_phone = #{uPhone,jdbcType=VARCHAR},
+      token = #{token,jdbcType=VARCHAR}
+    where u_id = #{uId,jdbcType=VARCHAR}
+  </update>
+</mapper>
