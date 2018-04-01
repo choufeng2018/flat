@@ -53,4 +53,14 @@ public class UserController {
         res.setSuccessMessageUpdate();
         return res;
     }
+
+    @ResponseBody
+    @RequestMapping(value = "/addUser", method = RequestMethod.POST)
+    public  AjaxResponse addUser(User user) {
+
+        userService.addUser(user);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
 }

@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.xsm.flat.config.JavaWebToken;
 import com.xsm.flat.dao.UserMapper;
 import com.xsm.flat.entity.User;
 import com.xsm.flat.service.UserService;
@@ -29,6 +30,14 @@ public class UserServiceImpl implements UserService{
     @Override
     public int deleteUser(User user) {
         return userMapper.deleteByPrimaryKey(user);
+    }
+
+    @Override
+    public int addUser(User user) {
+        JavaWebToken token = new JavaWebToken();
+        String javaTocken = token.createJavaWebToken(user.getuName());
+        user.setToken(javaTocken);
+        return userMapper.insertSelective(user);
     }
 
 
