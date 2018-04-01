@@ -5,7 +5,7 @@ import com.xsm.flat.entity.User;
 import java.util.List;
 
 public interface UserMapper {
-    int deleteByPrimaryKey(String uId);
+    int deleteByPrimaryKey(User user);
 
     int insert(User record);
 

@@ -43,4 +43,14 @@ public class UserController {
         res.setSuccessMessageUpdate();
         return res;
     }
+
+    @ResponseBody
+    @RequestMapping(value = "/deleteUser", method = RequestMethod.POST)
+    public  AjaxResponse deleteUser(User user) {
+
+        userService.deleteUser(user);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
 }

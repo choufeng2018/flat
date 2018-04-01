@@ -10,4 +10,6 @@ public interface UserService {
     List<User> getUsers();
 
     int updateUser(User user);
+
+    int deleteUser(User user);
 }
