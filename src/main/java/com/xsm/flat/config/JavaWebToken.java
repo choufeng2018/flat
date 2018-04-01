@@ -56,7 +56,7 @@ public class JavaWebToken {
     iat(Issued at)：是一个时间戳，代表这个JWT的签发时间；
     jti(JWT ID)：是JWT的唯一标识。
     */
-    public static String createJavaWebToken(String subject) {
+    public  String createJavaWebToken(String subject) {
         /*return Jwts.builder().setSubject(subject).claim("roles", "user").setIssuedAt(new Date())
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY).compact();*/
         Date startDate = new Date();
