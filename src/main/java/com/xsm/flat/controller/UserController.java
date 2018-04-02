@@ -1,5 +1,7 @@
 package com.xsm.flat.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.xsm.flat.base.AjaxResponse;
 import com.xsm.flat.entity.Province;
 import com.xsm.flat.entity.User;
@@ -22,10 +24,13 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/selectall", method = RequestMethod.GET)
-    public AjaxResponse selectUser(){
-        List<User> list = userService.getUsers();
+    public AjaxResponse selectUser(Integer pageNum,
+                                   Integer pageSize){
+        List<User> records = userService.getUsers(pageNum,pageSize);
+        PageInfo<User> page = new PageInfo<User>(records);
         AjaxResponse res= new AjaxResponse();
-        res.setSuccessMessage(true,list);
+        res.setSuccessMessage(true,records);
+        res.setPage(page);
         return res;
     }
 

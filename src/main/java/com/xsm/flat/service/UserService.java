@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 public interface UserService {
-    List<User> getUsers();
+    List<User> getUsers(Integer pageNum, Integer pageSize);
 
     int updateUser(User user);
 

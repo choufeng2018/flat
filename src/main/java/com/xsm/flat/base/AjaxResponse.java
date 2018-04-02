@@ -1,5 +1,6 @@
 package com.xsm.flat.base;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -25,6 +26,8 @@ public class AjaxResponse {
     
     private final String ERROR_STATE="999";
 
+	private Object page = new Object();
+
     public String getState() {
 		return state;
 	}
@@ -43,7 +46,15 @@ public class AjaxResponse {
 	public void setData(Object data) {
 		this.data = data;
 	}
-	
+
+	public Object getPage() {
+		return page;
+	}
+
+	public void setPage(Object page) {
+		this.page = page;
+	}
+
 	/**
      * 成功提示
      * @param success
@@ -52,7 +63,8 @@ public class AjaxResponse {
     public void  setSuccessMessage(Boolean success, List data){
     	this.setState(SUCCESS_STATE);
         this.setSuccess(success);
-        this.setData(data);
+        this.setData(data);// page 里重复返回
+        this.setMessage("查询完毕");
     }
     
     /**
@@ -75,5 +87,6 @@ public class AjaxResponse {
 		this.setSuccess(true);
 		this.setData("null");
 	}
-    
+
+
 }

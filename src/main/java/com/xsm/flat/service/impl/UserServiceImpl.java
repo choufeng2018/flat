@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.xsm.flat.config.JavaWebToken;
 import com.xsm.flat.dao.UserMapper;
 import com.xsm.flat.entity.User;
@@ -7,6 +8,7 @@ import com.xsm.flat.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -18,7 +20,9 @@ public class UserServiceImpl implements UserService{
     UserMapper userMapper;
 
     @Override
-    public List<User> getUsers() {
+    public List<User> getUsers(@PathVariable("pageNum") Integer pageNum,
+                               @PathVariable("pageSize") Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return userMapper.selectAll();
     }
 
