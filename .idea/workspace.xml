@@ -781,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522561116102</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="[add]finish admin login">
+      <created>1522832979959</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1522832979959</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -926,7 +933,8 @@
     <MESSAGE value="[update]userInfo update" />
     <MESSAGE value="[add]adduser" />
     <MESSAGE value="[all]userSelect" />
-    <option name="LAST_COMMIT_MESSAGE" value="[all]userSelect" />
+    <MESSAGE value="[add]finish admin login" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]finish admin login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
