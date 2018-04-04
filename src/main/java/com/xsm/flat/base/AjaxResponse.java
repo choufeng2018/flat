@@ -1,10 +1,13 @@
 package com.xsm.flat.base;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AjaxResponse {
+public class AjaxResponse implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 
 	private String state;
 
@@ -26,7 +29,7 @@ public class AjaxResponse {
     
     private final String ERROR_STATE="999";
 
-	private Object page = new Object();
+	private Object page;
 
     public String getState() {
 		return state;
