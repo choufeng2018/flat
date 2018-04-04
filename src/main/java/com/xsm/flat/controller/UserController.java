@@ -3,8 +3,10 @@ package com.xsm.flat.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.xsm.flat.base.AjaxResponse;
+import com.xsm.flat.entity.Admin;
 import com.xsm.flat.entity.Province;
 import com.xsm.flat.entity.User;
+import com.xsm.flat.service.AdminService;
 import com.xsm.flat.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private AdminService adminService;
 
     /**
      * admin,用户信息表管理，查询出所有的用户。
@@ -67,5 +72,13 @@ public class UserController {
         AjaxResponse res = new AjaxResponse();
         res.setSuccessMessageUpdate();
         return res;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public  Boolean loginCheck(Admin admin) {
+
+        Boolean result = adminService.loginCheck(admin);
+        return result;
     }
 }
