@@ -1,7 +1,7 @@
 package com.xsm.flat.utils;
 
 /**
- * Created by 万文杰 on 2017/10/11.
+ * Created by 薛时鸣 on 2017-10-11.
  * description:异常的工具类.
  */
 

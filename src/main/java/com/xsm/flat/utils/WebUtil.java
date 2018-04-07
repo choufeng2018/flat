@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * Created by 万文杰 on 2017/10/11.
+ * Created by 薛时鸣 on 17-1011.
  */
 public class WebUtil {
 
@@ -56,6 +56,9 @@ public class WebUtil {
         }
     }
 
+    public static JsonResult paramError(String data){
+        return new JsonResult(ResultCode.PARAMS_ERROR,ResultCode.PARAMS_ERROR.msg(),null);
+    }
     public static JsonResult paramError(){
         return new JsonResult(ResultCode.PARAMS_ERROR,ResultCode.PARAMS_ERROR.msg(),null);
     }

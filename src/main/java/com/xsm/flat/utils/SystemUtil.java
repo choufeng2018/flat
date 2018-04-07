@@ -13,13 +13,13 @@ import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 /**
- * Created by 万文杰 on 2017/10/11.
+ * Created by 薛时鸣 on 17-10-11.
  */
 public class SystemUtil {
 
     public static final String HASH_ALGORITHM = "SHA-1";
     public static final int HASH_INTERATIONS = 1024;
-
+    private static String string = "abcdefghijklmnopqrstuvwxyz";
     public static final int SALT_SIZE = 8;  //盐
 
     /**
@@ -115,5 +115,19 @@ public class SystemUtil {
         day = day*24*60*60*1000; // 要加上的天数转换成毫秒数
         time+=day; // 相加得到新的毫秒数
         return new Date(time); // 将毫秒数转换成日期
+    }
+
+
+    public static String getRandomString(int length){
+        StringBuffer sb = new StringBuffer();
+        int len = string.length();
+        for (int i = 0; i < length; i++) {
+            sb.append(string.charAt(getRandom(len-1)));
+        }
+        return sb.toString();
+    }
+
+    public static int getRandom(int count) {
+        return (int) Math.round(Math.random() * (count));
     }
 }

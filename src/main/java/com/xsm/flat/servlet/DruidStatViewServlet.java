@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebServlet;
 
 /**
  * druid数据源状态监控.
- * Created by 万文杰 on 2017/10/10.
+ * Created by 薛时鸣 on 17-10-10.
  */
 
 @WebServlet(urlPatterns="/druid/*",

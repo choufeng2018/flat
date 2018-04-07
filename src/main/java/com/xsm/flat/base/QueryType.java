@@ -1,10 +1,10 @@
 package com.xsm.flat.base;
 
 /**
- * Created by 万文杰 on 2017/10/29.
+ * Created by 薛时鸣 on 17-10-29.
  *
- * @author 万文杰
- * @date 2017/10/29
+ * @author 薛时鸣
+ * @date 17-10-29
  */
 public class QueryType {
 

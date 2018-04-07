@@ -15,9 +15,9 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * Created by 万文杰 on 2018/1/2.
+ * Created by 薛时鸣 on 2018/1/2.
  *
- * @author 万文杰
+ * @author 薛时鸣
  * @date 2018/1/2
  */
 public class JavaWebToken {

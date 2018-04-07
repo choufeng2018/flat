@@ -1,10 +1,10 @@
 package com.xsm.flat.base;
 
 /**
- * Created by 万文杰 on 2017/10/28.
+ * Created by 薛时鸣 on 17-10-28.
  *
- * @author 万文杰
- * @date 2017/10/28
+ * @author 薛时鸣
+ * @date 17-10-28
  */
 public enum ResultCode {
     /** 成功 */

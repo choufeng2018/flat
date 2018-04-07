@@ -200,6 +200,12 @@
             <artifactId>hutool-all</artifactId>
             <version>3.3.0</version>
         </dependency>
+        <!--腾讯万象优图-->
+        <dependency>
+            <groupId>com.qcloud</groupId>
+            <artifactId>cos_api</artifactId>
+            <version>5.2.4</version>
+        </dependency>
     </dependencies>
     <!--项目构建-->
     <build>

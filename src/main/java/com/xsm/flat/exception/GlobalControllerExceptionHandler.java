@@ -13,9 +13,9 @@ import javax.servlet.ServletException;
 import javax.validation.ConstraintViolationException;
 
 /**
- * Created by 万文杰 on 2018/1/2.
+ * Created by 薛时鸣 on 2018/1/2.
  * 定义全局异常处理
- * @author 万文杰
+ * @author 薛时鸣
  * @date 2018/1/2
  * @RestControllerAdvice 是@controlleradvice 与@ResponseBody 的组合注解
  */

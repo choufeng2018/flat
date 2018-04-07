@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebInitParam;
 
 /**
  * druid过滤器
- * Created by 万文杰 on 2017/10/10.
+ * Created by 薛时鸣 on 17-10-10.
  */
 @WebFilter(filterName="druidWebStatFilter",urlPatterns="/*",
         initParams={

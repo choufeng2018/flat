@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 /**
- * Created by 万文杰 on 2017/11/20.
+ * Created by 薛时鸣 on 17-11-20.
  * Gzip 压缩字符串
- * @author 万文杰
- * @date 2017/11/20
+ * @author 薛时鸣
+ * @date 17-11-20
  */
 public class GZIP {
     /**

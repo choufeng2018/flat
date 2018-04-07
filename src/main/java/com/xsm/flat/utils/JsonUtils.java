@@ -14,10 +14,10 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 /**
- * Created by 万文杰 on 2017/11/18.
+ * Created by 薛时鸣 on 17-11-18.
  *
- * @author 万文杰
- * @date 2017/11/18
+ * @author 薛时鸣
+ * @date 17-11-18
  */
 public class JsonUtils {
     private static final Logger logger = (Logger) LoggerFactory.getLogger(JsonUtils.class);
