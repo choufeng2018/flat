@@ -24,8 +24,8 @@ public class QcloudUtil {
     public static final String SECRET_ID = "AKID6HJBP0cDf2FH8ZQJlLo6D9IOteHjhHsL";
     public static final String SECRET_KEY = "SsKlBcu0ucIrK1nbLIMNEwTyZSRTvobD";
     // bucket的命名规则为{name}-{appid} ，此处填写的存储桶名称必须为此格式
-    public static final String Bucket_NAME = "aijiaflat-1253646934";
-    public static final String Region_NAME = "ap-beijing";
+    public static final String Bucket_NAME = "aijia-flat-sh-1253646934";
+    public static final String Region_NAME = "ap-shanghai";
 
     public static COSClient getCOSClient(){
         // 1 初始化用户身份信息(secretId, secretKey)
