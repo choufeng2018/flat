@@ -34,6 +34,13 @@ public class FlatInfoController {
     @Autowired
     private FlatService flatService;
 
+    /**
+     * admin 上传图片到腾讯对象存储
+     * @param request
+     * @param file
+     * @return
+     * @throws IOException
+     */
     @RequestMapping(value = "/imgUpload", method = RequestMethod.POST)
     public Object imgUpload(HttpServletRequest request, @RequestParam("file") MultipartFile file) throws IOException {
         JSONObject jsonObject = new JSONObject();
@@ -71,7 +78,11 @@ public class FlatInfoController {
     }
 
 
-
+    /**
+     * admin添加房源信息
+     * @param flat
+     * @return
+     */
     @RequestMapping(value = "addFlat", method = RequestMethod.POST)
     public AjaxResponse addFlat(Flat flat) {
 
@@ -79,5 +90,18 @@ public class FlatInfoController {
         AjaxResponse res = new AjaxResponse();
         res.setSuccessMessageUpdate();
         return res;
+    }
+
+    /**
+     * client 按街道Id查询房源信息
+     * @param sId
+     * @return
+     */
+    @RequestMapping(value = "/queryBysId/{sId}", method = RequestMethod.GET)
+    public AjaxResponse queryBysId(@PathVariable("sId") String sId) {
+        List<Flat> flatListBysId = flatService.selectBysId(sId);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,flatListBysId);
+        return Ares;
     }
 }

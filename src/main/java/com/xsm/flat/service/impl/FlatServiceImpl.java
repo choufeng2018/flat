@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by 薛时鸣 on 18-4-11.
  *
@@ -25,5 +27,11 @@ public class FlatServiceImpl implements FlatService{
         flat.setpId("1");
         flat.setsId("3");
         return flatMapper.insert(flat);
+    }
+
+    @Override
+    public List<Flat> selectBysId(String sId) {
+         List<Flat> list = flatMapper.selectBysId(sId);
+        return  list;
     }
 }

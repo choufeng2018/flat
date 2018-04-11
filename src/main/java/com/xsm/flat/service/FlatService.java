@@ -3,6 +3,8 @@ package com.xsm.flat.service;
 import com.xsm.flat.entity.Flat;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by 薛时鸣 on 18-4-11.
  *
@@ -13,4 +15,6 @@ import org.springframework.stereotype.Service;
 public interface FlatService {
 
     int addFlat (Flat flat);
+
+     List<Flat> selectBysId (String sId);
 }

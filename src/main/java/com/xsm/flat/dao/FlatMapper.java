@@ -2,6 +2,8 @@ package com.xsm.flat.dao;
 
 import com.xsm.flat.entity.Flat;
 
+import java.util.List;
+
 public interface FlatMapper {
     int deleteByPrimaryKey(String fId);
 
@@ -14,4 +16,6 @@ public interface FlatMapper {
     int updateByPrimaryKeySelective(Flat record);
 
     int updateByPrimaryKey(Flat record);
+
+    List<Flat> selectBysId(String sId);
 }
