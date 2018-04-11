@@ -17,4 +17,6 @@ public interface FlatService {
     int addFlat (Flat flat);
 
      List<Flat> selectBysId (String sId);
+
+     List<Flat> selectAll();
 }

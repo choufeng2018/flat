@@ -18,4 +18,6 @@ public interface FlatMapper {
     int updateByPrimaryKey(Flat record);
 
     List<Flat> selectBysId(String sId);
+
+    List<Flat> selectAll();
 }

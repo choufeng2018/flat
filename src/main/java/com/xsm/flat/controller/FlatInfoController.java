@@ -104,4 +104,12 @@ public class FlatInfoController {
         Ares.setSuccessMessage(true,flatListBysId);
         return Ares;
     }
+
+    @RequestMapping(value = "/queryall", method = RequestMethod.GET)
+    public AjaxResponse queryAllFlat() {
+        List<Flat> flatList = flatService.selectAll();
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,flatList);
+        return Ares;
+    }
 }

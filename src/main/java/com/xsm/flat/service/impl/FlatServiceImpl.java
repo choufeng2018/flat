@@ -34,4 +34,9 @@ public class FlatServiceImpl implements FlatService{
          List<Flat> list = flatMapper.selectBysId(sId);
         return  list;
     }
+
+    @Override
+    public List<Flat> selectAll() {
+        return flatMapper.selectAll();
+    }
 }
