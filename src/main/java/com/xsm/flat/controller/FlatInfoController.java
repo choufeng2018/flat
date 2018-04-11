@@ -2,16 +2,22 @@ package com.xsm.flat.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.qcloud.cos.model.PutObjectResult;
+import com.xsm.flat.base.AjaxResponse;
+import com.xsm.flat.entity.Flat;
+import com.xsm.flat.entity.Province;
+import com.xsm.flat.service.FlatService;
 import com.xsm.flat.utils.QcloudUtil;
 import com.xsm.flat.utils.SystemUtil;
 import com.xsm.flat.utils.WebUtil;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by 薛时鸣 on 18-4-7.
@@ -23,8 +29,10 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/flat")
 @CrossOrigin
-public class flatInfoController {
+public class FlatInfoController {
 
+    @Autowired
+    private FlatService flatService;
 
     @RequestMapping(value = "/imgUpload", method = RequestMethod.POST)
     public Object imgUpload(HttpServletRequest request, @RequestParam("file") MultipartFile file) throws IOException {
@@ -60,5 +68,16 @@ public class flatInfoController {
             jsonObject.put("state",200);
         }
         return jsonObject;
+    }
+
+
+
+    @RequestMapping(value = "addFlat", method = RequestMethod.POST)
+    public AjaxResponse addFlat(Flat flat) {
+
+        flatService.addFlat(flat);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
     }
 }

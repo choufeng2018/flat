@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.FlatMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.Flat">
+    <id column="f_id" jdbcType="VARCHAR" property="fId" />
+    <result column="f_name" jdbcType="VARCHAR" property="fName" />
+    <result column="f_type" jdbcType="VARCHAR" property="fType" />
+    <result column="f_habitable" jdbcType="VARCHAR" property="fHabitable" />
+    <result column="f_price" jdbcType="VARCHAR" property="fPrice" />
+    <result column="p_id" jdbcType="VARCHAR" property="pId" />
+    <result column="s_id" jdbcType="VARCHAR" property="sId" />
+    <result column="f_street" jdbcType="VARCHAR" property="fStreet" />
+    <result column="f_age" jdbcType="VARCHAR" property="fAge" />
+    <result column="f_details" jdbcType="VARCHAR" property="fDetails" />
+    <result column="f_require" jdbcType="VARCHAR" property="fRequire" />
+    <result column="f_pic" jdbcType="VARCHAR" property="fPic" />
+    <result column="f_area" jdbcType="VARCHAR" property="fArea" />
+    <result column="f_orientation" jdbcType="VARCHAR" property="fOrientation" />
+    <result column="f_floor" jdbcType="VARCHAR" property="fFloor" />
+    <result column="f_toilet" jdbcType="VARCHAR" property="fToilet" />
+    <result column="f_shower" jdbcType="VARCHAR" property="fShower" />
+    <result column="f_heating" jdbcType="VARCHAR" property="fHeating" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    f_id, f_name, f_type, f_habitable, f_price, p_id, s_id, f_street, f_age, f_details, 
+    f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_flat
+    where f_id = #{fId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_flat
+    where f_id = #{fId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.Flat">
+    insert into tb_flat (f_id, f_name, f_type, 
+      f_habitable, f_price, p_id, 
+      s_id, f_street, f_age, 
+      f_details, f_require, f_pic, 
+      f_area, f_orientation, f_floor, 
+      f_toilet, f_shower, f_heating
+      )
+    values (#{fId,jdbcType=VARCHAR}, #{fName,jdbcType=VARCHAR}, #{fType,jdbcType=VARCHAR}, 
+      #{fHabitable,jdbcType=VARCHAR}, #{fPrice,jdbcType=VARCHAR}, #{pId,jdbcType=VARCHAR}, 
+      #{sId,jdbcType=VARCHAR}, #{fStreet,jdbcType=VARCHAR}, #{fAge,jdbcType=VARCHAR}, 
+      #{fDetails,jdbcType=VARCHAR}, #{fRequire,jdbcType=VARCHAR}, #{fPic,jdbcType=VARCHAR}, 
+      #{fArea,jdbcType=VARCHAR}, #{fOrientation,jdbcType=VARCHAR}, #{fFloor,jdbcType=VARCHAR}, 
+      #{fToilet,jdbcType=VARCHAR}, #{fShower,jdbcType=VARCHAR}, #{fHeating,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.Flat">
+    insert into tb_flat
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="fId != null">
+        f_id,
+      </if>
+      <if test="fName != null">
+        f_name,
+      </if>
+      <if test="fType != null">
+        f_type,
+      </if>
+      <if test="fHabitable != null">
+        f_habitable,
+      </if>
+      <if test="fPrice != null">
+        f_price,
+      </if>
+      <if test="pId != null">
+        p_id,
+      </if>
+      <if test="sId != null">
+        s_id,
+      </if>
+      <if test="fStreet != null">
+        f_street,
+      </if>
+      <if test="fAge != null">
+        f_age,
+      </if>
+      <if test="fDetails != null">
+        f_details,
+      </if>
+      <if test="fRequire != null">
+        f_require,
+      </if>
+      <if test="fPic != null">
+        f_pic,
+      </if>
+      <if test="fArea != null">
+        f_area,
+      </if>
+      <if test="fOrientation != null">
+        f_orientation,
+      </if>
+      <if test="fFloor != null">
+        f_floor,
+      </if>
+      <if test="fToilet != null">
+        f_toilet,
+      </if>
+      <if test="fShower != null">
+        f_shower,
+      </if>
+      <if test="fHeating != null">
+        f_heating,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="fId != null">
+        #{fId,jdbcType=VARCHAR},
+      </if>
+      <if test="fName != null">
+        #{fName,jdbcType=VARCHAR},
+      </if>
+      <if test="fType != null">
+        #{fType,jdbcType=VARCHAR},
+      </if>
+      <if test="fHabitable != null">
+        #{fHabitable,jdbcType=VARCHAR},
+      </if>
+      <if test="fPrice != null">
+        #{fPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="pId != null">
+        #{pId,jdbcType=VARCHAR},
+      </if>
+      <if test="sId != null">
+        #{sId,jdbcType=VARCHAR},
+      </if>
+      <if test="fStreet != null">
+        #{fStreet,jdbcType=VARCHAR},
+      </if>
+      <if test="fAge != null">
+        #{fAge,jdbcType=VARCHAR},
+      </if>
+      <if test="fDetails != null">
+        #{fDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="fRequire != null">
+        #{fRequire,jdbcType=VARCHAR},
+      </if>
+      <if test="fPic != null">
+        #{fPic,jdbcType=VARCHAR},
+      </if>
+      <if test="fArea != null">
+        #{fArea,jdbcType=VARCHAR},
+      </if>
+      <if test="fOrientation != null">
+        #{fOrientation,jdbcType=VARCHAR},
+      </if>
+      <if test="fFloor != null">
+        #{fFloor,jdbcType=VARCHAR},
+      </if>
+      <if test="fToilet != null">
+        #{fToilet,jdbcType=VARCHAR},
+      </if>
+      <if test="fShower != null">
+        #{fShower,jdbcType=VARCHAR},
+      </if>
+      <if test="fHeating != null">
+        #{fHeating,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.Flat">
+    update tb_flat
+    <set>
+      <if test="fName != null">
+        f_name = #{fName,jdbcType=VARCHAR},
+      </if>
+      <if test="fType != null">
+        f_type = #{fType,jdbcType=VARCHAR},
+      </if>
+      <if test="fHabitable != null">
+        f_habitable = #{fHabitable,jdbcType=VARCHAR},
+      </if>
+      <if test="fPrice != null">
+        f_price = #{fPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="pId != null">
+        p_id = #{pId,jdbcType=VARCHAR},
+      </if>
+      <if test="sId != null">
+        s_id = #{sId,jdbcType=VARCHAR},
+      </if>
+      <if test="fStreet != null">
+        f_street = #{fStreet,jdbcType=VARCHAR},
+      </if>
+      <if test="fAge != null">
+        f_age = #{fAge,jdbcType=VARCHAR},
+      </if>
+      <if test="fDetails != null">
+        f_details = #{fDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="fRequire != null">
+        f_require = #{fRequire,jdbcType=VARCHAR},
+      </if>
+      <if test="fPic != null">
+        f_pic = #{fPic,jdbcType=VARCHAR},
+      </if>
+      <if test="fArea != null">
+        f_area = #{fArea,jdbcType=VARCHAR},
+      </if>
+      <if test="fOrientation != null">
+        f_orientation = #{fOrientation,jdbcType=VARCHAR},
+      </if>
+      <if test="fFloor != null">
+        f_floor = #{fFloor,jdbcType=VARCHAR},
+      </if>
+      <if test="fToilet != null">
+        f_toilet = #{fToilet,jdbcType=VARCHAR},
+      </if>
+      <if test="fShower != null">
+        f_shower = #{fShower,jdbcType=VARCHAR},
+      </if>
+      <if test="fHeating != null">
+        f_heating = #{fHeating,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where f_id = #{fId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.Flat">
+    update tb_flat
+    set f_name = #{fName,jdbcType=VARCHAR},
+      f_type = #{fType,jdbcType=VARCHAR},
+      f_habitable = #{fHabitable,jdbcType=VARCHAR},
+      f_price = #{fPrice,jdbcType=VARCHAR},
+      p_id = #{pId,jdbcType=VARCHAR},
+      s_id = #{sId,jdbcType=VARCHAR},
+      f_street = #{fStreet,jdbcType=VARCHAR},
+      f_age = #{fAge,jdbcType=VARCHAR},
+      f_details = #{fDetails,jdbcType=VARCHAR},
+      f_require = #{fRequire,jdbcType=VARCHAR},
+      f_pic = #{fPic,jdbcType=VARCHAR},
+      f_area = #{fArea,jdbcType=VARCHAR},
+      f_orientation = #{fOrientation,jdbcType=VARCHAR},
+      f_floor = #{fFloor,jdbcType=VARCHAR},
+      f_toilet = #{fToilet,jdbcType=VARCHAR},
+      f_shower = #{fShower,jdbcType=VARCHAR},
+      f_heating = #{fHeating,jdbcType=VARCHAR}
+    where f_id = #{fId,jdbcType=VARCHAR}
+  </update>
+</mapper>
