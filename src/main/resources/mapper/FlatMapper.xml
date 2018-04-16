@@ -7,8 +7,6 @@
     <result column="f_type" jdbcType="VARCHAR" property="fType" />
     <result column="f_habitable" jdbcType="VARCHAR" property="fHabitable" />
     <result column="f_price" jdbcType="VARCHAR" property="fPrice" />
-    <!--<result column="f_minPrice" jdbcType="VARCHAR" property="fMinPrice" />-->
-    <!--<result column="f_maxPrice" jdbcType="VARCHAR" property="fMaxPrice" />-->
     <result column="p_id" jdbcType="VARCHAR" property="pId" />
     <result column="s_id" jdbcType="VARCHAR" property="sId" />
     <result column="f_street" jdbcType="VARCHAR" property="fStreet" />
@@ -22,6 +20,7 @@
     <result column="f_toilet" jdbcType="VARCHAR" property="fToilet" />
     <result column="f_shower" jdbcType="VARCHAR" property="fShower" />
     <result column="f_heating" jdbcType="VARCHAR" property="fHeating" />
+    <result column="p_name" jdbcType="VARCHAR" property="pName" />
   </resultMap>
   <sql id="Base_Column_List">
     f_id, f_name, f_type, f_habitable, f_price, p_id, s_id, f_street, f_age, f_details, 
@@ -35,10 +34,11 @@
     where s_id = #{sId,jdbcType=VARCHAR}
   </select>
   <!--查询所有房屋信息-->
-  <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectBypName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
     from tb_flat
+    where p_name = #{pName,jdbcType=VARCHAR}
   </select>
 
   <!--联合查询-->
@@ -67,7 +67,33 @@
       </if>
     </where>
   </select>
+  <!--客户端首页模糊搜索-->
+  <select id="fuzzySearchFlat" parameterType="com.xsm.flat.entity.Flat" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from tb_flat
+    <where>
+      <if test="sId!=null and sId!='' ">
+        and s_id = #{sId,jdbcType=VARCHAR}
+      </if>
+      <if test="pId!=null and pId!='' ">
+        and p_id = #{pId,jdbcType=VARCHAR}
+      </if>
+      <if test="fHabitable!=null and fHabitable!= '' ">
+        and f_habitable = #{fHabitable,jdbcType=VARCHAR}
+      </if>
+      <if test="fMinPrice!=null and fMinPrice!= '' ">
+        and f_price &gt;= #{fMinPrice,jdbcType=VARCHAR}
+      </if>
+      <if test="fMaxPrice!=null and fMaxPrice!= '' ">
+        and f_price &lt; #{fMaxPrice,jdbcType=VARCHAR}
+      </if>
+      <if test="fStreet!=null and fStreet!= '' ">
+        and f_street like concat(concat('%',#{fStreet}),'%')
+      </if>
+    </where>
 
+  </select>
   <!--房屋详情页面 按房屋id查询房屋信息-->
   <select id="selectFlatByfId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select

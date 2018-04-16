@@ -109,9 +109,9 @@ public class FlatInfoController {
      * client 查询所有房源信息，数据初始化
      * @return
      */
-    @RequestMapping(value = "/queryall", method = RequestMethod.GET)
-    public AjaxResponse queryAllFlat() {
-        List<Flat> flatList = flatService.selectAll();
+    @RequestMapping(value = "/queryall/{pName}", method = RequestMethod.GET)
+    public AjaxResponse queryAllFlat(@PathVariable("pName") String pName) {
+        List<Flat> flatList = flatService.selectBypName(pName);
         AjaxResponse Ares = new AjaxResponse();
         Ares.setSuccessMessage(true,flatList);
         return Ares;
@@ -137,6 +137,11 @@ public class FlatInfoController {
         return Ares;
     }
 
+    /**
+     * client 房源信息详情页查询
+     * @param fId
+     * @return
+     */
     @RequestMapping(value = "/flatbyid/{fId}", method = RequestMethod.GET)
     public AjaxResponse selectFlatById(@PathVariable("fId") String fId) {
 
@@ -146,5 +151,17 @@ public class FlatInfoController {
         return Ares;
     }
 
+    /**
+     * client 首页模糊查询
+     * @param flat
+     * @return
+     */
+    @PostMapping("/fuzzysearch")
+    public AjaxResponse fuzzySearchFlat(@ModelAttribute Flat flat) {
+        List<Flat> flatList = flatService.fuzzySearchFlat(flat);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,flatList);
+        return Ares;
+    }
 
 }

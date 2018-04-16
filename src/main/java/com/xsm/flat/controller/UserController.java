@@ -98,6 +98,11 @@ public class UserController {
         return result;
     }
 
+    /**
+     * client 用户登录校验
+     * @param user
+     * @return
+     */
     @RequestMapping(value = "/userlogin", method = RequestMethod.POST)
     public Boolean userLoginCheck (User user){
 

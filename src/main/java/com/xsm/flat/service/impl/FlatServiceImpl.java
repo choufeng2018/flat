@@ -36,8 +36,8 @@ public class FlatServiceImpl implements FlatService{
     }
 
     @Override
-    public List<Flat> selectAll() {
-        return flatMapper.selectAll();
+    public List<Flat> selectBypName(String pName) {
+        return flatMapper.selectBypName(pName);
     }
 
     @Override
@@ -50,5 +50,10 @@ public class FlatServiceImpl implements FlatService{
     public List<Flat> selectFlatByfId(String fId) {
         List<Flat> list = flatMapper.selectFlatByfId(fId);
         return list;
+    }
+
+    @Override
+    public List<Flat> fuzzySearchFlat(Flat flat) {
+        return flatMapper.fuzzySearchFlat(flat);
     }
 }

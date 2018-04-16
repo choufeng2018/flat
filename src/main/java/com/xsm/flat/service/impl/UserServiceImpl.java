@@ -49,12 +49,14 @@ public class UserServiceImpl implements UserService{
     public Boolean userLoginCheck(User user) {
         User result = userMapper.userLogincheck(user);
 
-        if(result.getuPwd().equals(user.getuPwd())){
-            return true;
-        }else {
+        if(result == null){
             return false;
+        }else {
+            if (result.getuPwd().equals(user.getuPwd())) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
-
-
 }

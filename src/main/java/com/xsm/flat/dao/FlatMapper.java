@@ -19,10 +19,12 @@ public interface FlatMapper {
 
     List<Flat> selectBysId(String sId);
 
-    List<Flat> selectAll();
+    List<Flat> selectBypName(String pName);
 
     List<Flat> combineSelect(Flat flat);
 
     List<Flat> selectFlatByfId(String fId);
+
+    List<Flat> fuzzySearchFlat(Flat flat);
 
 }
