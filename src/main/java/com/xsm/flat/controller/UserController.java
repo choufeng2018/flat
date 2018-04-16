@@ -54,6 +54,11 @@ public class UserController {
         return res;
     }
 
+    /**
+     * admin 删除用户
+     * @param user
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value = "/deleteUser", method = RequestMethod.POST)
     public  AjaxResponse deleteUser(User user) {
@@ -64,6 +69,12 @@ public class UserController {
         return res;
     }
 
+    /**
+     *
+     * client 注册接口，admin 添加用户接口
+     * @param user
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public  AjaxResponse addUser(User user) {
@@ -74,6 +85,11 @@ public class UserController {
         return res;
     }
 
+    /**
+     * admin 管理员登录验证
+     * @param admin
+     * @return
+     */
     @ResponseBody
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public  Boolean loginCheck(Admin admin) {
@@ -81,4 +97,12 @@ public class UserController {
         Boolean result = adminService.loginCheck(admin);
         return result;
     }
+
+    @RequestMapping(value = "/userlogin", method = RequestMethod.POST)
+    public Boolean userLoginCheck (User user){
+
+        Boolean result = userService.userLoginCheck(user);
+        return result;
+    }
+
 }

@@ -7,6 +7,8 @@
     <result column="f_type" jdbcType="VARCHAR" property="fType" />
     <result column="f_habitable" jdbcType="VARCHAR" property="fHabitable" />
     <result column="f_price" jdbcType="VARCHAR" property="fPrice" />
+    <!--<result column="f_minPrice" jdbcType="VARCHAR" property="fMinPrice" />-->
+    <!--<result column="f_maxPrice" jdbcType="VARCHAR" property="fMaxPrice" />-->
     <result column="p_id" jdbcType="VARCHAR" property="pId" />
     <result column="s_id" jdbcType="VARCHAR" property="sId" />
     <result column="f_street" jdbcType="VARCHAR" property="fStreet" />
@@ -37,6 +39,33 @@
     select
     <include refid="Base_Column_List"/>
     from tb_flat
+  </select>
+
+  <!--联合查询-->
+  <select id="combineSelect" parameterType="com.xsm.flat.entity.Flat" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from tb_flat
+    <where>
+      <if test="sId!=null and sId!='' ">
+        and s_id = #{sId,jdbcType=VARCHAR}
+      </if>
+      <if test="pId!=null and pId!='' ">
+        and p_id = #{pId,jdbcType=VARCHAR}
+      </if>
+      <if test="fHabitable!=null and fHabitable!= '' ">
+        and f_habitable = #{fHabitable,jdbcType=VARCHAR}
+      </if>
+      <if test="fMinPrice!=null and fMinPrice!= '' ">
+        and f_price &gt;= #{fMinPrice,jdbcType=VARCHAR}
+      </if>
+      <if test="fMaxPrice!=null and fMaxPrice!= '' ">
+        and f_price &lt; #{fMaxPrice,jdbcType=VARCHAR}
+      </if>
+      <if test="fType!=null and fType!= '' ">
+        and f_type = #{fType,jdbcType=VARCHAR}
+      </if>
+    </where>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 

@@ -17,6 +17,13 @@
     <include refid="Base_Column_List" />
     from tb_user
   </select>
+  <!--客户端登录校验-->
+  <select id="userLogincheck" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_admin
+    where u_name = #{uName,jdbcType=VARCHAR}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

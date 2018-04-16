@@ -105,6 +105,10 @@ public class FlatInfoController {
         return Ares;
     }
 
+    /**
+     * client 查询所有房源信息，数据初始化
+     * @return
+     */
     @RequestMapping(value = "/queryall", method = RequestMethod.GET)
     public AjaxResponse queryAllFlat() {
         List<Flat> flatList = flatService.selectAll();
@@ -112,4 +116,20 @@ public class FlatInfoController {
         Ares.setSuccessMessage(true,flatList);
         return Ares;
     }
+
+
+    @PostMapping("/combineselect")
+    public AjaxResponse combineQuery(@ModelAttribute Flat flat) {
+        //@RequestParam(value = "fHabitable",defaultValue = "",required = false)  String fHabitable
+
+        /*System.out.println(fHabitable);
+        Flat flat = new Flat();
+        flat.setfHabitable(fHabitable);*/
+        //System.out.println(flat);
+        List<Flat> flatList = flatService.combineSelect(flat);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,flatList);
+        return Ares;
+    }
+
 }

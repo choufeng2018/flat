@@ -3,6 +3,7 @@ package com.xsm.flat.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.xsm.flat.config.JavaWebToken;
 import com.xsm.flat.dao.UserMapper;
+import com.xsm.flat.entity.Admin;
 import com.xsm.flat.entity.User;
 import com.xsm.flat.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,17 @@ public class UserServiceImpl implements UserService{
         String javaTocken = token.createJavaWebToken(user.getuName());
         user.setToken(javaTocken);
         return userMapper.insertSelective(user);
+    }
+
+    @Override
+    public Boolean userLoginCheck(User user) {
+        User result = userMapper.userLogincheck(user);
+
+        if(result.getuPwd().equals(user.getuPwd())){
+            return true;
+        }else {
+            return false;
+        }
     }
 
 

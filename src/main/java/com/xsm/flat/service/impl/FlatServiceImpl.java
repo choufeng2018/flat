@@ -39,4 +39,10 @@ public class FlatServiceImpl implements FlatService{
     public List<Flat> selectAll() {
         return flatMapper.selectAll();
     }
+
+    @Override
+    public List<Flat> combineSelect(Flat flat) {
+        return flatMapper.combineSelect(flat);
+
+    }
 }

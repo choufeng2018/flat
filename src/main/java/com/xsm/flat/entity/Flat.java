@@ -16,6 +16,30 @@ public class Flat implements Serializable  {
 
     private String fPrice;
 
+    private String fMinPrice;
+
+    private String fMaxPrice;
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getfMinPrice() {
+        return fMinPrice;
+    }
+
+    public void setfMinPrice(String fMinPrice) {
+        this.fMinPrice = fMinPrice;
+    }
+
+    public String getfMaxPrice() {
+        return fMaxPrice;
+    }
+
+    public void setfMaxPrice(String fMaxPrice) {
+        this.fMaxPrice = fMaxPrice;
+    }
+
     private String pId;
 
     private String sId;
@@ -241,5 +265,29 @@ public class Flat implements Serializable  {
         result = prime * result + ((getfShower() == null) ? 0 : getfShower().hashCode());
         result = prime * result + ((getfHeating() == null) ? 0 : getfHeating().hashCode());
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Flat{" +
+                "fId='" + fId + '\'' +
+                ", fName='" + fName + '\'' +
+                ", fType='" + fType + '\'' +
+                ", fHabitable='" + fHabitable + '\'' +
+                ", fPrice='" + fPrice + '\'' +
+                ", pId='" + pId + '\'' +
+                ", sId='" + sId + '\'' +
+                ", fStreet='" + fStreet + '\'' +
+                ", fAge='" + fAge + '\'' +
+                ", fDetails='" + fDetails + '\'' +
+                ", fRequire='" + fRequire + '\'' +
+                ", fPic='" + fPic + '\'' +
+                ", fArea='" + fArea + '\'' +
+                ", fOrientation='" + fOrientation + '\'' +
+                ", fFloor='" + fFloor + '\'' +
+                ", fToilet='" + fToilet + '\'' +
+                ", fShower='" + fShower + '\'' +
+                ", fHeating='" + fHeating + '\'' +
+                '}';
     }
 }

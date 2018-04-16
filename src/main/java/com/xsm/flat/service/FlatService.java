@@ -19,4 +19,6 @@ public interface FlatService {
      List<Flat> selectBysId (String sId);
 
      List<Flat> selectAll();
+
+     List<Flat> combineSelect(Flat flat);
 }
