@@ -67,6 +67,14 @@
       </if>
     </where>
   </select>
+
+  <!--房屋详情页面 按房屋id查询房屋信息-->
+  <select id="selectFlatByfId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_flat
+    where f_id = #{fId,jdbcType=VARCHAR}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

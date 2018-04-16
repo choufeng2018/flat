@@ -118,6 +118,11 @@ public class FlatInfoController {
     }
 
 
+    /**
+     * client 动态查询接口
+     * @param flat
+     * @return
+     */
     @PostMapping("/combineselect")
     public AjaxResponse combineQuery(@ModelAttribute Flat flat) {
         //@RequestParam(value = "fHabitable",defaultValue = "",required = false)  String fHabitable
@@ -131,5 +136,15 @@ public class FlatInfoController {
         Ares.setSuccessMessage(true,flatList);
         return Ares;
     }
+
+    @RequestMapping(value = "/flatbyid/{fId}", method = RequestMethod.GET)
+    public AjaxResponse selectFlatById(@PathVariable("fId") String fId) {
+
+        List<Flat> flatListByfId = flatService.selectFlatByfId(fId);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,flatListByfId);
+        return Ares;
+    }
+
 
 }

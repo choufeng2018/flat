@@ -21,4 +21,7 @@ public interface FlatService {
      List<Flat> selectAll();
 
      List<Flat> combineSelect(Flat flat);
+
+    List<Flat> selectFlatByfId (String fId);
+
 }

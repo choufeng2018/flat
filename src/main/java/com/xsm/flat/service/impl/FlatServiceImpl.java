@@ -45,4 +45,10 @@ public class FlatServiceImpl implements FlatService{
         return flatMapper.combineSelect(flat);
 
     }
+
+    @Override
+    public List<Flat> selectFlatByfId(String fId) {
+        List<Flat> list = flatMapper.selectFlatByfId(fId);
+        return list;
+    }
 }
