@@ -46,17 +46,8 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public Boolean userLoginCheck(User user) {
-        User result = userMapper.userLogincheck(user);
-
-        if(result == null){
-            return false;
-        }else {
-            if (result.getuPwd().equals(user.getuPwd())) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+    public User userLoginCheck(User user) {
+        User userResult = userMapper.userLogincheck(user);
+        return userResult;
     }
 }

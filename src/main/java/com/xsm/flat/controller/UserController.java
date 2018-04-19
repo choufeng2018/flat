@@ -104,9 +104,9 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/userlogin", method = RequestMethod.POST)
-    public Boolean userLoginCheck (User user){
+    public User userLoginCheck (User user){
 
-        Boolean result = userService.userLoginCheck(user);
+        User result = userService.userLoginCheck(user);
         return result;
     }
 
