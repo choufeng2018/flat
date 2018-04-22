@@ -26,6 +26,7 @@ public class FlatServiceImpl implements FlatService{
     public int addFlat(Flat flat) {
         flat.setpId("1");
         flat.setsId("3");
+        flat.setpName("上海市");
         return flatMapper.insert(flat);
     }
 

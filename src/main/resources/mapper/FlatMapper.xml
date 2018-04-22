@@ -24,7 +24,7 @@
   </resultMap>
   <sql id="Base_Column_List">
     f_id, f_name, f_type, f_habitable, f_price, p_id, s_id, f_street, f_age, f_details, 
-    f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating
+    f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name
   </sql>
   <!--按照街道Id查询房屋信息-->
   <select id="selectBysId" parameterType="java.lang.String" resultMap="BaseResultMap">
@@ -117,14 +117,15 @@
       s_id, f_street, f_age, 
       f_details, f_require, f_pic, 
       f_area, f_orientation, f_floor, 
-      f_toilet, f_shower, f_heating
+      f_toilet, f_shower, f_heating, p_name
       )
     values (#{fId,jdbcType=VARCHAR}, #{fName,jdbcType=VARCHAR}, #{fType,jdbcType=VARCHAR}, 
       #{fHabitable,jdbcType=VARCHAR}, #{fPrice,jdbcType=VARCHAR}, #{pId,jdbcType=VARCHAR}, 
       #{sId,jdbcType=VARCHAR}, #{fStreet,jdbcType=VARCHAR}, #{fAge,jdbcType=VARCHAR}, 
       #{fDetails,jdbcType=VARCHAR}, #{fRequire,jdbcType=VARCHAR}, #{fPic,jdbcType=VARCHAR}, 
       #{fArea,jdbcType=VARCHAR}, #{fOrientation,jdbcType=VARCHAR}, #{fFloor,jdbcType=VARCHAR}, 
-      #{fToilet,jdbcType=VARCHAR}, #{fShower,jdbcType=VARCHAR}, #{fHeating,jdbcType=VARCHAR}
+      #{fToilet,jdbcType=VARCHAR}, #{fShower,jdbcType=VARCHAR}, #{fHeating,jdbcType=VARCHAR},
+    #{pName,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.xsm.flat.entity.Flat">
@@ -154,7 +155,7 @@
       <if test="fStreet != null">
         f_street,
       </if>
-      <if test="fAge != null">
+      <if test="fAge != nu1ll">
         f_age,
       </if>
       <if test="fDetails != null">
