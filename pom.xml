@@ -138,11 +138,11 @@
         </dependency>
         <!-- commons end-->
         <!--切换日志系统工具-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.21</version>
-        </dependency>
+        </dependency>-->
         <!-- Logging -->
         <dependency>
             <groupId>log4j</groupId>
@@ -202,6 +202,7 @@
         </dependency>
         <!--腾讯万象优图-->
         <dependency>
+
             <groupId>com.qcloud</groupId>
             <artifactId>cos_api</artifactId>
             <version>5.2.4</version>
