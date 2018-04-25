@@ -17413,3 +17413,81 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in 
 2018-04-24 14:35:37.422  INFO 5630 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-04-24 14:35:37.457  INFO 5630 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
 2018-04-24 14:35:37.632  INFO 5630 --- [http-nio-8081-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 20:30:31.974  INFO 7824 --- [restartedMain] com.xsm.flat.FlatApplication             : Starting FlatApplication on DESKTOP-9T673I7 with PID 7824 (F:\graduate-flat-springboot\flat\target\classes started by fisherman in F:\graduate-flat-springboot\flat)
+2018-04-24 20:30:31.975  INFO 7824 --- [restartedMain] com.xsm.flat.FlatApplication             : The following profiles are active: dev
+2018-04-24 20:30:32.320  INFO 7824 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f948698: startup date [Tue Apr 24 20:30:32 CST 2018]; root of context hierarchy
+2018-04-24 20:30:37.278  INFO 7824 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-04-24 20:30:37.357  INFO 7824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-24 20:30:37.358  INFO 7824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2018-04-24 20:30:37.741  INFO 7824 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-24 20:30:37.741  INFO 7824 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5485 ms
+2018-04-24 20:30:38.158  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-24 20:30:38.160  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'com.xsm.flat.servlet.DruidStatViewServlet' to [/druid/*]
+2018-04-24 20:30:38.177  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-24 20:30:38.178  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-24 20:30:38.178  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-24 20:30:38.178  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-24 20:30:38.179  INFO 7824 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-04-24 20:30:40.245  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f948698: startup date [Tue Apr 24 20:30:32 CST 2018]; root of context hierarchy
+2018-04-24 20:30:40.409  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/imgUpload],methods=[POST]}" onto public java.lang.Object com.xsm.flat.controller.FlatInfoController.imgUpload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile) throws java.io.IOException
+2018-04-24 20:30:40.412  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/addFlat],methods=[POST]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.FlatInfoController.addFlat(com.xsm.flat.entity.Flat)
+2018-04-24 20:30:40.413  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/queryBysId/{sId}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.FlatInfoController.queryBysId(java.lang.String)
+2018-04-24 20:30:40.413  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/combineselect],methods=[POST]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.FlatInfoController.combineQuery(com.xsm.flat.entity.Flat)
+2018-04-24 20:30:40.414  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/flatbyid/{fId}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.FlatInfoController.selectFlatById(java.lang.String)
+2018-04-24 20:30:40.415  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/queryall/{pName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.FlatInfoController.queryAllFlat(java.lang.String)
+2018-04-24 20:30:40.415  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/flat/fuzzysearch],methods=[POST]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.FlatInfoController.fuzzySearchFlat(com.xsm.flat.entity.Flat)
+2018-04-24 20:30:40.417  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByCname/{cName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByCname(java.lang.String)
+2018-04-24 20:30:40.418  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/queryByPname/{pName}],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryByPname(java.lang.String)
+2018-04-24 20:30:40.419  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryProvince/query],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.PositionController.queryProvince()
+2018-04-24 20:30:40.423  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/addUser],methods=[POST]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.UserController.addUser(com.xsm.flat.entity.User)
+2018-04-24 20:30:40.424  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/selectall],methods=[GET]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.UserController.selectUser(java.lang.Integer,java.lang.Integer)
+2018-04-24 20:30:40.425  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/updateUser],methods=[POST]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.UserController.updateUser(com.xsm.flat.entity.User)
+2018-04-24 20:30:40.425  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.Boolean com.xsm.flat.controller.UserController.loginCheck(com.xsm.flat.entity.Admin)
+2018-04-24 20:30:40.426  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/userlogin],methods=[POST]}" onto public com.xsm.flat.entity.User com.xsm.flat.controller.UserController.userLoginCheck(com.xsm.flat.entity.User)
+2018-04-24 20:30:40.427  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/deleteUser],methods=[POST]}" onto public com.xsm.flat.base.AjaxResponse com.xsm.flat.controller.UserController.deleteUser(com.xsm.flat.entity.User)
+2018-04-24 20:30:40.435  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-24 20:30:40.436  INFO 7824 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-24 20:30:40.513  INFO 7824 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 20:30:40.514  INFO 7824 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 20:30:40.560  INFO 7824 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2018-04-24 20:30:40.620  INFO 7824 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-24 20:30:41.283  INFO 7824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-04-24 20:30:41.360  INFO 7824 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-24 20:30:41.363  INFO 7824 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-24 20:30:41.369  INFO 7824 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-04-24 20:30:41.566  INFO 7824 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-04-24 20:30:41.586  INFO 7824 --- [restartedMain] com.xsm.flat.FlatApplication             : Started FlatApplication in 11.288 seconds (JVM running for 13.501)
+2018-04-24 20:34:09.122  INFO 7824 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-24 20:34:09.124  INFO 7824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-24 20:34:09.245  INFO 7824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 121 ms
+2018-04-24 20:34:09.511  INFO 7824 --- [http-nio-8081-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-04-24 21:02:46.412  INFO 7824 --- [http-nio-8081-exec-9] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:683) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+
+2018-04-24 21:02:46.412  INFO 7824 --- [http-nio-8081-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:422) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:683) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_60]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+
