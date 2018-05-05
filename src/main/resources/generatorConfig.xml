@@ -21,9 +21,9 @@
 
         <!-- JDBC数据库连接 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/flat?useUnicode=true&amp;characterEncoding=UTF-8"
+                        connectionURL="jdbc:mysql://123.207.157.140:3306/flat?useUnicode=true&amp;characterEncoding=UTF-8"
                         userId="root"
-                        password="root" />
+                        password="123456" />
 
         <!-- 类型转换 -->
         <javaTypeResolver>
@@ -92,7 +92,10 @@
        <!-- <table tableName="tb_admin" domainObjectName="Admin"
                enableCountByExample ='false' enableUpdateByExample ='false'
                enableSelectByExample='false'  enableDeleteByExample="false"/>-->
-        <table tableName="tb_flat" domainObjectName="Flat"
+        <!--<table tableName="tb_flat" domainObjectName="Flat"
+               enableCountByExample ='false' enableUpdateByExample ='false'
+               enableSelectByExample='false'  enableDeleteByExample="false"/>-->
+        <table tableName="tb_verify" domainObjectName="FlatVerify"
                enableCountByExample ='false' enableUpdateByExample ='false'
                enableSelectByExample='false'  enableDeleteByExample="false"/>
     </context>

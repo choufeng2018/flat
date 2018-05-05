@@ -20,7 +20,7 @@ import java.util.List;
 public class FlatServiceImpl implements FlatService{
 
     @Autowired
-    private FlatMapper flatMapper;
+    FlatMapper flatMapper;
 
     @Override
     public int addFlat(Flat flat) {
