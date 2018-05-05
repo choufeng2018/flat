@@ -19,6 +19,18 @@ public class FlatVerify {
 
     private String fBuilding;
 
+    private String fStatus;
+
+    private String uId;
+
+    public String getuId() {
+        return uId;
+    }
+
+    public void setuId(String uId) {
+        this.uId = uId;
+    }
+
     public String getfId() {
         return fId;
     }
@@ -91,6 +103,14 @@ public class FlatVerify {
         this.fBuilding = fBuilding == null ? null : fBuilding.trim();
     }
 
+    public String getfStatus() {
+        return fStatus;
+    }
+
+    public void setfStatus(String fStatus) {
+        this.fStatus = fStatus == null ? null : fStatus.trim();
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -111,7 +131,8 @@ public class FlatVerify {
             && (this.getfExpectprice() == null ? other.getfExpectprice() == null : this.getfExpectprice().equals(other.getfExpectprice()))
             && (this.getfOwnername() == null ? other.getfOwnername() == null : this.getfOwnername().equals(other.getfOwnername()))
             && (this.getfOwnermobile() == null ? other.getfOwnermobile() == null : this.getfOwnermobile().equals(other.getfOwnermobile()))
-            && (this.getfBuilding() == null ? other.getfBuilding() == null : this.getfBuilding().equals(other.getfBuilding()));
+            && (this.getfBuilding() == null ? other.getfBuilding() == null : this.getfBuilding().equals(other.getfBuilding()))
+            && (this.getfStatus() == null ? other.getfStatus() == null : this.getfStatus().equals(other.getfStatus()));
     }
 
     @Override
@@ -127,6 +148,7 @@ public class FlatVerify {
         result = prime * result + ((getfOwnername() == null) ? 0 : getfOwnername().hashCode());
         result = prime * result + ((getfOwnermobile() == null) ? 0 : getfOwnermobile().hashCode());
         result = prime * result + ((getfBuilding() == null) ? 0 : getfBuilding().hashCode());
+        result = prime * result + ((getfStatus() == null) ? 0 : getfStatus().hashCode());
         return result;
     }
 }

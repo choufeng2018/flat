@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by 薛时鸣 on 2018/5/5.
  */
@@ -21,6 +23,12 @@ public class FlatVerifyServiceImpl implements FlatVerifyService {
     @Override
     public int add(FlatVerify flatVerify) {
         flatVerify.setfId(UUIDUtils.getUUID());
+        flatVerify.setfStatus("0");
         return flatVerifyMapper.insert(flatVerify);
+    }
+
+    @Override
+    public List<FlatVerify> getVerifyByuId(String uId) {
+        return flatVerifyMapper.selectByuId(uId);
     }
 }

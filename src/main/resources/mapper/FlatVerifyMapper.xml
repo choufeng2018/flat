@@ -11,10 +11,12 @@
     <result column="f_ownername" jdbcType="VARCHAR" property="fOwnername" />
     <result column="f_ownermobile" jdbcType="VARCHAR" property="fOwnermobile" />
     <result column="f_building" jdbcType="VARCHAR" property="fBuilding" />
+    <result column="f_status" jdbcType="VARCHAR" property="fStatus" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--后来加上的字段-->
   </resultMap>
   <sql id="Base_Column_List">
-    f_id, f_city, f_name, f_unit, f_house, f_expectprice, f_ownername, f_ownermobile, 
-    f_building
+    u_id, f_id, f_city, f_name, f_unit, f_house, f_expectprice, f_ownername, f_ownermobile,
+    f_building, f_status
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
@@ -22,19 +24,25 @@
     from tb_verify
     where f_id = #{fId,jdbcType=VARCHAR}
   </select>
+  <select id="selectByuId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_verify
+    where u_id = #{uId,jdbcType=VARCHAR}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from tb_verify
     where f_id = #{fId,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.xsm.flat.entity.FlatVerify">
-    insert into tb_verify (f_id, f_city, f_name, 
+    insert into tb_verify (u_id, f_id, f_city, f_name,
       f_unit, f_house, f_expectprice, 
-      f_ownername, f_ownermobile, f_building
-      )
-    values (#{fId,jdbcType=VARCHAR}, #{fCity,jdbcType=VARCHAR}, #{fName,jdbcType=VARCHAR}, 
+      f_ownername, f_ownermobile, f_building, 
+      f_status)
+    values (#{uId,jdbcType=VARCHAR}, #{fId,jdbcType=VARCHAR}, #{fCity,jdbcType=VARCHAR}, #{fName,jdbcType=VARCHAR},
       #{fUnit,jdbcType=VARCHAR}, #{fHouse,jdbcType=VARCHAR}, #{fExpectprice,jdbcType=VARCHAR}, 
-      #{fOwnername,jdbcType=VARCHAR}, #{fOwnermobile,jdbcType=VARCHAR}, #{fBuilding,jdbcType=VARCHAR}
-      )
+      #{fOwnername,jdbcType=VARCHAR}, #{fOwnermobile,jdbcType=VARCHAR}, #{fBuilding,jdbcType=VARCHAR}, 
+      #{fStatus,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.xsm.flat.entity.FlatVerify">
     insert into tb_verify
@@ -42,6 +50,9 @@
       <if test="fId != null">
         f_id,
       </if>
+      <if test="uId != null">
+        u_id,
+      </if>,
       <if test="fCity != null">
         f_city,
       </if>
@@ -66,10 +77,16 @@
       <if test="fBuilding != null">
         f_building,
       </if>
+      <if test="fStatus != null">
+        f_status,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="fId != null">
         #{fId,jdbcType=VARCHAR},
+      </if>
+      <if test="uId != null">
+        #{uId,jdbcType=VARCHAR},
       </if>
       <if test="fCity != null">
         #{fCity,jdbcType=VARCHAR},
@@ -94,6 +111,9 @@
       </if>
       <if test="fBuilding != null">
         #{fBuilding,jdbcType=VARCHAR},
+      </if>
+      <if test="fStatus != null">
+        #{fStatus,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -124,6 +144,9 @@
       <if test="fBuilding != null">
         f_building = #{fBuilding,jdbcType=VARCHAR},
       </if>
+      <if test="fStatus != null">
+        f_status = #{fStatus,jdbcType=VARCHAR},
+      </if>
     </set>
     where f_id = #{fId,jdbcType=VARCHAR}
   </update>
@@ -136,7 +159,8 @@
       f_expectprice = #{fExpectprice,jdbcType=VARCHAR},
       f_ownername = #{fOwnername,jdbcType=VARCHAR},
       f_ownermobile = #{fOwnermobile,jdbcType=VARCHAR},
-      f_building = #{fBuilding,jdbcType=VARCHAR}
-    where f_id = #{fId,jdbcType=VARCHAR}
+      f_building = #{fBuilding,jdbcType=VARCHAR},
+      f_status = #{fStatus,jdbcType=VARCHAR}
+    where f_id = #{fId,jdbcType=VARCHAR} AND u_id = #{uId,jdbcType=VARCHAR}
   </update>
 </mapper>

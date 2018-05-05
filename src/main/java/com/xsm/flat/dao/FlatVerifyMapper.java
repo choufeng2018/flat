@@ -2,6 +2,8 @@ package com.xsm.flat.dao;
 
 import com.xsm.flat.entity.FlatVerify;
 
+import java.util.List;
+
 public interface FlatVerifyMapper {
     int deleteByPrimaryKey(String fId);
 
@@ -14,4 +16,6 @@ public interface FlatVerifyMapper {
     int updateByPrimaryKeySelective(FlatVerify record);
 
     int updateByPrimaryKey(FlatVerify record);
+
+    List<FlatVerify> selectByuId(String uId);
 }
