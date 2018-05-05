@@ -23,6 +23,18 @@ public class FlatVerify {
 
     private String uId;
 
+    private String fVtime;
+
+    public String getfVtime() {
+        return fVtime;
+    }
+
+    public void setfVtime(String fVtime) {
+        this.fVtime = fVtime;
+    }
+
+
+
     public String getuId() {
         return uId;
     }

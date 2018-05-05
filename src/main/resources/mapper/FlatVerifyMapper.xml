@@ -13,10 +13,11 @@
     <result column="f_building" jdbcType="VARCHAR" property="fBuilding" />
     <result column="f_status" jdbcType="VARCHAR" property="fStatus" />
     <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--后来加上的字段-->
+    <result column="f_vtime" jdbcType="VARCHAR" property="fVtime" />
   </resultMap>
   <sql id="Base_Column_List">
     u_id, f_id, f_city, f_name, f_unit, f_house, f_expectprice, f_ownername, f_ownermobile,
-    f_building, f_status
+    f_building, f_status, f_vtime
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
@@ -38,7 +39,7 @@
     insert into tb_verify (u_id, f_id, f_city, f_name,
       f_unit, f_house, f_expectprice, 
       f_ownername, f_ownermobile, f_building, 
-      f_status)
+      f_status, f_vtime)
     values (#{uId,jdbcType=VARCHAR}, #{fId,jdbcType=VARCHAR}, #{fCity,jdbcType=VARCHAR}, #{fName,jdbcType=VARCHAR},
       #{fUnit,jdbcType=VARCHAR}, #{fHouse,jdbcType=VARCHAR}, #{fExpectprice,jdbcType=VARCHAR}, 
       #{fOwnername,jdbcType=VARCHAR}, #{fOwnermobile,jdbcType=VARCHAR}, #{fBuilding,jdbcType=VARCHAR}, 
@@ -52,7 +53,7 @@
       </if>
       <if test="uId != null">
         u_id,
-      </if>,
+      </if>
       <if test="fCity != null">
         f_city,
       </if>
@@ -79,6 +80,9 @@
       </if>
       <if test="fStatus != null">
         f_status,
+      </if>
+      <if test="fVtime != null">
+        f_vtime,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -114,6 +118,9 @@
       </if>
       <if test="fStatus != null">
         #{fStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="fVtime != null">
+        #{fVtime,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>

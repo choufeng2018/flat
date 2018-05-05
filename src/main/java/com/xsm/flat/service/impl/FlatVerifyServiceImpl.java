@@ -24,7 +24,7 @@ public class FlatVerifyServiceImpl implements FlatVerifyService {
     public int add(FlatVerify flatVerify) {
         flatVerify.setfId(UUIDUtils.getUUID());
         flatVerify.setfStatus("0");
-        return flatVerifyMapper.insert(flatVerify);
+        return flatVerifyMapper.insertSelective(flatVerify);
     }
 
     @Override
