@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.AssumpsitMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.Assumpsit">
+    <id column="ass_id" jdbcType="VARCHAR" property="assId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="ass_createtime" jdbcType="VARCHAR" property="assCreatetime" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="ass_on_off" jdbcType="VARCHAR" property="assOnOff" />
+    <result column="ass_status" jdbcType="VARCHAR" property="assStatus" />
+    <result column="ass_starttime" jdbcType="VARCHAR" property="assStarttime" />
+    <result column="ass_endtime" jdbcType="VARCHAR" property="assEndtime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ass_id, f_id, ass_createtime, u_id, ass_on_off, ass_status, ass_starttime, ass_endtime
+  </sql>
+  <select id="getAllTimeByFid" resultType="java.lang.String">
+    select
+    ass_starttime
+    from tb_assumpsit
+    where f_id = #{fId}
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_assumpsit
+    where ass_id = #{assId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_assumpsit
+    where ass_id = #{assId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.Assumpsit">
+    insert into tb_assumpsit (ass_id, f_id, ass_createtime,
+    u_id, ass_on_off, ass_status,
+    ass_starttime, ass_endtime)
+    values (#{assId,jdbcType=VARCHAR}, #{fId,jdbcType=INTEGER}, #{assCreatetime,jdbcType=VARCHAR},
+    #{uId,jdbcType=VARCHAR}, #{assOnOff,jdbcType=VARCHAR}, #{assStatus,jdbcType=VARCHAR},
+    #{assStarttime,jdbcType=VARCHAR}, #{assEndtime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.Assumpsit">
+    insert into tb_assumpsit
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="assId != null">
+        ass_id,
+      </if>
+      <if test="fId != null">
+        f_id,
+      </if>
+      <if test="assCreatetime != null">
+        ass_createtime,
+      </if>
+      <if test="uId != null">
+        u_id,
+      </if>
+      <if test="assOnOff != null">
+        ass_on_off,
+      </if>
+      <if test="assStatus != null">
+        ass_status,
+      </if>
+      <if test="assStarttime != null">
+        ass_starttime,
+      </if>
+      <if test="assEndtime != null">
+        ass_endtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="assId != null">
+        #{assId,jdbcType=VARCHAR},
+      </if>
+      <if test="fId != null">
+        #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="assCreatetime != null">
+        #{assCreatetime,jdbcType=VARCHAR},
+      </if>
+      <if test="uId != null">
+        #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="assOnOff != null">
+        #{assOnOff,jdbcType=VARCHAR},
+      </if>
+      <if test="assStatus != null">
+        #{assStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="assStarttime != null">
+        #{assStarttime,jdbcType=VARCHAR},
+      </if>
+      <if test="assEndtime != null">
+        #{assEndtime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.Assumpsit">
+    update tb_assumpsit
+    <set>
+      <if test="fId != null">
+        f_id = #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="assCreatetime != null">
+        ass_createtime = #{assCreatetime,jdbcType=VARCHAR},
+      </if>
+      <if test="uId != null">
+        u_id = #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="assOnOff != null">
+        ass_on_off = #{assOnOff,jdbcType=VARCHAR},
+      </if>
+      <if test="assStatus != null">
+        ass_status = #{assStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="assStarttime != null">
+        ass_starttime = #{assStarttime,jdbcType=VARCHAR},
+      </if>
+      <if test="assEndtime != null">
+        ass_endtime = #{assEndtime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ass_id = #{assId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.Assumpsit">
+    update tb_assumpsit
+    set f_id = #{fId,jdbcType=INTEGER},
+    ass_createtime = #{assCreatetime,jdbcType=VARCHAR},
+    u_id = #{uId,jdbcType=VARCHAR},
+    ass_on_off = #{assOnOff,jdbcType=VARCHAR},
+    ass_status = #{assStatus,jdbcType=VARCHAR},
+    ass_starttime = #{assStarttime,jdbcType=VARCHAR},
+    ass_endtime = #{assEndtime,jdbcType=VARCHAR}
+    where ass_id = #{assId,jdbcType=VARCHAR}
+  </update>
+  <!--客户端约看校验-->
+  <select id="assCheck" resultType="java.lang.Boolean">
+    SELECT IFNULL((select 1 FROM tb_assumpsit where f_id = #{fId} and  ass_starttime = #{assStarttime} limit 1),0)
+</select>
+
+
+</mapper>

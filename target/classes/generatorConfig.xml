@@ -95,7 +95,10 @@
         <!--<table tableName="tb_flat" domainObjectName="Flat"
                enableCountByExample ='false' enableUpdateByExample ='false'
                enableSelectByExample='false'  enableDeleteByExample="false"/>-->
-        <table tableName="tb_verify" domainObjectName="FlatVerify"
+        <!--<table tableName="tb_verify" domainObjectName="FlatVerify"-->
+               <!--enableCountByExample ='false' enableUpdateByExample ='false'-->
+               <!--enableSelectByExample='false'  enableDeleteByExample="false"/>-->
+        <table tableName="tb_assumpsit" domainObjectName="Assumpsit"
                enableCountByExample ='false' enableUpdateByExample ='false'
                enableSelectByExample='false'  enableDeleteByExample="false"/>
     </context>
