@@ -36,4 +36,10 @@ public class AssumpsitServiceImpl implements AssumpsitService {
     public List<String> getAllTimeByFid(Integer fId) {
         return assumpsitMapper.getAllTimeByFid(fId);
     }
+
+    @Override
+    public List<Assumpsit> getAssInfoByUid(String uId) {
+
+        return assumpsitMapper.getAssInfoByUid(uId);
+    }
 }

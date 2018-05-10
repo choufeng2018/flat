@@ -1,6 +1,7 @@
 package com.xsm.flat.dao;
 
 import com.xsm.flat.entity.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,5 +21,7 @@ public interface UserMapper {
     List<User> selectAll();
 
     User userLogincheck(User user);
+
+    String selectUserNameByUid(@Param("uId") String uId);
 
 }

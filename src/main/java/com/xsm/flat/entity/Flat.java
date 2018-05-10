@@ -20,6 +20,16 @@ public class Flat implements Serializable  {
 
     private String fMaxPrice;
 
+    private String uId;
+
+    public String getuId() {
+        return uId;
+    }
+
+    public void setuId(String uId) {
+        this.uId = uId;
+    }
+
     public String getpName() {
         return pName;
     }

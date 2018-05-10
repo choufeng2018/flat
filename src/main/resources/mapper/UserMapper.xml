@@ -12,6 +12,9 @@
   <sql id="Base_Column_List">
     u_id, u_name, u_pwd, u_nickname, u_phone, token
   </sql>
+  <select id="selectUserNameByUid" parameterType="java.lang.String" resultType="java.lang.String">
+    SELECT u_name FROM tb_user where u_id =#{uId}
+  </select>
   <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

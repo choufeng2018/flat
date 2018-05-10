@@ -21,10 +21,11 @@
     <result column="f_shower" jdbcType="VARCHAR" property="fShower" />
     <result column="f_heating" jdbcType="VARCHAR" property="fHeating" />
     <result column="p_name" jdbcType="VARCHAR" property="pName" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--添加uId-->
   </resultMap>
   <sql id="Base_Column_List">
     f_id, f_name, f_type, f_habitable, f_price, p_id, s_id, f_street, f_age, f_details, 
-    f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name
+    f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name,u_id
   </sql>
   <!--按照街道Id查询房屋信息-->
   <select id="selectBysId" parameterType="java.lang.String" resultMap="BaseResultMap">
@@ -117,7 +118,7 @@
       s_id, f_street, f_age, 
       f_details, f_require, f_pic, 
       f_area, f_orientation, f_floor, 
-      f_toilet, f_shower, f_heating, p_name
+      f_toilet, f_shower, f_heating, p_name,u_id
       )
     values (#{fId,jdbcType=VARCHAR}, #{fName,jdbcType=VARCHAR}, #{fType,jdbcType=VARCHAR}, 
       #{fHabitable,jdbcType=VARCHAR}, #{fPrice,jdbcType=VARCHAR}, #{pId,jdbcType=VARCHAR}, 
@@ -125,7 +126,7 @@
       #{fDetails,jdbcType=VARCHAR}, #{fRequire,jdbcType=VARCHAR}, #{fPic,jdbcType=VARCHAR}, 
       #{fArea,jdbcType=VARCHAR}, #{fOrientation,jdbcType=VARCHAR}, #{fFloor,jdbcType=VARCHAR}, 
       #{fToilet,jdbcType=VARCHAR}, #{fShower,jdbcType=VARCHAR}, #{fHeating,jdbcType=VARCHAR},
-    #{pName,jdbcType=VARCHAR}
+    #{pName,jdbcType=VARCHAR},#{uId,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.xsm.flat.entity.Flat">
@@ -185,6 +186,9 @@
       <if test="fHeating != null">
         f_heating,
       </if>
+      <if test="uId != null">
+       u_id,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="fId != null">
@@ -240,6 +244,9 @@
       </if>
       <if test="fHeating != null">
         #{fHeating,jdbcType=VARCHAR},
+      </if>
+      <if test="uId != null">
+        #{uId,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -297,6 +304,9 @@
       <if test="fHeating != null">
         f_heating = #{fHeating,jdbcType=VARCHAR},
       </if>
+      <if test="uId != null">
+        u_id = #{uId,jdbcType=VARCHAR},
+      </if>
     </set>
     where f_id = #{fId,jdbcType=VARCHAR}
   </update>
@@ -318,7 +328,8 @@
       f_floor = #{fFloor,jdbcType=VARCHAR},
       f_toilet = #{fToilet,jdbcType=VARCHAR},
       f_shower = #{fShower,jdbcType=VARCHAR},
-      f_heating = #{fHeating,jdbcType=VARCHAR}
+      f_heating = #{fHeating,jdbcType=VARCHAR},
+          u_id = #{uId,jdbcType=VARCHAR}
     where f_id = #{fId,jdbcType=VARCHAR}
   </update>
 </mapper>

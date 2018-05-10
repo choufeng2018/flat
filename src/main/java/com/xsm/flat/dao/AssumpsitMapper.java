@@ -23,4 +23,6 @@ public interface AssumpsitMapper {
     Boolean assCheck(@Param("fId") Integer fId, @Param("assStarttime")String assStarttime);
 
     List<String> getAllTimeByFid(@Param("fId") Integer fId);
+
+    List<Assumpsit> getAssInfoByUid(@Param("uId") String uId);
 }

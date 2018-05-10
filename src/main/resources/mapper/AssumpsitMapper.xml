@@ -11,14 +11,35 @@
     <result column="ass_starttime" jdbcType="VARCHAR" property="assStarttime" />
     <result column="ass_endtime" jdbcType="VARCHAR" property="assEndtime" />
   </resultMap>
+
+  <resultMap id="DetailResultMap" type="com.xsm.flat.entity.AssumpsitDetail">
+    <id column="ass_id" jdbcType="VARCHAR" property="assId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="ass_createtime" jdbcType="VARCHAR" property="assCreatetime" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="ass_on_off" jdbcType="VARCHAR" property="assOnOff" />
+    <result column="ass_status" jdbcType="VARCHAR" property="assStatus" />
+    <result column="ass_starttime" jdbcType="VARCHAR" property="assStarttime" />
+    <result column="ass_endtime" jdbcType="VARCHAR" property="assEndtime" />
+    <association property="userName" column="u_id" javaType="java.lang.String" select="com.xsm.flat.dao.UserMapper.selectUserNameByUid"/>
+    <association property="flat" column="f_id" javaType="com.xsm.flat.entity.Flat" select="com.xsm.flat.dao.FlatMapper.selectByPrimaryKey"/>
+  </resultMap>
   <sql id="Base_Column_List">
     ass_id, f_id, ass_createtime, u_id, ass_on_off, ass_status, ass_starttime, ass_endtime
   </sql>
+  <!--查询有没有人已经预约-->
   <select id="getAllTimeByFid" resultType="java.lang.String">
     select
     ass_starttime
     from tb_assumpsit
     where f_id = #{fId}
+  </select>
+  <!--按用户查询预约信息-->
+  <select id="getAssInfoByUid" parameterType="java.lang.String" resultMap="DetailResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_assumpsit
+    WHERE u_id = #{uId}
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select

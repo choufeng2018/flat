@@ -25,27 +25,40 @@ public class AssController {
 
     /**
      * 预约时间校验
-     * @param assStarttime
-     * @param assEndtime
+     * @param fId
      * @return
      */
-    /*@RequestMapping(value = "/asscheck/{assStarttime}/{assEndtime}", method = RequestMethod.GET)
-    public Assumpsit queryProvince(@PathVariable("assStarttime") String assStarttime,
-                                   @PathVariable("assEndtime") String assEndtime ) {
-        Assumpsit result = assumpsitService.inse(assStarttime,assEndtime);
-        return result;
-    }*/
-
-
     @RequestMapping(value = "/getAllTimeByFid/{fId}", method = RequestMethod.GET)
     public Object getAllTimeByFid(@PathVariable("fId") Integer fId) {
         return assumpsitService.getAllTimeByFid(fId);
     }
 
+    /**
+     * 添加预约信息
+     * @param fId
+     * @param uId
+     * @param assStarttime
+     * @return
+     */
     @RequestMapping(value = "/assinsert", method = RequestMethod.POST)
     public Object getAllTimeByFid(@RequestParam("fId") Integer fId,
                                   @RequestParam("uId") String uId,
                                   @RequestParam("assStarttime") String assStarttime ) {
         return assumpsitService.insertAssumpsit(uId, fId, assStarttime);
     }
+
+    /**
+     * 根据uId查询约看信息
+     * @param uId
+     * @return
+     */
+    @RequestMapping(value = "/getAssInfoByUid/{uId}", method = RequestMethod.GET)
+    public AjaxResponse getAssInfoByUid(@PathVariable("uId") String uId) {
+
+        List<Assumpsit> asslist = assumpsitService.getAssInfoByUid(uId);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,asslist);
+        return Ares;
+    }
+
 }

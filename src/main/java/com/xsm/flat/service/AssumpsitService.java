@@ -12,4 +12,5 @@ import java.util.List;
 public interface AssumpsitService {
     Boolean insertAssumpsit(String uId,Integer fId, String assStarttime);
     List<String> getAllTimeByFid(Integer fId);
+    List<Assumpsit> getAssInfoByUid(String uId);
 }
