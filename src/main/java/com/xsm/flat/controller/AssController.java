@@ -6,6 +6,7 @@ import com.xsm.flat.entity.Province;
 import com.xsm.flat.service.AssumpsitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import sun.plugin.viewer.context.AxBridgeAppletContext;
 
 import java.util.List;
 
@@ -59,6 +60,14 @@ public class AssController {
         AjaxResponse Ares = new AjaxResponse();
         Ares.setSuccessMessage(true,asslist);
         return Ares;
+    }
+
+    @RequestMapping(value = "/assdelete/{assId}", method = RequestMethod.GET)
+    public AjaxResponse deleteInfoByFid(@PathVariable("assId") String assId) {
+        assumpsitService.deleteInfoByFid(assId);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
     }
 
 }

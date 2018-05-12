@@ -42,4 +42,9 @@ public class AssumpsitServiceImpl implements AssumpsitService {
 
         return assumpsitMapper.getAssInfoByUid(uId);
     }
+
+    @Override
+    public int deleteInfoByFid(String assId) {
+        return assumpsitMapper.deleteByPrimaryKey(assId);
+    }
 }

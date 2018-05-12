@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface AssumpsitMapper {
-    int deleteByPrimaryKey(String assId);
+    int deleteByPrimaryKey(String fId);
 
     int insert(Assumpsit record);
 

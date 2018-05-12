@@ -49,7 +49,7 @@
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from tb_assumpsit
-    where ass_id = #{assId,jdbcType=VARCHAR}
+    where ass_id = #{assId}
   </delete>
   <insert id="insert" parameterType="com.xsm.flat.entity.Assumpsit">
     insert into tb_assumpsit (ass_id, f_id, ass_createtime,
