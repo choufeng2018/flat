@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.Order">
+    <id column="o_id" jdbcType="VARCHAR" property="oId" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="on_off_shelf" jdbcType="VARCHAR" property="onOffShelf" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    o_id, u_id, on_off_shelf, f_id
+  </sql>
+  <!--判断订单是或否存在-->
+  <select id="orderCheck" resultType="java.lang.Boolean">
+    SELECT IFNULL((select 1 FROM tb_order where f_id = #{fId} limit 1),0)
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_order
+    where o_id = #{oId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_order
+    where o_id = #{oId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.Order">
+    insert into tb_order (o_id, u_id, on_off_shelf, 
+      f_id)
+    values (#{oId,jdbcType=VARCHAR}, #{uId,jdbcType=VARCHAR}, #{onOffShelf,jdbcType=VARCHAR}, 
+      #{fId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.Order">
+    insert into tb_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oId != null">
+        o_id,
+      </if>
+      <if test="uId != null">
+        u_id,
+      </if>
+      <if test="onOffShelf != null">
+        on_off_shelf,
+      </if>
+      <if test="fId != null">
+        f_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oId != null">
+        #{oId,jdbcType=VARCHAR},
+      </if>
+      <if test="uId != null">
+        #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="onOffShelf != null">
+        #{onOffShelf,jdbcType=VARCHAR},
+      </if>
+      <if test="fId != null">
+        #{fId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.Order">
+    update tb_order
+    <set>
+      <if test="uId != null">
+        u_id = #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="onOffShelf != null">
+        on_off_shelf = #{onOffShelf,jdbcType=VARCHAR},
+      </if>
+      <if test="fId != null">
+        f_id = #{fId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where o_id = #{oId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.Order">
+    update tb_order
+    set u_id = #{uId,jdbcType=VARCHAR},
+    on_off_shelf = #{onOffShelf,jdbcType=VARCHAR},
+    f_id = #{fId,jdbcType=INTEGER}
+    where o_id = #{oId,jdbcType=VARCHAR}
+  </update>
+</mapper>

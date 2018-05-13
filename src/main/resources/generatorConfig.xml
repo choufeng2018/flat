@@ -98,9 +98,12 @@
         <!--<table tableName="tb_verify" domainObjectName="FlatVerify"-->
                <!--enableCountByExample ='false' enableUpdateByExample ='false'-->
                <!--enableSelectByExample='false'  enableDeleteByExample="false"/>-->
-        <table tableName="tb_assumpsit" domainObjectName="Assumpsit"
+        <!--<table tableName="tb_assumpsit" domainObjectName="Assumpsit"
                enableCountByExample ='false' enableUpdateByExample ='false'
-               enableSelectByExample='false'  enableDeleteByExample="false"/>
+               enableSelectByExample='false'  enableDeleteByExample="false"/>-->
+        <!--<table tableName="tb_order" domainObjectName="Order"
+               enableCountByExample ='false' enableUpdateByExample ='false'
+               enableSelectByExample='false'  enableDeleteByExample="false"/>-->
     </context>
 
 </generatorConfiguration>
