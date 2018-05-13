@@ -152,6 +152,11 @@
     ass_endtime = #{assEndtime,jdbcType=VARCHAR}
     where ass_id = #{assId,jdbcType=VARCHAR}
   </update>
+  <update id="updateByUidFid" parameterType="com.xsm.flat.entity.Assumpsit">
+     update tb_assumpsit
+     set  ass_on_off = #{assOnOff,jdbcType=VARCHAR}
+     WHERE u_id = #{uId,jdbcType=VARCHAR} AND f_id = #{fId,jdbcType=INTEGER}
+  </update>
   <!--客户端约看校验-->
   <select id="assCheck" resultType="java.lang.Boolean">
     SELECT IFNULL((select 1 FROM tb_assumpsit where f_id = #{fId} and  ass_starttime = #{assStarttime} limit 1),0)

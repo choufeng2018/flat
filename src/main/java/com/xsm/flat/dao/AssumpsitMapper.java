@@ -25,4 +25,7 @@ public interface AssumpsitMapper {
     List<String> getAllTimeByFid(@Param("fId") Integer fId);
 
     List<Assumpsit> getAssInfoByUid(@Param("uId") String uId);
+
+    int updateByUidFid(Assumpsit record);
+
 }

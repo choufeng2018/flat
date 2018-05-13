@@ -70,4 +70,13 @@ public class AssController {
         return res;
     }
 
+    @RequestMapping(value = "/assOnOff", method = RequestMethod.POST)
+    public AjaxResponse updateAssOnOff(@RequestParam("fId") Integer fId,
+                                 @RequestParam("uId") String uId){
+
+        assumpsitService.assOnOff(uId,fId);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
 }

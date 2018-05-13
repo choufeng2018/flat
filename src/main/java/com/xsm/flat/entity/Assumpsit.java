@@ -127,7 +127,10 @@ public class Assumpsit {
         this.fId = fId;
         this.assStarttime = assStarttime;
     }
-
+    public Assumpsit(String uId, Integer fId) {
+        this.uId = uId;
+        this.fId = fId;
+    }
     public Assumpsit(Integer fId, String uId, String assStarttime) {
         this.fId = fId;
         this.uId = uId;
@@ -140,4 +143,5 @@ public class Assumpsit {
         this.uId = uId;
         this.assStarttime = assStarttime;
     }
+
 }

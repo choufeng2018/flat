@@ -47,4 +47,12 @@ public class AssumpsitServiceImpl implements AssumpsitService {
     public int deleteInfoByFid(String assId) {
         return assumpsitMapper.deleteByPrimaryKey(assId);
     }
+
+    @Override
+    public int assOnOff(String uId, Integer fId) {
+        Assumpsit assumpsit = new Assumpsit(uId,fId);
+        assumpsit.setAssOnOff("0");
+        System.out.println("------"+assumpsit.getuId());
+        return assumpsitMapper.updateByUidFid(assumpsit);
+    }
 }
