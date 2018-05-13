@@ -23,7 +23,7 @@ public class AssumpsitServiceImpl implements AssumpsitService {
 
     @Override
     public Boolean insertAssumpsit(String uId,Integer fId, String assStarttime) {
-        Boolean isExist = assumpsitMapper.assCheck(fId, assStarttime);
+        Boolean isExist = assumpsitMapper.assCheck(uId, fId, assStarttime);
         if(!isExist){
             Assumpsit assumpsit = new Assumpsit(IdGen.uuid(),fId,uId,assStarttime);
             assumpsitMapper.insertSelective(assumpsit);

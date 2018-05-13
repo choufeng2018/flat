@@ -1,5 +1,6 @@
 package com.xsm.flat.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.xsm.flat.base.AjaxResponse;
 import com.xsm.flat.entity.Assumpsit;
 import com.xsm.flat.entity.Province;
@@ -42,10 +43,19 @@ public class AssController {
      * @return
      */
     @RequestMapping(value = "/assinsert", method = RequestMethod.POST)
-    public Object getAllTimeByFid(@RequestParam("fId") Integer fId,
+    public AjaxResponse getAllTimeByFid(@RequestParam("fId") Integer fId,
                                   @RequestParam("uId") String uId,
                                   @RequestParam("assStarttime") String assStarttime ) {
-        return assumpsitService.insertAssumpsit(uId, fId, assStarttime);
+        Boolean result =  assumpsitService.insertAssumpsit(uId, fId, assStarttime);
+
+        AjaxResponse res = new AjaxResponse();
+        if(result){
+            res.setSuccessMessageUpdate();
+            return res;
+        }else {
+            res.setErrorMessage("这间房屋您只能约看一次",result);
+            return res;
+        }
     }
 
     /**

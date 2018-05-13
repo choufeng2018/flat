@@ -159,7 +159,7 @@
   </update>
   <!--客户端约看校验-->
   <select id="assCheck" resultType="java.lang.Boolean">
-    SELECT IFNULL((select 1 FROM tb_assumpsit where f_id = #{fId} and  ass_starttime = #{assStarttime} limit 1),0)
+    SELECT IFNULL((select 1 FROM tb_assumpsit where u_id = #{uId} and f_id = #{fId} limit 1),0)
 </select>
 
 

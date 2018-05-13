@@ -20,7 +20,7 @@ public interface AssumpsitMapper {
 
     int updateByPrimaryKey(Assumpsit record);
 
-    Boolean assCheck(@Param("fId") Integer fId, @Param("assStarttime")String assStarttime);
+    Boolean assCheck(@Param("uId") String uId,@Param("fId") Integer fId, @Param("assStarttime")String assStarttime);
 
     List<String> getAllTimeByFid(@Param("fId") Integer fId);
 

@@ -6,8 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Assumpsit.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Assumpsit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/AssumpsitServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/AssumpsitServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml" />
     </list>
@@ -32,11 +30,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AssController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="41" />
+            <state relative-caret-position="309">
+              <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
               <folding>
                 <element signature="method#getAssInfoByUid#0;class#AssController#0" expanded="false" />
               </folding>
@@ -44,68 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssumpsitService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssumpsitServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/AssumpsitServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="51" column="50" lean-forward="true" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssumpsitMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Assumpsit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Assumpsit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
-              <folding>
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssumpsitMapper.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AssumpsitMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="157" column="15" lean-forward="false" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="15" />
+            <state relative-caret-position="77">
+              <caret line="161" column="83" lean-forward="false" selection-start-line="161" selection-start-column="83" selection-end-line="161" selection-end-column="83" />
               <folding>
                 <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
                 <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-                <marker date="1526183867868" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
-                <marker date="1526183867868" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
-                <marker date="1526183867868" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
-                <marker date="1526183867868" expanded="true" signature="2635:2687" ph="delete from " />
-                <marker date="1526183867868" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
-                <marker date="1526183867868" expanded="true" signature="4721:5492" ph="update tb_as... " />
-                <marker date="1526183867868" expanded="true" signature="5590:5984" ph="update tb_as... " />
-                <marker date="1526183867868" expanded="true" signature="6079:6227" ph="update tb_as... " />
-                <marker date="1526183867868" expanded="true" signature="6317:6427" ph="SELECT IFNUL... " />
+                <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
+                <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
+                <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
+                <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
+                <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
+                <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
+                <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
+                <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
+                <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
               </folding>
             </state>
           </provider>
@@ -143,7 +106,6 @@
       <find>insertSelective</find>
       <find>TIMESTAMP</find>
       <find>selectBypName</find>
-      <find>assCheck</find>
       <find>assStarttime</find>
       <find>ass_starttime</find>
       <find>BaseResultMap</find>
@@ -153,6 +115,7 @@
       <find>updateByPrimaryKeySelective</find>
       <find>deleteByPrimaryKey</find>
       <find>selectByPrimaryKey</find>
+      <find>assCheck</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,12 +174,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Assumpsit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/AssumpsitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml" />
       </list>
     </option>
   </component>
@@ -427,48 +390,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xsm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="flat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1213,7 +1134,7 @@
       <workItem from="1525922866076" duration="9302000" />
       <workItem from="1526110931195" duration="7894000" />
       <workItem from="1526136944718" duration="1445000" />
-      <workItem from="1526178467214" duration="4131000" />
+      <workItem from="1526178467214" duration="6315000" />
     </task>
     <task id="LOCAL-00001" summary="[增加]省市县级联功能">
       <created>1518143074409</created>
@@ -1468,7 +1389,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70176000" />
+    <option name="totallyTimeSpent" value="72360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1481,7 +1402,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1501,7 +1421,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5334477" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46483704" sideWeight="0.48562783" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46483704" sideWeight="0.48562783" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5180103" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
@@ -1899,16 +1819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1966,46 +1876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="157" column="15" lean-forward="false" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="15" />
-          <folding>
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1526183867868" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
-            <marker date="1526183867868" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
-            <marker date="1526183867868" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
-            <marker date="1526183867868" expanded="true" signature="2635:2687" ph="delete from " />
-            <marker date="1526183867868" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
-            <marker date="1526183867868" expanded="true" signature="4721:5492" ph="update tb_as... " />
-            <marker date="1526183867868" expanded="true" signature="5590:5984" ph="update tb_as... " />
-            <marker date="1526183867868" expanded="true" signature="6079:6227" ph="update tb_as... " />
-            <marker date="1526183867868" expanded="true" signature="6317:6427" ph="SELECT IFNUL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="41" />
-          <folding>
-            <element signature="method#getAssInfoByUid#0;class#AssController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Assumpsit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -2019,27 +1889,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/AssumpsitServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="51" column="50" lean-forward="true" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+        <state relative-caret-position="247">
+          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="282">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="323">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/AssController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+          <folding>
+            <element signature="method#getAssInfoByUid#0;class#AssController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="161" column="83" lean-forward="false" selection-start-line="161" selection-start-column="83" selection-end-line="161" selection-end-column="83" />
+          <folding>
+            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
+            <element signature="n#insert#1;n#mapper#0;n#!!top" expanded="false" />
+            <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
+            <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
+            <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
+          </folding>
         </state>
       </provider>
     </entry>
