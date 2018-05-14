@@ -86,6 +86,16 @@ public class Flat implements Serializable  {
 
     private String fHeating;
 
+    private String fStatus;
+
+    public String getfStatus() {
+        return fStatus;
+    }
+
+    public void setfStatus(String fStatus) {
+        this.fStatus = fStatus;
+    }
+
     public String getfId() {
         return fId;
     }

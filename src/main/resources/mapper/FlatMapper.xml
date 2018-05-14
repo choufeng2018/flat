@@ -9,6 +9,7 @@
     <result column="f_price" jdbcType="VARCHAR" property="fPrice" />
     <result column="p_id" jdbcType="VARCHAR" property="pId" />
     <result column="s_id" jdbcType="VARCHAR" property="sId" />
+    <result column="f_status" jdbcType="VARCHAR" property="fStatus" />
     <result column="f_street" jdbcType="VARCHAR" property="fStreet" />
     <result column="f_age" jdbcType="VARCHAR" property="fAge" />
     <result column="f_details" jdbcType="VARCHAR" property="fDetails" />
@@ -24,7 +25,7 @@
     <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--添加uId-->
   </resultMap>
   <sql id="Base_Column_List">
-    f_id, f_name, f_type, f_habitable, f_price, p_id, s_id, f_street, f_age, f_details, 
+    f_id, f_name, f_type, f_habitable, f_price,f_status, p_id, s_id, f_street, f_age, f_details,
     f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name,u_id
   </sql>
   <!--按照街道Id查询房屋信息-->

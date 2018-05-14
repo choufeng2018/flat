@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/FavoriteDetail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,13 +27,47 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FavController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FavController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="69" />
+            <state relative-caret-position="263">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1442">
+              <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+              <folding>
+                <element signature="e#1508#1509#0" expanded="true" />
+                <element signature="e#1538#1539#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4123">
+              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+              <folding>
+                <marker date="1526292343637" expanded="true" signature="2078:2182" ph="select from tb_flat" />
+                <marker date="1526292343637" expanded="true" signature="2306:2414" ph="select from tb_flat" />
+                <marker date="1526292343637" expanded="true" signature="4339:4444" ph="select from tb_flat" />
+                <marker date="1526292343637" expanded="true" signature="4555:4661" ph="select from tb_flat" />
+                <marker date="1526292343637" expanded="true" signature="4746:4806" ph="delete from " />
+                <marker date="1526292343637" expanded="true" signature="4887:5743" ph="insert into tb_flat... " />
+                <marker date="1526292343637" expanded="true" signature="8808:10531" ph="update tb_fl... " />
+                <marker date="1526292343637" expanded="true" signature="10624:11482" ph="update tb_fl... " />
               </folding>
             </state>
           </provider>
@@ -123,8 +151,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/PositionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AdminService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/AssumpsitDetail.java" />
@@ -151,6 +177,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" />
       </list>
     </option>
   </component>
@@ -1148,7 +1176,7 @@
       <workItem from="1526110931195" duration="7894000" />
       <workItem from="1526136944718" duration="1445000" />
       <workItem from="1526178467214" duration="16945000" />
-      <workItem from="1526258399134" duration="14467000" />
+      <workItem from="1526258399134" duration="16116000" />
     </task>
     <task id="LOCAL-00001" summary="[增加]省市县级联功能">
       <created>1518143074409</created>
@@ -1403,7 +1431,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97457000" />
+    <option name="totallyTimeSpent" value="99106000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1888,29 +1916,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1525946474446" expanded="true" signature="1999:2103" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="2227:2335" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="4260:4365" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="4476:4582" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="4667:4727" ph="delete from " />
-            <marker date="1525946474446" expanded="true" signature="4808:5664" ph="insert into tb_flat... " />
-            <marker date="1525946474446" expanded="true" signature="8729:10452" ph="update tb_fl... " />
-            <marker date="1525946474446" expanded="true" signature="10545:11403" ph="update tb_fl... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1938,14 +1949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -2006,8 +2009,8 @@
         <state relative-caret-position="589">
           <caret line="41" column="55" lean-forward="false" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
           <folding>
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="false" />
+            <element signature="e#1126#1127#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2046,10 +2049,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="69" />
+        <state relative-caret-position="263">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1442">
+          <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+          <folding>
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4123">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <folding>
+            <marker date="1526292343637" expanded="true" signature="2078:2182" ph="select from tb_flat" />
+            <marker date="1526292343637" expanded="true" signature="2306:2414" ph="select from tb_flat" />
+            <marker date="1526292343637" expanded="true" signature="4339:4444" ph="select from tb_flat" />
+            <marker date="1526292343637" expanded="true" signature="4555:4661" ph="select from tb_flat" />
+            <marker date="1526292343637" expanded="true" signature="4746:4806" ph="delete from " />
+            <marker date="1526292343637" expanded="true" signature="4887:5743" ph="insert into tb_flat... " />
+            <marker date="1526292343637" expanded="true" signature="8808:10531" ph="update tb_fl... " />
+            <marker date="1526292343637" expanded="true" signature="10624:11482" ph="update tb_fl... " />
           </folding>
         </state>
       </provider>
