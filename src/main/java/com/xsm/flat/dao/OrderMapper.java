@@ -21,4 +21,5 @@ public interface OrderMapper {
     Boolean orderCheck(@Param("fId") Integer fId);
 
     List<Order> getAllOrders(@Param("uId") String uId);
+
 }

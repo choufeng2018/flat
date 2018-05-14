@@ -6,7 +6,7 @@ public class Flat implements Serializable  {
 
     private static final long serialVersionUID = 1L;
 
-    private String fId;
+    private Integer fId;
 
     private String fName;
 
@@ -96,12 +96,12 @@ public class Flat implements Serializable  {
         this.fStatus = fStatus;
     }
 
-    public String getfId() {
+    public Integer getfId() {
         return fId;
     }
 
-    public void setfId(String fId) {
-        this.fId = fId == null ? null : fId.trim();
+    public void setfId(Integer fId) {
+        this.fId = fId;
     }
 
     public String getfName() {
@@ -319,5 +319,13 @@ public class Flat implements Serializable  {
                 ", fShower='" + fShower + '\'' +
                 ", fHeating='" + fHeating + '\'' +
                 '}';
+    }
+
+    public Flat(String uId, Integer fId) {
+        this.fId = fId;
+        this.uId = uId;
+    }
+
+    public Flat() {
     }
 }

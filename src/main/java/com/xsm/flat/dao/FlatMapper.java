@@ -1,6 +1,7 @@
 package com.xsm.flat.dao;
 
 import com.xsm.flat.entity.Flat;
+import com.xsm.flat.entity.Order;
 
 import java.util.List;
 
@@ -26,5 +27,7 @@ public interface FlatMapper {
     List<Flat> selectFlatByfId(String fId);
 
     List<Flat> fuzzySearchFlat(Flat flat);
+
+    int updateFlatStatus(Flat flat);
 
 }
