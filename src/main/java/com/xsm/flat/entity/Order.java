@@ -9,6 +9,16 @@ public class Order {
 
     private Integer fId;
 
+    private String oTime;
+
+    public String getoTime() {
+        return oTime;
+    }
+
+    public void setoTime(String oTime) {
+        this.oTime = oTime;
+    }
+
     public String getoId() {
         return oId;
     }

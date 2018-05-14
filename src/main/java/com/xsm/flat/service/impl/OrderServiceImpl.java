@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by 薛时鸣 on 2018/5/12.
  */
@@ -29,5 +31,10 @@ public class OrderServiceImpl implements OrderService{
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<Order> getAllOrders(String uId) {
+        return orderMapper.getAllOrders(uId);
     }
 }

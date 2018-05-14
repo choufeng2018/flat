@@ -1,9 +1,12 @@
 package com.xsm.flat.controller;
 
 import com.xsm.flat.base.AjaxResponse;
+import com.xsm.flat.entity.Order;
 import com.xsm.flat.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Created by 薛时鸣 on 2018/5/12.
@@ -16,6 +19,12 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    /**
+     * 插入订单信息
+     * @param fId
+     * @param uId
+     * @return
+     */
     @RequestMapping(value = "/orderinsert", method = RequestMethod.POST)
     public AjaxResponse insertOrder(@RequestParam("fId") Integer fId,
                                   @RequestParam("uId") String uId) {
@@ -28,5 +37,14 @@ public class OrderController {
             res.setErrorMessage("已经有此房屋的订单",result);
             return res;
         }
+    }
+
+    @RequestMapping(value = "/getAllOrders", method = RequestMethod.POST)
+    public AjaxResponse getAllOrders(@RequestParam("uId") String uId) {
+
+        List<Order> list = orderService.getAllOrders(uId);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,list);
+        return Ares;
     }
 }

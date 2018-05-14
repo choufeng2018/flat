@@ -6,9 +6,19 @@
     <result column="u_id" jdbcType="VARCHAR" property="uId" />
     <result column="on_off_shelf" jdbcType="VARCHAR" property="onOffShelf" />
     <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="o_time" jdbcType="VARCHAR" property="oTime" />
+  </resultMap>
+  <resultMap id="DetailBaseResultMap" type="com.xsm.flat.entity.OrderDetail">
+    <id column="o_id" jdbcType="VARCHAR" property="oId" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="on_off_shelf" jdbcType="VARCHAR" property="onOffShelf" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="o_time" jdbcType="VARCHAR" property="oTime" />
+    <association property="userName" column="u_id" javaType="java.lang.String" select="com.xsm.flat.dao.UserMapper.selectUserNameByUid"/>
+    <association property="flat" column="f_id" javaType="com.xsm.flat.entity.Flat" select="com.xsm.flat.dao.FlatMapper.selectByPrimaryKey"/>
   </resultMap>
   <sql id="Base_Column_List">
-    o_id, u_id, on_off_shelf, f_id
+    o_id, u_id, on_off_shelf, f_id, o_time
   </sql>
   <!--判断订单是或否存在-->
   <select id="orderCheck" resultType="java.lang.Boolean">
@@ -20,6 +30,14 @@
     from tb_order
     where o_id = #{oId,jdbcType=VARCHAR}
   </select>
+  <!--查询所有订单信息-->
+  <select id="getAllOrders" parameterType="java.lang.String" resultMap="DetailBaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM tb_order
+    WHERE u_id = #{uId}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from tb_order
     where o_id = #{oId,jdbcType=VARCHAR}
@@ -27,7 +45,7 @@
   <insert id="insert" parameterType="com.xsm.flat.entity.Order">
     insert into tb_order (o_id, u_id, on_off_shelf, 
       f_id)
-    values (#{oId,jdbcType=VARCHAR}, #{uId,jdbcType=VARCHAR}, #{onOffShelf,jdbcType=VARCHAR}, 
+    values (#{oId,jdbcType=VARCHAR}, #{uId,jdbcType=VARCHAR}, #{onOffShelf,jdbcType=VARCHAR},
       #{fId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.xsm.flat.entity.Order">
@@ -45,6 +63,9 @@
       <if test="fId != null">
         f_id,
       </if>
+      <if test="oTime != null">
+        o_time,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="oId != null">
@@ -58,6 +79,9 @@
       </if>
       <if test="fId != null">
         #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="oTime != null">
+        #{oTime,jdbcType=String},
       </if>
     </trim>
   </insert>
@@ -80,7 +104,7 @@
     update tb_order
     set u_id = #{uId,jdbcType=VARCHAR},
     on_off_shelf = #{onOffShelf,jdbcType=VARCHAR},
-    f_id = #{fId,jdbcType=INTEGER}
+    f_id = #{fId,jdbcType=INTEGER}, o_time = #{oTime, jdbcType=VARCHAR}
     where o_id = #{oId,jdbcType=VARCHAR}
   </update>
 </mapper>
