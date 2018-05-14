@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.FavoriteMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.Favorite">
+    <id column="fav_id" jdbcType="VARCHAR" property="favId" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="f_creatime" jdbcType="VARCHAR" property="fCreatime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    fav_id, u_id, f_id, f_creatime
+  </sql>
+  <!--客户端添加收藏校验-->
+  <select id="favCheck" resultType="java.lang.Boolean">
+    SELECT IFNULL((select 1 FROM tb_favorite where u_id = #{uId} and f_id = #{fId} limit 1),0)
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_favorite
+    where fav_id = #{favId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_favorite
+    where fav_id = #{favId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.Favorite">
+    insert into tb_favorite (fav_id, u_id, f_id, 
+      f_creatime)
+    values (#{favId,jdbcType=VARCHAR}, #{uId,jdbcType=VARCHAR}, #{fId,jdbcType=INTEGER}, 
+      #{fCreatime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.Favorite">
+    insert into tb_favorite
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="favId != null">
+        fav_id,
+      </if>
+      <if test="uId != null">
+        u_id,
+      </if>
+      <if test="fId != null">
+        f_id,
+      </if>
+      <if test="fCreatime != null">
+        f_creatime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="favId != null">
+        #{favId,jdbcType=VARCHAR},
+      </if>
+      <if test="uId != null">
+        #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="fId != null">
+        #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="fCreatime != null">
+        #{fCreatime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.Favorite">
+    update tb_favorite
+    <set>
+      <if test="uId != null">
+        u_id = #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="fId != null">
+        f_id = #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="fCreatime != null">
+        f_creatime = #{fCreatime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where fav_id = #{favId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.Favorite">
+    update tb_favorite
+    set u_id = #{uId,jdbcType=VARCHAR},
+      f_id = #{fId,jdbcType=INTEGER},
+      f_creatime = #{fCreatime,jdbcType=TIMESTAMP}
+    where fav_id = #{favId,jdbcType=VARCHAR}
+  </update>
+</mapper>

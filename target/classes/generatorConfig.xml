@@ -104,6 +104,9 @@
         <!--<table tableName="tb_order" domainObjectName="Order"
                enableCountByExample ='false' enableUpdateByExample ='false'
                enableSelectByExample='false'  enableDeleteByExample="false"/>-->
+       <table tableName="tb_favorite" domainObjectName="Favorite"
+               enableCountByExample ='false' enableUpdateByExample ='false'
+               enableSelectByExample='false'  enableDeleteByExample="false"/>
     </context>
 
 </generatorConfiguration>
