@@ -9,7 +9,7 @@ public class Favorite {
 
     private Integer fId;
 
-    private Date fCreatime;
+    private String fCreatime;
 
     public String getFavId() {
         return favId;
@@ -35,11 +35,11 @@ public class Favorite {
         this.fId = fId;
     }
 
-    public Date getfCreatime() {
+    public String  getfCreatime() {
         return fCreatime;
     }
 
-    public void setfCreatime(Date fCreatime) {
+    public void setfCreatime(String fCreatime) {
         this.fCreatime = fCreatime;
     }
 

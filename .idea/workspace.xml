@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/FavoriteDetail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,60 +36,11 @@
       <file leaf-file-name="FavController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            <state relative-caret-position="415">
+              <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoriteMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="22" />
-              <folding>
-                <marker date="1526275557063" expanded="true" signature="701:791" ph="SELECT IFNUL... " />
-                <marker date="1526275557063" expanded="true" signature="902:1016" ph="select from tb_favorite" />
-                <marker date="1526275557063" expanded="true" signature="1101:1169" ph="delete from " />
-                <marker date="1526275557063" expanded="true" signature="1254:1446" ph="insert into tb_favorite... " />
-                <marker date="1526275557063" expanded="true" signature="2362:2712" ph="update tb_fa... " />
-                <marker date="1526275557063" expanded="true" signature="2809:3001" ph="update tb_fa... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/utils/GZIP.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/utils/IdGen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/utils/JsonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/utils/PinYin4JUtil.java" />
@@ -192,12 +144,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/utils/QcloudUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/FavoriteDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java" />
       </list>
     </option>
   </component>
@@ -1195,7 +1148,7 @@
       <workItem from="1526110931195" duration="7894000" />
       <workItem from="1526136944718" duration="1445000" />
       <workItem from="1526178467214" duration="16945000" />
-      <workItem from="1526258399134" duration="10265000" />
+      <workItem from="1526258399134" duration="14467000" />
     </task>
     <task id="LOCAL-00001" summary="[增加]省市县级联功能">
       <created>1518143074409</created>
@@ -1450,7 +1403,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93255000" />
+    <option name="totallyTimeSpent" value="97457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1463,7 +1416,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1483,12 +1435,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5334477" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75814754" sideWeight="0.48260212" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39794168" sideWeight="0.48260212" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5180103" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43494704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1599,20 +1551,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="406" column="0" lean-forward="false" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/com/alibaba/druid/support/http/WebStatFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -1649,34 +1587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding>
-            <marker date="1525946474446" expanded="true" signature="1999:2103" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="2227:2335" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="4260:4365" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="4476:4582" ph="select from tb_flat" />
-            <marker date="1525946474446" expanded="true" signature="4667:4727" ph="delete from " />
-            <marker date="1525946474446" expanded="true" signature="4808:5664" ph="insert into tb_flat... " />
-            <marker date="1525946474446" expanded="true" signature="8729:10452" ph="update tb_fl... " />
-            <marker date="1525946474446" expanded="true" signature="10545:11403" ph="update tb_fl... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1709,6 +1623,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1716,14 +1631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1741,6 +1648,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
           <caret line="79" column="33" lean-forward="false" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#409#410#0" expanded="false" />
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#636#637#0" expanded="false" />
+            <element signature="e#674#675#0" expanded="false" />
+            <element signature="e#699#700#0" expanded="false" />
+            <element signature="e#729#730#0" expanded="false" />
+            <element signature="e#750#751#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#821#822#0" expanded="false" />
+            <element signature="e#848#849#0" expanded="false" />
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#902#903#0" expanded="false" />
+            <element signature="e#925#926#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
+            <element signature="e#971#972#0" expanded="false" />
+            <element signature="e#1008#1009#0" expanded="false" />
+            <element signature="e#1031#1032#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1748,6 +1678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1843,26 +1774,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FlatMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/config/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FlatInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="51" column="69" lean-forward="true" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1893,26 +1808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="73" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1930,25 +1829,6 @@
         <state relative-caret-position="114">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#1024#1025#0" expanded="false" />
-            <element signature="e#1076#1077#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1984,10 +1864,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/AssumpsitMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/AssumpsitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1525946474446" expanded="true" signature="1999:2103" ph="select from tb_flat" />
+            <marker date="1525946474446" expanded="true" signature="2227:2335" ph="select from tb_flat" />
+            <marker date="1525946474446" expanded="true" signature="4260:4365" ph="select from tb_flat" />
+            <marker date="1525946474446" expanded="true" signature="4476:4582" ph="select from tb_flat" />
+            <marker date="1525946474446" expanded="true" signature="4667:4727" ph="delete from " />
+            <marker date="1525946474446" expanded="true" signature="4808:5664" ph="insert into tb_flat... " />
+            <marker date="1525946474446" expanded="true" signature="8729:10452" ph="update tb_fl... " />
+            <marker date="1525946474446" expanded="true" signature="10545:11403" ph="update tb_fl... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
+        <state relative-caret-position="152">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
             <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
@@ -2003,61 +1934,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FlatMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="209">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="49" />
+        <state relative-caret-position="247">
+          <caret line="76" column="24" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/FavoriteDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Favorite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="95">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FavoriteMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
           <folding>
-            <marker date="1526275557063" expanded="true" signature="701:791" ph="SELECT IFNUL... " />
-            <marker date="1526275557063" expanded="true" signature="902:1016" ph="select from tb_favorite" />
-            <marker date="1526275557063" expanded="true" signature="1101:1169" ph="delete from " />
-            <marker date="1526275557063" expanded="true" signature="1254:1446" ph="insert into tb_favorite... " />
-            <marker date="1526275557063" expanded="true" signature="2362:2712" ph="update tb_fa... " />
-            <marker date="1526275557063" expanded="true" signature="2809:3001" ph="update tb_fa... " />
+            <marker date="1526278274987" expanded="true" signature="1336:1426" ph="SELECT IFNUL... " />
+            <marker date="1526278274987" expanded="true" signature="1549:1641" ph="select from tb_favorite" />
+            <marker date="1526278274987" expanded="true" signature="1752:1866" ph="select from tb_favorite" />
+            <marker date="1526278274987" expanded="true" signature="1951:2019" ph="delete from " />
+            <marker date="1526278274987" expanded="true" signature="2104:2296" ph="insert into tb_favorite... " />
+            <marker date="1526278274987" expanded="true" signature="3212:3562" ph="update tb_fa... " />
+            <marker date="1526278274987" expanded="true" signature="3659:3851" ph="update tb_fa... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="41" column="55" lean-forward="false" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+          <folding>
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FlatInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1655">
+          <caret line="116" column="20" lean-forward="true" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FlatVerifyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="68" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="415">
+          <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

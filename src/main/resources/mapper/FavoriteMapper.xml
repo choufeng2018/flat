@@ -7,12 +7,27 @@
     <result column="f_id" jdbcType="INTEGER" property="fId" />
     <result column="f_creatime" jdbcType="VARCHAR" property="fCreatime" />
   </resultMap>
+  <resultMap id="DetailResultMap" type="com.xsm.flat.entity.FavoriteDetail">
+    <id column="fav_id" jdbcType="VARCHAR" property="favId" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="f_creatime" jdbcType="VARCHAR" property="fCreatime" />
+    <association property="userName" column="u_id" javaType="java.lang.String" select="com.xsm.flat.dao.UserMapper.selectUserNameByUid"/>
+    <association property="flat" column="f_id" javaType="com.xsm.flat.entity.Flat" select="com.xsm.flat.dao.FlatMapper.selectByPrimaryKey"/>
+  </resultMap>
   <sql id="Base_Column_List">
     fav_id, u_id, f_id, f_creatime
   </sql>
   <!--客户端添加收藏校验-->
   <select id="favCheck" resultType="java.lang.Boolean">
     SELECT IFNULL((select 1 FROM tb_favorite where u_id = #{uId} and f_id = #{fId} limit 1),0)
+  </select>
+  <!--按用户查询收藏信息-->
+  <select id="getAllFav" parameterType="java.lang.String" resultMap="DetailResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_favorite
+    WHERE u_id = #{uId}
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 

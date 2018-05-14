@@ -1,8 +1,11 @@
 package com.xsm.flat.dao;
 
+import com.xsm.flat.entity.Assumpsit;
 import com.xsm.flat.entity.Favorite;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public interface FavoriteMapper {
@@ -19,4 +22,6 @@ public interface FavoriteMapper {
     int updateByPrimaryKey(Favorite record);
 
     Boolean favCheck(@Param("uId") String uId, @Param("fId") Integer fId);
+
+    List<Favorite> getAllFav(@Param("uId") String uId);
 }

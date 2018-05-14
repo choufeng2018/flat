@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by 薛时鸣 on 2018/5/14.
  */
@@ -28,5 +30,15 @@ public class FavServiceImpl implements FavService{
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<Favorite> getAllFav(String uId) {
+        return favoriteMapper.getAllFav(uId);
+    }
+
+    @Override
+    public int deleteFav(String favId) {
+        return favoriteMapper.deleteByPrimaryKey(favId);
     }
 }
