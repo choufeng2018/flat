@@ -8,6 +8,14 @@
     <result column="r_belongname" jdbcType="VARCHAR" property="rBelongname" />
     <result column="r_info" jdbcType="VARCHAR" property="rInfo" />
   </resultMap>
+  <resultMap id="DetailRemarkResultMap" type="com.xsm.flat.entity.RemarkDetail">
+    <id column="r_id" jdbcType="VARCHAR" property="rId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="r_sendname" jdbcType="VARCHAR" property="rSendname" />
+    <result column="r_belongname" jdbcType="VARCHAR" property="rBelongname" />
+    <result column="r_info" jdbcType="VARCHAR" property="rInfo" />
+    <association property="flat" column="f_id" javaType="com.xsm.flat.entity.Flat" select="com.xsm.flat.dao.FlatMapper.selectByPrimaryKey"/>
+  </resultMap>
   <sql id="Base_Column_List">
     r_id, f_id, r_sendname, r_belongname, r_info
   </sql>
@@ -17,6 +25,13 @@
     from tb_remark
     where r_id = #{rId,jdbcType=VARCHAR}
   </select>
+  <select id="getAllRemark" parameterType="java.lang.String" resultMap="DetailRemarkResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_remark
+    WHERE r_belongname = #{uName}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from tb_remark
     where r_id = #{rId,jdbcType=VARCHAR}

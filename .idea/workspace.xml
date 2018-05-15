@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/RemarkDetail.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FlatMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FlatMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/RemarkMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/RemarkMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/RemarkMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RemarkMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,36 +32,61 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RemarkServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java">
+      <file leaf-file-name="RemarkMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RemarkMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="190">
+              <caret line="10" column="71" lean-forward="true" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
+                <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
+                <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
+                <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
+                <marker date="1526389960573" expanded="true" signature="1389:1497" ph="select from tb_remark" />
+                <marker date="1526389960573" expanded="true" signature="1610:1710" ph="select from tb_remark" />
+                <marker date="1526389960573" expanded="true" signature="1796:1858" ph="delete from " />
+                <marker date="1526389960573" expanded="true" signature="1941:2176" ph="insert into tb_remark... " />
+                <marker date="1526389960573" expanded="true" signature="3249:3703" ph="update tb_re... " />
+                <marker date="1526389960573" expanded="true" signature="3798:4040" ph="update tb_re... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlatMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
+      <file leaf-file-name="AssumpsitMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="29" />
+              <folding>
+                <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
+                <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
+                <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
+                <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
+                <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
+                <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
+                <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
+                <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
+                <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
+                <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemarkDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/RemarkDetail.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding>
-                <marker date="1526384564700" expanded="true" signature="2078:2182" ph="select from tb_flat" />
-                <marker date="1526384564700" expanded="true" signature="2313:2365" ph="SELECT u_id tb_flat" />
-                <marker date="1526384564700" expanded="true" signature="2489:2597" ph="select from tb_flat" />
-                <marker date="1526384564700" expanded="true" signature="2708:2752" ph="UPDATE tb_fl... " />
-                <marker date="1526384564700" expanded="true" signature="2708:2780" ph="UPDATE tb_fl... " />
-                <marker date="1526384564700" expanded="true" signature="2708:2794" ph="UPDATE tb_fl... " />
-                <marker date="1526384564700" expanded="true" signature="4718:4806" ph="select from tb_flat" />
-                <marker date="1526384564700" expanded="true" signature="4917:5006" ph="select from tb_flat" />
-                <marker date="1526384564700" expanded="true" signature="5091:5134" ph="delete from " />
-                <marker date="1526384564700" expanded="true" signature="5215:6053" ph="insert into tb_flat... " />
-                <marker date="1526384564700" expanded="true" signature="9101:10807" ph="update tb_fl... " />
-                <marker date="1526384564700" expanded="true" signature="10900:11741" ph="update tb_fl... " />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="method#equals#0;class#RemarkDetail#0" expanded="false" />
+                <element signature="method#hashCode#0;class#RemarkDetail#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,8 +97,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/flatInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FlatService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/UserServiceImpl.java" />
@@ -167,13 +189,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Flat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/RemarkMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Remark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FlatMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/RemarkMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/RemarkMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/RemarkDetail.java" />
       </list>
     </option>
   </component>
@@ -1173,7 +1197,7 @@
       <workItem from="1526178467214" duration="16945000" />
       <workItem from="1526258399134" duration="19321000" />
       <workItem from="1526354135286" duration="6621000" />
-      <workItem from="1526383310230" duration="1599000" />
+      <workItem from="1526383310230" duration="5725000" />
     </task>
     <task id="LOCAL-00001" summary="[增加]省市县级联功能">
       <created>1518143074409</created>
@@ -1428,7 +1452,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110531000" />
+    <option name="totallyTimeSpent" value="114657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1577,20 +1601,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/AssumpsitDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Assumpsit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatVerifyMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1731,6 +1741,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1738,6 +1751,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1748,29 +1764,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
-            <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
-            <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
-            <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
-            <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
-            <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
-            <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
-            <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
-            <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1833,13 +1833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FlatVerifyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1865,24 +1858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RemarkMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="70" />
-          <folding>
-            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1526374895373" expanded="true" signature="809:917" ph="select from tb_remark" />
-            <marker date="1526374895373" expanded="true" signature="1002:1064" ph="delete from " />
-            <marker date="1526374895373" expanded="true" signature="1147:1382" ph="insert into tb_remark... " />
-            <marker date="1526374895373" expanded="true" signature="2455:2909" ph="update tb_re... " />
-            <marker date="1526374895373" expanded="true" signature="3004:3246" ph="update tb_re... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1918,22 +1893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Remark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1950,26 +1909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/RemarkMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FlatMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -1978,20 +1917,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/FlatMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="133">
+          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <marker date="1526384564700" expanded="true" signature="2078:2182" ph="select from tb_flat" />
             <marker date="1526384564700" expanded="true" signature="2313:2365" ph="SELECT u_id tb_flat" />
@@ -2005,6 +1934,127 @@
             <marker date="1526384564700" expanded="true" signature="5215:6053" ph="insert into tb_flat... " />
             <marker date="1526384564700" expanded="true" signature="9101:10807" ph="update tb_fl... " />
             <marker date="1526384564700" expanded="true" signature="10900:11741" ph="update tb_fl... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/RemarkMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/RemarkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/RemarkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FavController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/RemarkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Remark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="90" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
+            <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
+            <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
+            <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/RemarkDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="method#equals#0;class#RemarkDetail#0" expanded="false" />
+            <element signature="method#hashCode#0;class#RemarkDetail#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RemarkMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="71" lean-forward="true" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+          <folding>
+            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
+            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
+            <marker date="1526389960573" expanded="true" signature="1389:1497" ph="select from tb_remark" />
+            <marker date="1526389960573" expanded="true" signature="1610:1710" ph="select from tb_remark" />
+            <marker date="1526389960573" expanded="true" signature="1796:1858" ph="delete from " />
+            <marker date="1526389960573" expanded="true" signature="1941:2176" ph="insert into tb_remark... " />
+            <marker date="1526389960573" expanded="true" signature="3249:3703" ph="update tb_re... " />
+            <marker date="1526389960573" expanded="true" signature="3798:4040" ph="update tb_re... " />
           </folding>
         </state>
       </provider>

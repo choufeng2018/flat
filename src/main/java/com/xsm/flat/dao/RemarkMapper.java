@@ -3,6 +3,8 @@ package com.xsm.flat.dao;
 import com.xsm.flat.entity.Remark;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface RemarkMapper {
     int deleteByPrimaryKey(String rId);
@@ -16,4 +18,6 @@ public interface RemarkMapper {
     int updateByPrimaryKeySelective(Remark record);
 
     int updateByPrimaryKey(Remark record);
+
+    List<Remark> getAllRemark(String uName);
 }

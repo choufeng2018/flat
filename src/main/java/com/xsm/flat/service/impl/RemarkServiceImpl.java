@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by 薛时鸣 on 2018/5/15.
  */
@@ -34,5 +36,10 @@ public class RemarkServiceImpl implements RemarkService{
         String rBelongname = userMapper.selectUserNameByUid(uId);
         Remark remark = new Remark(IdGen.uuid(), fId, rSendname, rBelongname, rInfo);
         return remarkMapper.insertSelective(remark);
+    }
+
+    @Override
+    public List<Remark> getAllRemark(String uName) {
+        return remarkMapper.getAllRemark(uName);
     }
 }
