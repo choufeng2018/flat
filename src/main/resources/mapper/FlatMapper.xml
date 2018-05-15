@@ -35,6 +35,12 @@
     from tb_flat
     where s_id = #{sId,jdbcType=VARCHAR}
   </select>
+  <!--按fId查询Uid-->
+  <select id="selectUIdByfId" parameterType="java.lang.Integer" resultType="java.lang.String">
+    SELECT u_id
+    FROM tb_flat
+    WHERE f_id = #{fId}
+  </select>
   <!--查询所有房屋信息-->
   <select id="selectBypName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select

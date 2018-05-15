@@ -2,6 +2,7 @@ package com.xsm.flat.dao;
 
 import com.xsm.flat.entity.Flat;
 import com.xsm.flat.entity.Order;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -30,4 +31,5 @@ public interface FlatMapper {
 
     int updateFlatStatus(Flat flat);
 
+    String selectUIdByfId(@Param("fId") Integer fId);
 }
