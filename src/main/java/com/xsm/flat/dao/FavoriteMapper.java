@@ -24,4 +24,6 @@ public interface FavoriteMapper {
     Boolean favCheck(@Param("uId") String uId, @Param("fId") Integer fId);
 
     List<Favorite> getAllFav(@Param("uId") String uId);
+
+    List<Favorite> getFavByTime(@Param("uId") String uId);
 }

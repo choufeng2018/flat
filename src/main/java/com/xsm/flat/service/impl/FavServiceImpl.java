@@ -41,4 +41,9 @@ public class FavServiceImpl implements FavService{
     public int deleteFav(String favId) {
         return favoriteMapper.deleteByPrimaryKey(favId);
     }
+
+    @Override
+    public List<Favorite> getFavByTime(String uId) {
+        return favoriteMapper.getFavByTime(uId);
+    }
 }

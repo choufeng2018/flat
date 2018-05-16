@@ -13,4 +13,5 @@ public interface FavService {
     Boolean insertFav(String uId,Integer fId);
     List<Favorite> getAllFav(String uId);
     int deleteFav(String favId);
+    List<Favorite> getFavByTime(String uId);
 }

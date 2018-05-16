@@ -34,6 +34,11 @@ public class FavController {
        }
    }
 
+    /**
+     * 查询所有收藏信息
+     * @param uId
+     * @return
+     */
     @RequestMapping(value = "/getAllFav", method = RequestMethod.POST)
     public AjaxResponse getAllOrders(@RequestParam("uId") String uId) {
 
@@ -55,5 +60,14 @@ public class FavController {
         AjaxResponse res = new AjaxResponse();
         res.setSuccessMessageUpdate();
         return res;
+    }
+
+    @RequestMapping(value = "/getFavByTime", method = RequestMethod.POST)
+    public AjaxResponse getFavByTime(@RequestParam("uId") String uId) {
+
+        List<Favorite> list = favService.getAllFav(uId);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessage(true,list);
+        return Ares;
     }
 }

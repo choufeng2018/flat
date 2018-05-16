@@ -29,6 +29,13 @@
     from tb_favorite
     WHERE u_id = #{uId}
   </select>
+  <!--最近收藏的房源信息-->
+  <select id="getFavByTime" parameterType="java.lang.String" resultMap="DetailResultMap">
+    SELECT * FROM
+    tb_favorite
+    WHERE u_id = #{uId}
+    ORDER BY f_creatime
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
