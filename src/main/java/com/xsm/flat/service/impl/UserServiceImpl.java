@@ -50,4 +50,24 @@ public class UserServiceImpl implements UserService{
         User userResult = userMapper.userLogincheck(user);
         return userResult;
     }
+
+    @Override
+    public Boolean updateUserInfo(User user) {
+
+        //判断原密码是否存在
+        Boolean isExact = userMapper.isPwdExact(user.getuPwd());
+
+        if(isExact){
+            String uPwd = user.getuPwdnew();
+            String uName = user.getuName();
+            String uNickname = user.getuNickname();
+            String uPhone = user.getuPhone();
+            String uId = user.getuId();
+            User user1 = new User(uId, uName, uPwd,  uNickname,  uPhone);
+            userMapper.updateByPrimaryKeySelective(user1);
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

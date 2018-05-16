@@ -15,6 +15,10 @@
   <select id="selectUserNameByUid" parameterType="java.lang.String" resultType="java.lang.String">
     SELECT u_name FROM tb_user where u_id =#{uId}
   </select>
+  <!--判断是否和原密码相同-->
+  <select id="isPwdExact" resultType="java.lang.Boolean">
+  SELECT IFNULL((select 1 FROM tb_user where u_pwd = #{uPwd} limit 1),0)
+  </select>
   <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

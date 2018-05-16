@@ -110,4 +110,23 @@ public class UserController {
         return result;
     }
 
+    /**
+     * 客户端更新用户信息
+     * @param user
+     * @return
+     */
+    @RequestMapping(value = "/updateUserInfo", method = RequestMethod.POST)
+    public  AjaxResponse updateUserInfo(User user) {
+
+        Boolean result =  userService.updateUserInfo(user);
+        AjaxResponse res = new AjaxResponse();
+        if(result){
+            res.setSuccessMessageUpdate();
+            return res;
+        }else {
+            res.setErrorMessage("您的原密码不正确！",result);
+            return res;
+        }
+
+    }
 }

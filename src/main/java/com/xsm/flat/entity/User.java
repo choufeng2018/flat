@@ -18,6 +18,17 @@ public class User implements Serializable {
 
     private String token;
 
+    public String getuPwdnew() {
+        return uPwdnew;
+    }
+
+    public void setuPwdnew(String uPwdnew) {
+        this.uPwdnew = uPwdnew;
+    }
+
+    private String uPwdnew;
+
+
     public String getuId() {
         return uId;
     }
@@ -97,5 +108,16 @@ public class User implements Serializable {
         result = prime * result + ((getuPhone() == null) ? 0 : getuPhone().hashCode());
         result = prime * result + ((getToken() == null) ? 0 : getToken().hashCode());
         return result;
+    }
+
+    public User(String uId, String uName, String uPwd, String uNickname, String uPhone) {
+        this.uId = uId;
+        this.uName = uName;
+        this.uPwd = uPwd;
+        this.uNickname = uNickname;
+        this.uPhone = uPhone;
+    }
+
+    public User() {
     }
 }

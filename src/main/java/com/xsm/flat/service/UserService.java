@@ -16,4 +16,6 @@ public interface UserService {
     int addUser(User user);
 
     User userLoginCheck(User user);
+
+    Boolean updateUserInfo(User user);
 }

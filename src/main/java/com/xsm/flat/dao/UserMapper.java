@@ -24,4 +24,6 @@ public interface UserMapper {
 
     String selectUserNameByUid(@Param("uId") String uId);
 
+    Boolean isPwdExact(String uPwdnew);
+
 }
