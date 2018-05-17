@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xsm.flat.dao.NewsMapper">
+  <resultMap id="BaseResultMap" type="com.xsm.flat.entity.News">
+    <id column="n_id" jdbcType="VARCHAR" property="nId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="n_info" jdbcType="VARCHAR" property="nInfo" />
+    <result column="n_creatime" jdbcType="VARCHAR" property="nCreatime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    n_id, f_id, n_info, n_creatime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_news
+    where n_id = #{nId,jdbcType=VARCHAR}
+  </select>
+  <select id="getNewsByFid" parameterType="java.lang.String" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM tb_news
+    WHERE f_id = #{fId}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from tb_news
+    where n_id = #{nId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.xsm.flat.entity.News">
+    insert into tb_news (n_id, f_id, n_info, 
+      n_creatime)
+    values (#{nId,jdbcType=VARCHAR}, #{fId,jdbcType=INTEGER}, #{nInfo,jdbcType=VARCHAR}, 
+      #{nCreatime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xsm.flat.entity.News">
+    insert into tb_news
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="nId != null">
+        n_id,
+      </if>
+      <if test="fId != null">
+        f_id,
+      </if>
+      <if test="nInfo != null">
+        n_info,
+      </if>
+      <if test="nCreatime != null">
+        n_creatime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="nId != null">
+        #{nId,jdbcType=VARCHAR},
+      </if>
+      <if test="fId != null">
+        #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="nInfo != null">
+        #{nInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="nCreatime != null">
+        #{nCreatime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xsm.flat.entity.News">
+    update tb_news
+    <set>
+      <if test="fId != null">
+        f_id = #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="nInfo != null">
+        n_info = #{nInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="nCreatime != null">
+        n_creatime = #{nCreatime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where n_id = #{nId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xsm.flat.entity.News">
+    update tb_news
+    set f_id = #{fId,jdbcType=INTEGER},
+      n_info = #{nInfo,jdbcType=VARCHAR},
+      n_creatime = #{nCreatime,jdbcType=VARCHAR}
+    where n_id = #{nId,jdbcType=VARCHAR}
+  </update>
+</mapper>
