@@ -44,7 +44,8 @@ public class FlatInfoController {
     @RequestMapping(value = "/imgUpload", method = RequestMethod.POST)
     public Object imgUpload(HttpServletRequest request, @RequestParam("file") MultipartFile file) throws IOException {
         JSONObject jsonObject = new JSONObject();
-        String rootPath = "/home/xsm/Desktop/";
+        String rootPath = "C:\\Users\\fisherman\\Desktop\\毕业设计论文\\projectImg";
+        //        String rootPath = "/home/xsm/Desktop/";
         //判断文件格式
         String filename = file.getOriginalFilename();
         String suffix = filename.substring(filename.lastIndexOf("."));
