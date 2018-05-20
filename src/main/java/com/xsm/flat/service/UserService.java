@@ -18,4 +18,7 @@ public interface UserService {
     User userLoginCheck(User user);
 
     Boolean updateUserInfo(User user);
+
+    List<User> getAllUsers();
+
 }

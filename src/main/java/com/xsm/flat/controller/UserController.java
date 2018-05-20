@@ -129,4 +129,12 @@ public class UserController {
         }
 
     }
+
+    @RequestMapping(value = "/selectalluser", method = RequestMethod.GET)
+    public AjaxResponse selectalluser(){
+        List<User> records = userService.getAllUsers();
+        AjaxResponse res= new AjaxResponse();
+        res.setSuccessMessage(true,records);
+        return res;
+    }
 }
