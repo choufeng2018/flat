@@ -9,6 +9,13 @@
   <sql id="Base_Column_List">
     s_id, s_name, c_id
   </sql>
+  <!--根据sName查出sId-->
+  <select id="selectsIdBysName" parameterType="java.lang.String" resultType="java.lang.String">
+    SELECT
+    s_id
+    from tb_street
+    WHERE s_name = #{sName}
+  </select>
   <!--地理位置：按城市ID查询出所有街道-->
   <select id="selectByCId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select

@@ -168,7 +168,7 @@
       <if test="fStreet != null">
         f_street,
       </if>
-      <if test="fAge != nu1ll">
+      <if test="fAge != null">
         f_age,
       </if>
       <if test="fDetails != null">
@@ -200,6 +200,9 @@
       </if>
       <if test="uId != null">
        u_id,
+      </if>
+      <if test="pName != null">
+        p_name,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -259,6 +262,9 @@
       </if>
       <if test="uId != null">
         #{uId,jdbcType=VARCHAR},
+      </if>
+      <if test="pName != null">
+        #{pName,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>

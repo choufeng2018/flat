@@ -24,4 +24,5 @@ public interface CityMapper {
 
     List<City> selectByCName(@Param("cName") String cName);
 
+    String selectcIdBycName(String cName);
 }

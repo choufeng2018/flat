@@ -12,6 +12,14 @@
   <sql id="Base_Column_List">
     c_id, c_name, p_id
   </sql>
+
+  <!--根据cName查出cId-->
+  <select id="selectcIdBycName" parameterType="java.lang.String"  resultType="java.lang.String">
+    SELECT
+    c_id
+    FROM tb_city
+    WHERE c_name = #{cName}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

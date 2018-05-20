@@ -21,4 +21,6 @@ public interface StreetMapper {
     int updateByPrimaryKey(Street record);
 
     List<Street> selectByCId(@Param("cId") String cId);
+
+    String selectsIdBysName(String sName);
 }

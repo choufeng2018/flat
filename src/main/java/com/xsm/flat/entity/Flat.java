@@ -22,43 +22,7 @@ public class Flat implements Serializable  {
 
     private String uId;
 
-    public String getuId() {
-        return uId;
-    }
-
-    public void setuId(String uId) {
-        this.uId = uId;
-    }
-
-    public String getpName() {
-        return pName;
-    }
-
-    public void setpName(String pName) {
-        this.pName = pName;
-    }
-
     private String pName;
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
-    public String getfMinPrice() {
-        return fMinPrice;
-    }
-
-    public void setfMinPrice(String fMinPrice) {
-        this.fMinPrice = fMinPrice;
-    }
-
-    public String getfMaxPrice() {
-        return fMaxPrice;
-    }
-
-    public void setfMaxPrice(String fMaxPrice) {
-        this.fMaxPrice = fMaxPrice;
-    }
 
     private String pId;
 
@@ -87,6 +51,62 @@ public class Flat implements Serializable  {
     private String fHeating;
 
     private String fStatus;
+
+    private String cName;
+
+    private String sName;
+
+    public String getuId() {
+        return uId;
+    }
+
+    public void setuId(String uId) {
+        this.uId = uId;
+    }
+
+    public String getpName() {
+        return pName;
+    }
+
+    public void setpName(String pName) {
+        this.pName = pName;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getfMinPrice() {
+        return fMinPrice;
+    }
+
+    public void setfMinPrice(String fMinPrice) {
+        this.fMinPrice = fMinPrice;
+    }
+
+    public String getfMaxPrice() {
+        return fMaxPrice;
+    }
+
+    public void setfMaxPrice(String fMaxPrice) {
+        this.fMaxPrice = fMaxPrice;
+    }
+
+    public String getcName() {
+        return cName;
+    }
+
+    public void setcName(String cName) {
+        this.cName = cName;
+    }
+
+    public String getsName() {
+        return sName;
+    }
+
+    public void setsName(String sName) {
+        this.sName = sName;
+    }
 
     public String getfStatus() {
         return fStatus;
@@ -300,11 +320,15 @@ public class Flat implements Serializable  {
     @Override
     public String toString() {
         return "Flat{" +
-                "fId='" + fId + '\'' +
+                "fId=" + fId +
                 ", fName='" + fName + '\'' +
                 ", fType='" + fType + '\'' +
                 ", fHabitable='" + fHabitable + '\'' +
                 ", fPrice='" + fPrice + '\'' +
+                ", fMinPrice='" + fMinPrice + '\'' +
+                ", fMaxPrice='" + fMaxPrice + '\'' +
+                ", uId='" + uId + '\'' +
+                ", pName='" + pName + '\'' +
                 ", pId='" + pId + '\'' +
                 ", sId='" + sId + '\'' +
                 ", fStreet='" + fStreet + '\'' +
@@ -318,6 +342,9 @@ public class Flat implements Serializable  {
                 ", fToilet='" + fToilet + '\'' +
                 ", fShower='" + fShower + '\'' +
                 ", fHeating='" + fHeating + '\'' +
+                ", fStatus='" + fStatus + '\'' +
+                ", cName='" + cName + '\'' +
+                ", sName='" + sName + '\'' +
                 '}';
     }
 

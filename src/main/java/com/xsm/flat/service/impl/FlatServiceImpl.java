@@ -1,6 +1,9 @@
 package com.xsm.flat.service.impl;
 
+import com.xsm.flat.dao.CityMapper;
 import com.xsm.flat.dao.FlatMapper;
+import com.xsm.flat.dao.ProvinceMapper;
+import com.xsm.flat.dao.StreetMapper;
 import com.xsm.flat.entity.Flat;
 import com.xsm.flat.service.FlatService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +25,26 @@ public class FlatServiceImpl implements FlatService{
     @Autowired
     FlatMapper flatMapper;
 
+    @Autowired
+    ProvinceMapper provinceMapper;
+
+    @Autowired
+    CityMapper cityMapper;
+
+    @Autowired
+    StreetMapper streetMapper;
+
     @Override
     public int addFlat(Flat flat) {
-        flat.setpId("1");
-        flat.setsId("3");
-        flat.setpName("上海市");
-        return flatMapper.insert(flat);
+//        flat.setpId("1");
+//        flat.setsId("3");
+//        flat.setpName("上海市");
+        System.out.println("============>"+flat.getpName());
+        String pId = provinceMapper.selectPidBypName(flat.getpName());
+        String sId = streetMapper.selectsIdBysName(flat.getsName());
+        flat.setpId(pId);
+        flat.setsId(sId);
+        return flatMapper.insertSelective(flat);
     }
 
     @Override

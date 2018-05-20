@@ -14,6 +14,13 @@
   <sql id="Base_Column_List">
     p_id, p_name
   </sql>
+  <!--根据pName查出pId-->
+  <select id="selectPidBypName" parameterType="java.lang.String"  resultType="java.lang.String">
+    SELECT
+    p_id
+    FROM tb_province
+    WHERE p_name = #{pName, jdbcType=VARCHAR}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
