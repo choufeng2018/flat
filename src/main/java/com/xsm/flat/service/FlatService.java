@@ -26,4 +26,6 @@ public interface FlatService {
 
     List<Flat> fuzzySearchFlat(Flat flat);
 
+    List<Flat> selectAll(Integer pageNum, Integer pageSize);
+
 }

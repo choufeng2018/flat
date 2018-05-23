@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.xsm.flat.dao.CityMapper;
 import com.xsm.flat.dao.FlatMapper;
 import com.xsm.flat.dao.ProvinceMapper;
@@ -9,6 +10,7 @@ import com.xsm.flat.service.FlatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -74,4 +76,12 @@ public class FlatServiceImpl implements FlatService{
     public List<Flat> fuzzySearchFlat(Flat flat) {
         return flatMapper.fuzzySearchFlat(flat);
     }
+
+    @Override
+    public List<Flat> selectAll(@PathVariable("pageNum") Integer pageNum,
+                                @PathVariable("pageSize") Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        return flatMapper.selectAll();
+    }
+
 }

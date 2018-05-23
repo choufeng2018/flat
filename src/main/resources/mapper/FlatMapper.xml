@@ -28,6 +28,12 @@
     f_id, f_name, f_type, f_habitable, f_price,f_status, p_id, s_id, f_street, f_age, f_details,
     f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name,u_id
   </sql>
+  <!--管理员端查询所有信息-->
+  <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    from tb_flat
+  </select>
   <!--按照街道Id查询房屋信息-->
   <select id="selectBysId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select

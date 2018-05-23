@@ -32,4 +32,6 @@ public interface FlatMapper {
     int updateFlatStatus(Flat flat);
 
     String selectUIdByfId(@Param("fId") Integer fId);
+
+    List<Flat> selectAll();
 }

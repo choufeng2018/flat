@@ -1,10 +1,12 @@
 package com.xsm.flat.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
 import com.qcloud.cos.model.PutObjectResult;
 import com.xsm.flat.base.AjaxResponse;
 import com.xsm.flat.entity.Flat;
 import com.xsm.flat.entity.Province;
+import com.xsm.flat.entity.User;
 import com.xsm.flat.service.FlatService;
 import com.xsm.flat.utils.QcloudUtil;
 import com.xsm.flat.utils.SystemUtil;
@@ -163,6 +165,17 @@ public class FlatInfoController {
         AjaxResponse Ares = new AjaxResponse();
         Ares.setSuccessMessage(true,flatList);
         return Ares;
+    }
+
+    @RequestMapping(value = "/queryall", method = RequestMethod.GET)
+    public AjaxResponse queryall(Integer pageNum,
+                                 Integer pageSize) {
+        List<Flat> records = flatService.selectAll(pageNum,pageSize);
+        PageInfo<Flat> page = new PageInfo<Flat>(records);
+        AjaxResponse res= new AjaxResponse();
+        res.setSuccessMessage(true,records);
+        res.setPage(page);
+        return res;
     }
 
 }
