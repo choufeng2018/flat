@@ -89,4 +89,7 @@ public class Remark {
         this.rSendname = rSendname;
         this.rInfo = rInfo;
     }
+
+    public Remark() {
+    }
 }

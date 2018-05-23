@@ -70,4 +70,19 @@ public class RemarkController {
         res.setPage(page);
         return res;
     }
+
+    /**
+     * 更新留言信息
+     * @param remark
+     * @return
+     */
+    @RequestMapping(value = "/updateRemark", method = RequestMethod.POST)
+    public  AjaxResponse updateRemark(Remark remark) {
+
+        remarkService.updateRemark(remark);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
+
 }

@@ -52,4 +52,9 @@ public class RemarkServiceImpl implements RemarkService{
         PageHelper.startPage(pageNum, pageSize);
         return remarkMapper.getRemarkPage();
     }
+
+    @Override
+    public int updateRemark(Remark remark) {
+        return remarkMapper.updateByPrimaryKeySelective(remark);
+    }
 }

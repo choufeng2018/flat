@@ -15,4 +15,6 @@ public interface RemarkService {
     List<Remark> getAllRemark(String uName);
 
     List<Remark> getRemarkPage(Integer pageNum, Integer pageSize);
+
+    int updateRemark(Remark remark);
 }
