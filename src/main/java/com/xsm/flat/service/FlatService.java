@@ -28,4 +28,6 @@ public interface FlatService {
 
     List<Flat> selectAll(Integer pageNum, Integer pageSize);
 
+    int deleteFlat (Flat flat);
+
 }

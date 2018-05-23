@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface FlatMapper {
-    int deleteByPrimaryKey(String fId);
+    int deleteByPrimaryKey(Flat flat);
 
     int insert(Flat record);
 

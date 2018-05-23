@@ -84,4 +84,9 @@ public class FlatServiceImpl implements FlatService{
         return flatMapper.selectAll();
     }
 
+    @Override
+    public int deleteFlat(Flat flat) {
+        return flatMapper.deleteByPrimaryKey(flat);
+    }
+
 }

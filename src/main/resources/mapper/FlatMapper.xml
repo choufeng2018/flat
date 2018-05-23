@@ -28,6 +28,10 @@
     f_id, f_name, f_type, f_habitable, f_price,f_status, p_id, s_id, f_street, f_age, f_details,
     f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name,u_id
   </sql>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_flat
+    where f_id = #{fId}
+  </delete>
   <!--管理员端查询所有信息-->
   <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
     SELECT
@@ -126,10 +130,6 @@
     from tb_flat
     where f_id = #{fId}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from tb_flat
-    where f_id = #{fId}
-  </delete>
   <insert id="insert" parameterType="com.xsm.flat.entity.Flat">
     insert into tb_flat (f_id, f_name, f_type, 
       f_habitable, f_price, p_id, 

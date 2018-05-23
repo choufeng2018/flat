@@ -178,4 +178,18 @@ public class FlatInfoController {
         return res;
     }
 
+    /**
+     * admin 删除房源
+     * @param flat
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/deleteFlat", method = RequestMethod.POST)
+    public  AjaxResponse deleteUser(Flat flat) {
+
+        flatService.deleteFlat(flat);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
 }
