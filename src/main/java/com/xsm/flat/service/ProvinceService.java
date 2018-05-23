@@ -13,4 +13,6 @@ public interface ProvinceService {
 
     public List<Province> getProvincesByPName(String pName);
 
+    public List<Province> getProvincesPage(Integer pageNum, Integer pageSize);
+
 }

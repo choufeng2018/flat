@@ -9,6 +9,14 @@
   <sql id="Base_Column_List">
     s_id, s_name, c_id
   </sql>
+<!--根据cId查出sName-->
+
+  <select id="getNameByCid" parameterType="java.lang.String" resultType="java.lang.String">
+   SELECT
+    s_name
+    from tb_street
+    WHERE c_id = #{cId}
+  </select>
   <!--根据sName查出sId-->
   <select id="selectsIdBysName" parameterType="java.lang.String" resultType="java.lang.String">
     SELECT

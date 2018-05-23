@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.xsm.flat.dao.CityMapper;
 import com.xsm.flat.dao.ProvinceMapper;
 import com.xsm.flat.dao.StreetMapper;
@@ -8,6 +9,7 @@ import com.xsm.flat.service.ProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -32,5 +34,12 @@ public class ProvinceServiceImpl implements ProvinceService {
     public List<Province> getProvincesByPName(String pName) {
 
         return provinceMapper.selectProvinceByPName(pName);
+    }
+
+    @Override
+    public List<Province> getProvincesPage(@PathVariable("pageNum") Integer pageNum,
+                                           @PathVariable("pageSize") Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        return provinceMapper.selectProvince();
     }
 }

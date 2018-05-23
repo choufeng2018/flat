@@ -23,4 +23,6 @@ public interface StreetMapper {
     List<Street> selectByCId(@Param("cId") String cId);
 
     String selectsIdBysName(String sName);
+
+    List<Street> getNameByCid(Street street);
 }
