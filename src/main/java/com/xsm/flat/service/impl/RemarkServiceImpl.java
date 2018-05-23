@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.xsm.flat.dao.FlatMapper;
 import com.xsm.flat.dao.RemarkMapper;
 import com.xsm.flat.dao.UserMapper;
@@ -9,6 +10,7 @@ import com.xsm.flat.utils.IdGen;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -41,5 +43,13 @@ public class RemarkServiceImpl implements RemarkService{
     @Override
     public List<Remark> getAllRemark(String uName) {
         return remarkMapper.getAllRemark(uName);
+    }
+
+    @Override
+    public List<Remark> getRemarkPage(@PathVariable("pageNum") Integer pageNum,
+                                      @PathVariable("pageSize") Integer pageSize) {
+
+        PageHelper.startPage(pageNum, pageSize);
+        return remarkMapper.getRemarkPage();
     }
 }

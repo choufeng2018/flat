@@ -19,6 +19,13 @@
   <sql id="Base_Column_List">
     r_id, f_id, r_sendname, r_belongname, r_info
   </sql>
+
+  <!--查询出留言的分页信息-->
+  <select id="getRemarkPage" parameterType="java.lang.String" resultMap="DetailRemarkResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_remark
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

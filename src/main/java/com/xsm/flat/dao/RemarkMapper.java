@@ -20,4 +20,6 @@ public interface RemarkMapper {
     int updateByPrimaryKey(Remark record);
 
     List<Remark> getAllRemark(String uName);
+
+    List<Remark> getRemarkPage();
 }

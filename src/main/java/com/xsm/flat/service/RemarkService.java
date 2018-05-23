@@ -13,4 +13,6 @@ public interface RemarkService {
     int insertRemark(Integer fId, String rSendname, String rInfo);
 
     List<Remark> getAllRemark(String uName);
+
+    List<Remark> getRemarkPage(Integer pageNum, Integer pageSize);
 }
