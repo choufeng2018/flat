@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.xsm.flat.dao.FlatMapper;
 import com.xsm.flat.dao.OrderMapper;
 import com.xsm.flat.entity.Flat;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -46,5 +48,12 @@ public class OrderServiceImpl implements OrderService{
     @Override
     public List<Order> getAllOrders(String uId) {
         return orderMapper.getAllOrders(uId);
+    }
+
+    @Override
+    public List<Order> getAllOrderPage(@PathVariable("pageNum") Integer pageNum,
+                                       @PathVariable("pageSize") Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        return orderMapper.getAllOrderPage();
     }
 }

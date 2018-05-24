@@ -22,4 +22,6 @@ public interface OrderMapper {
 
     List<Order> getAllOrders(@Param("uId") String uId);
 
+    List<Order> getAllOrderPage();
+
 }

@@ -12,4 +12,5 @@ import java.util.List;
 public interface OrderService {
     Boolean insertOrder(String uId,Integer fId);
     List<Order> getAllOrders(String uId);
+    List<Order> getAllOrderPage(Integer pageNum, Integer pageSize);
 }

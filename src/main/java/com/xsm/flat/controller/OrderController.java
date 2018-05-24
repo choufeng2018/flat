@@ -1,7 +1,9 @@
 package com.xsm.flat.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.xsm.flat.base.AjaxResponse;
 import com.xsm.flat.entity.Order;
+import com.xsm.flat.entity.Remark;
 import com.xsm.flat.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -46,5 +48,17 @@ public class OrderController {
         AjaxResponse Ares = new AjaxResponse();
         Ares.setSuccessMessage(true,list);
         return Ares;
+    }
+
+    @RequestMapping(value = "/getAllOrderPage", method = RequestMethod.POST)
+    public AjaxResponse getAllOrderPage(Integer pageNum,
+                                         Integer pageSize) {
+
+        List<Order> records = orderService.getAllOrderPage(pageNum,pageSize);
+        PageInfo<Order> page = new PageInfo<Order>(records);
+        AjaxResponse res= new AjaxResponse();
+        res.setSuccessMessage(true,records);
+        res.setPage(page);
+        return res;
     }
 }
