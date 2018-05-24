@@ -103,4 +103,6 @@ public class OrderDetail {
         return result;
     }
 
+    public OrderDetail() {
+    }
 }

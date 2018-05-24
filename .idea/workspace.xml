@@ -4,10 +4,8 @@
     <list default="true" id="10119a6e-e6e9-407f-8260-c9790bd6f10f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp.log" afterPath="$PROJECT_DIR$/myapp.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/OrderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Order.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/OrderDetail.java" afterPath="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/OrderDetail.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +31,7 @@
       <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
+            <state relative-caret-position="44">
               <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
               <folding>
                 <element signature="e#1816#1823#0" expanded="true" />
@@ -42,21 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="232">
+              <caret line="52" column="42" lean-forward="false" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
               <folding>
                 <marker date="1527166037704" expanded="true" signature="1473:1542" ph="SELECT IFNUL... " />
                 <marker date="1527166037704" expanded="true" signature="1653:1760" ph="select from tb_order" />
@@ -71,65 +59,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/NewsController.java">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="59" column="71" lean-forward="true" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+            <state relative-caret-position="420">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java">
+      <file leaf-file-name="OrderDetail.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/OrderDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="230">
+              <caret line="97" column="23" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/NewsMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding>
-                <marker date="1527131469575" expanded="true" signature="1228:1292" ph="select from tb_news" />
-                <marker date="1527131469575" expanded="true" signature="1404:1510" ph="select from tb_news" />
-                <marker date="1527131469575" expanded="true" signature="1615:1703" ph="SELECT FROM tb_news" />
-                <marker date="1527131469575" expanded="true" signature="1789:1849" ph="delete from " />
-                <marker date="1527131469575" expanded="true" signature="1930:2116" ph="insert into tb_news... " />
-                <marker date="1527131469575" expanded="true" signature="3020:3366" ph="update tb_ne... " />
-                <marker date="1527131469575" expanded="true" signature="3459:3645" ph="update tb_ne... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/NewsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-              <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1119#1120#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -189,8 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/FavService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/FavoriteMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FavServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
@@ -235,11 +178,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/FlatVerifyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/FlatVerifyMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/FlatVerifyController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/dao/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/OrderDetail.java" />
       </list>
     </option>
   </component>
@@ -1209,7 +1154,7 @@
       <workItem from="1526783611657" duration="9937000" />
       <workItem from="1527042401347" duration="5330000" />
       <workItem from="1527059324526" duration="13486000" />
-      <workItem from="1527129264910" duration="17876000" />
+      <workItem from="1527129264910" duration="19098000" />
     </task>
     <task id="LOCAL-00001" summary="[增加]省市县级联功能">
       <created>1518143074409</created>
@@ -1485,7 +1430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178931000" />
+    <option name="totallyTimeSpent" value="180153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1498,7 +1443,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1462,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6620926" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41509435" sideWeight="0.48260212" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41509435" sideWeight="0.48260212" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.432247" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
@@ -1644,21 +1588,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/com/alibaba/druid/support/http/WebStatFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="112" column="58" lean-forward="false" selection-start-line="112" selection-start-column="58" selection-end-line="112" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Province.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-454">
@@ -2043,24 +1972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
-            <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
-            <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
-            <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
-            <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
-            <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
-            <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
-            <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
-            <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/NewsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -2095,18 +2006,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="152">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssumpsitMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="32" />
           <folding>
-            <marker date="1527131469575" expanded="true" signature="1228:1292" ph="select from tb_news" />
-            <marker date="1527131469575" expanded="true" signature="1404:1510" ph="select from tb_news" />
-            <marker date="1527131469575" expanded="true" signature="1615:1703" ph="SELECT FROM tb_news" />
-            <marker date="1527131469575" expanded="true" signature="1789:1849" ph="delete from " />
-            <marker date="1527131469575" expanded="true" signature="1930:2116" ph="insert into tb_news... " />
-            <marker date="1527131469575" expanded="true" signature="3020:3366" ph="update tb_ne... " />
-            <marker date="1527131469575" expanded="true" signature="3459:3645" ph="update tb_ne... " />
+            <marker date="1526194513045" expanded="true" signature="2033:2103" ph="select ass_s... tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2232:2325" ph="select from tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2436:2550" ph="select from tb_assumpsit" />
+            <marker date="1526194513045" expanded="true" signature="2635:2687" ph="delete from " />
+            <marker date="1526194513045" expanded="true" signature="2773:3153" ph="insert into tb_assumpsit... " />
+            <marker date="1526194513045" expanded="true" signature="4721:5492" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="5590:5984" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="6079:6227" ph="update tb_as... " />
+            <marker date="1526194513045" expanded="true" signature="6317:6408" ph="SELECT IFNUL... " />
           </folding>
         </state>
       </provider>
@@ -2119,28 +2040,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/NewsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NewsMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="59" column="71" lean-forward="true" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        <state relative-caret-position="156">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="32" />
           <folding>
-            <element signature="e#1816#1823#0" expanded="true" />
+            <marker date="1527131469575" expanded="true" signature="1228:1292" ph="select from tb_news" />
+            <marker date="1527131469575" expanded="true" signature="1404:1510" ph="select from tb_news" />
+            <marker date="1527131469575" expanded="true" signature="1615:1703" ph="SELECT FROM tb_news" />
+            <marker date="1527131469575" expanded="true" signature="1789:1849" ph="delete from " />
+            <marker date="1527131469575" expanded="true" signature="1930:2116" ph="insert into tb_news... " />
+            <marker date="1527131469575" expanded="true" signature="3020:3366" ph="update tb_ne... " />
+            <marker date="1527131469575" expanded="true" signature="3459:3645" ph="update tb_ne... " />
           </folding>
         </state>
       </provider>
@@ -2153,10 +2064,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="e#1816#1823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="232">
+          <caret line="52" column="42" lean-forward="false" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
           <folding>
             <marker date="1527166037704" expanded="true" signature="1473:1542" ph="SELECT IFNUL... " />
             <marker date="1527166037704" expanded="true" signature="1653:1760" ph="select from tb_order" />
@@ -2167,6 +2096,22 @@
             <marker date="1527166037704" expanded="true" signature="3629:3974" ph="update tb_or... " />
             <marker date="1527166037704" expanded="true" signature="4068:4287" ph="update tb_or... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xsm/flat/entity/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="97" column="23" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

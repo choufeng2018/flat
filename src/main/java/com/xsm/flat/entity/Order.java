@@ -90,4 +90,7 @@ public class Order {
         this.uId = uId;
         this.fId = fId;
     }
+
+    public Order() {
+    }
 }
