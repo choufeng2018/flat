@@ -7,9 +7,23 @@
     <result column="n_info" jdbcType="VARCHAR" property="nInfo" />
     <result column="n_creatime" jdbcType="VARCHAR" property="nCreatime" />
   </resultMap>
+  <resultMap id="DetailRemarkResultMap" type="com.xsm.flat.entity.News">
+    <id column="n_id" jdbcType="VARCHAR" property="nId" />
+    <result column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="n_info" jdbcType="VARCHAR" property="nInfo" />
+    <result column="n_creatime" jdbcType="VARCHAR" property="nCreatime" />
+    <association property="flat" column="f_id" javaType="com.xsm.flat.entity.Flat" select="com.xsm.flat.dao.FlatMapper.selectByPrimaryKey"/>
+  </resultMap>
   <sql id="Base_Column_List">
     n_id, f_id, n_info, n_creatime
   </sql>
+  <!--管理员查询分页信息-->
+  <select id="getAllNewsPage" parameterType="java.lang.String" resultMap="DetailRemarkResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_news
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

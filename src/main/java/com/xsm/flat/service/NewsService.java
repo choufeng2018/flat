@@ -12,4 +12,10 @@ import java.util.List;
 public interface NewsService {
 
     List<News> getNewsByFid(String fId);
+
+    List<News> getAllNewsPage(Integer pageNum, Integer pageSize);
+
+    int updateNews(News news);
+
+    int deleteNews(News news);
 }

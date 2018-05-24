@@ -11,6 +11,16 @@ public class News {
 
     private String nCreatime;
 
+    private Flat flat;
+
+    public Flat getFlat() {
+        return flat;
+    }
+
+    public void setFlat(Flat flat) {
+        this.flat = flat;
+    }
+
     public String getnId() {
         return nId;
     }

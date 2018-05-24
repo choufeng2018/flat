@@ -5,7 +5,8 @@ import com.xsm.flat.entity.News;
 import java.util.List;
 
 public interface NewsMapper {
-    int deleteByPrimaryKey(String nId);
+
+    int deleteByPrimaryKey(News news);
 
     int insert(News record);
 
@@ -18,4 +19,6 @@ public interface NewsMapper {
     int updateByPrimaryKey(News record);
 
     List<News> getNewsByFid(String fId);
+
+    List<News> getAllNewsPage();
 }
