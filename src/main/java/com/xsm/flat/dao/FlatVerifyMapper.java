@@ -20,4 +20,8 @@ public interface FlatVerifyMapper {
     List<FlatVerify> selectByuId(String uId);
 
     List<FlatVerify> getAllVerifyPage();
+
+    int verifyFlatPass(FlatVerify flatVerify);
+
+    int  verifyFlatNoPass(FlatVerify flatVerify);
 }

@@ -27,6 +27,16 @@ public class FlatVerify {
 
     private String userName;
 
+    private Integer passFlag;
+
+    public Integer getPassFlag() {
+        return passFlag;
+    }
+
+    public void setPassFlag(Integer passFlag) {
+        this.passFlag = passFlag;
+    }
+
     public String getUserName() {
         return userName;
     }

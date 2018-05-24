@@ -40,7 +40,18 @@
     <include refid="Base_Column_List" />
     FROM tb_verify
   </select>
-
+  <!--审核通过-->
+  <update id="verifyFlatPass" parameterType="com.xsm.flat.entity.FlatVerify">
+    update tb_verify
+    set f_status = #{ fStatus }
+    WHERE f_id = #{ fId }
+  </update>
+  <!--审核不通过-->
+  <update id="verifyFlatNoPass" parameterType="com.xsm.flat.entity.FlatVerify">
+    update tb_verify
+    set f_status = #{ fStatus }
+    WHERE f_id = #{ fId }
+  </update>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

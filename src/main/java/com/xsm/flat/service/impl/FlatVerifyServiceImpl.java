@@ -41,4 +41,20 @@ public class FlatVerifyServiceImpl implements FlatVerifyService {
         PageHelper.startPage(pageNum, pageSize);
         return flatVerifyMapper.getAllVerifyPage();
     }
+
+    @Override
+    public int verifyFlatInfo(FlatVerify flatVerify) {
+
+        if (flatVerify.getPassFlag() == 1){
+            flatVerify.setfStatus("1");
+            return  flatVerifyMapper.verifyFlatPass(flatVerify);
+        }else {
+            flatVerify.setfStatus("0");
+            return  flatVerifyMapper.verifyFlatNoPass(flatVerify);
+        }
+
+
+    }
+
+
 }

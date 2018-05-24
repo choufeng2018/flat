@@ -39,6 +39,12 @@ public class FlatVerifyController {
         return Ares;
     }
 
+    /**
+     * 管理员端审核信息分页
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
     @RequestMapping(value = "/getAllVerifyPage", method = RequestMethod.POST)
     public AjaxResponse getAllVerifyPage(Integer pageNum,
                                        Integer pageSize) {
@@ -50,4 +56,20 @@ public class FlatVerifyController {
         res.setPage(page);
         return res;
     }
+
+
+    /**
+     * 审核房屋信息通过与否
+     * @param flatVerify
+     * @return
+     */
+    @RequestMapping(value = "/verifyFlatInfo", method = RequestMethod.POST)
+    public AjaxResponse verifyFlatInfo(FlatVerify flatVerify) {
+
+        flatVerifyService.verifyFlatInfo(flatVerify);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessageUpdate();
+        return Ares;
+    }
+
 }

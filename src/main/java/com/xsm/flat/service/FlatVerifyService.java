@@ -1,5 +1,6 @@
 package com.xsm.flat.service;
 
+import com.xsm.flat.entity.Flat;
 import com.xsm.flat.entity.FlatVerify;
 import org.springframework.stereotype.Service;
 
@@ -15,4 +16,6 @@ public interface FlatVerifyService {
     List<FlatVerify> getVerifyByuId(String uId);
 
     List<FlatVerify> getAllVerifyPage(Integer pageNum, Integer pageSize);
+
+    int verifyFlatInfo(FlatVerify flatVerify);
 }
