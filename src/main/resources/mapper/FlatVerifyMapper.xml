@@ -15,10 +15,32 @@
     <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--后来加上的字段-->
     <result column="f_vtime" jdbcType="VARCHAR" property="fVtime" />
   </resultMap>
+  <resultMap id="DetailRemarkResultMap" type="com.xsm.flat.entity.FlatVerify">
+    <id column="f_id" jdbcType="VARCHAR" property="fId" />
+    <result column="f_city" jdbcType="VARCHAR" property="fCity" />
+    <result column="f_name" jdbcType="VARCHAR" property="fName" />
+    <result column="f_unit" jdbcType="VARCHAR" property="fUnit" />
+    <result column="f_house" jdbcType="VARCHAR" property="fHouse" />
+    <result column="f_expectprice" jdbcType="VARCHAR" property="fExpectprice" />
+    <result column="f_ownername" jdbcType="VARCHAR" property="fOwnername" />
+    <result column="f_ownermobile" jdbcType="VARCHAR" property="fOwnermobile" />
+    <result column="f_building" jdbcType="VARCHAR" property="fBuilding" />
+    <result column="f_status" jdbcType="VARCHAR" property="fStatus" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--后来加上的字段-->
+    <result column="f_vtime" jdbcType="VARCHAR" property="fVtime" />
+    <association property="userName" column="u_id" javaType="java.lang.String" select="com.xsm.flat.dao.UserMapper.selectUserNameByUid"/>
+  </resultMap>
   <sql id="Base_Column_List">
     u_id, f_id, f_city, f_name, f_unit, f_house, f_expectprice, f_ownername, f_ownermobile,
     f_building, f_status, f_vtime
   </sql>
+  <!--房屋审核信息分页-->
+  <select id="getAllVerifyPage" parameterType="java.lang.String" resultMap="DetailRemarkResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM tb_verify
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

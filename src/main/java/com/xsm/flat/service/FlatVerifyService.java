@@ -13,4 +13,6 @@ public interface FlatVerifyService {
     int add (FlatVerify flatVerify);
 
     List<FlatVerify> getVerifyByuId(String uId);
+
+    List<FlatVerify> getAllVerifyPage(Integer pageNum, Integer pageSize);
 }

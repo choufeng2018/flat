@@ -18,4 +18,6 @@ public interface FlatVerifyMapper {
     int updateByPrimaryKey(FlatVerify record);
 
     List<FlatVerify> selectByuId(String uId);
+
+    List<FlatVerify> getAllVerifyPage();
 }
