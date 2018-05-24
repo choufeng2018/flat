@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface OrderMapper {
-    int deleteByPrimaryKey(String oId);
+    int deleteByPrimaryKey(Order order);
 
     int insert(Order record);
 

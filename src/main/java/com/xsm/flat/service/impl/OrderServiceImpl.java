@@ -56,4 +56,14 @@ public class OrderServiceImpl implements OrderService{
         PageHelper.startPage(pageNum, pageSize);
         return orderMapper.getAllOrderPage();
     }
+
+    @Override
+    public int updateOrder(Order order) {
+        return orderMapper.updateByPrimaryKeySelective(order);
+    }
+
+    @Override
+    public int deleteOrder(Order order) {
+        return orderMapper.deleteByPrimaryKey(order);
+    }
 }

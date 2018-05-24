@@ -2,6 +2,7 @@ package com.xsm.flat.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.xsm.flat.base.AjaxResponse;
+import com.xsm.flat.entity.News;
 import com.xsm.flat.entity.Order;
 import com.xsm.flat.entity.Remark;
 import com.xsm.flat.service.OrderService;
@@ -59,6 +60,24 @@ public class OrderController {
         AjaxResponse res= new AjaxResponse();
         res.setSuccessMessage(true,records);
         res.setPage(page);
+        return res;
+    }
+
+    @RequestMapping(value = "/updateOrder", method = RequestMethod.POST)
+    public  AjaxResponse updateOrder(Order order) {
+
+        orderService.updateOrder(order);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
+
+    @RequestMapping(value = "/deleteOrder", method = RequestMethod.POST)
+    public  AjaxResponse deleteOrder(Order order) {
+
+        orderService.deleteOrder(order);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
         return res;
     }
 }
