@@ -1,9 +1,11 @@
 package com.xsm.flat.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.xsm.flat.base.AjaxResponse;
 import com.xsm.flat.entity.Assumpsit;
 import com.xsm.flat.entity.Province;
+import com.xsm.flat.entity.Remark;
 import com.xsm.flat.service.AssumpsitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -87,6 +89,18 @@ public class AssController {
         assumpsitService.assOnOff(uId,fId);
         AjaxResponse res = new AjaxResponse();
         res.setSuccessMessageUpdate();
+        return res;
+    }
+
+    @RequestMapping(value = "/getAssPage", method = RequestMethod.POST)
+    public AjaxResponse getAssPage(Integer pageNum,
+                                   Integer pageSize) {
+
+        List<Assumpsit> records = assumpsitService.getAssPage(pageNum,pageSize);
+        PageInfo<Assumpsit> page = new PageInfo<Assumpsit>(records);
+        AjaxResponse res= new AjaxResponse();
+        res.setSuccessMessage(true,records);
+        res.setPage(page);
         return res;
     }
 }

@@ -28,4 +28,6 @@ public interface AssumpsitMapper {
 
     int updateByUidFid(Assumpsit record);
 
+    List<Assumpsit> getAssPage();
+
 }

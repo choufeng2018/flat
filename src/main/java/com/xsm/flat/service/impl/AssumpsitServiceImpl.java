@@ -1,5 +1,6 @@
 package com.xsm.flat.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.xsm.flat.dao.AssumpsitMapper;
 import com.xsm.flat.entity.Assumpsit;
 import com.xsm.flat.service.AssumpsitService;
@@ -8,6 +9,7 @@ import com.xsm.flat.utils.SystemUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -54,5 +56,12 @@ public class AssumpsitServiceImpl implements AssumpsitService {
         assumpsit.setAssOnOff("0");
         System.out.println("------"+assumpsit.getuId());
         return assumpsitMapper.updateByUidFid(assumpsit);
+    }
+
+    @Override
+    public List<Assumpsit> getAssPage(@PathVariable("pageNum") Integer pageNum,
+                                      @PathVariable("pageSize") Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        return assumpsitMapper.getAssPage();
     }
 }

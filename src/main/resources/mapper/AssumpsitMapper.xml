@@ -34,6 +34,12 @@
     from tb_assumpsit
     where f_id = #{fId}
   </select>
+  <!--查询预约分页信息-->
+  <select id="getAssPage"  parameterType="java.lang.String" resultMap="DetailResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM tb_assumpsit
+  </select>
   <!--按用户查询预约信息-->
   <select id="getAssInfoByUid" parameterType="java.lang.String" resultMap="DetailResultMap">
     select
