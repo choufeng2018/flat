@@ -16,4 +16,5 @@ public interface AssumpsitService {
     int deleteInfoByFid(String assId);
     int assOnOff(String uId,Integer fId);
     List<Assumpsit> getAssPage(Integer pageNum, Integer pageSize);
+    int updateAssPass(Assumpsit assumpsit);
 }

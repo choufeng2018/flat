@@ -64,4 +64,10 @@ public class AssumpsitServiceImpl implements AssumpsitService {
         PageHelper.startPage(pageNum, pageSize);
         return assumpsitMapper.getAssPage();
     }
+
+    @Override
+    public int updateAssPass(Assumpsit assumpsit) {
+        assumpsit.setAssStatus("1");
+        return assumpsitMapper.updateByPrimaryKeySelective(assumpsit);
+    }
 }

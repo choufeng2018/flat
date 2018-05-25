@@ -103,4 +103,14 @@ public class AssController {
         res.setPage(page);
         return res;
     }
+
+
+    @RequestMapping(value = "/assPass", method = RequestMethod.POST)
+    public AjaxResponse orderAssPass(Assumpsit assumpsit) {
+
+        assumpsitService.updateAssPass(assumpsit);
+        AjaxResponse Ares = new AjaxResponse();
+        Ares.setSuccessMessageUpdate();
+        return Ares;
+    }
 }
