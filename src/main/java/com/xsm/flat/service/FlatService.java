@@ -30,4 +30,5 @@ public interface FlatService {
 
     int deleteFlat (Flat flat);
 
+    int updateFlat (Flat flat);
 }

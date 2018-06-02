@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.qcloud.cos.model.PutObjectResult;
 import com.xsm.flat.base.AjaxResponse;
 import com.xsm.flat.entity.Flat;
+import com.xsm.flat.entity.News;
 import com.xsm.flat.entity.Province;
 import com.xsm.flat.entity.User;
 import com.xsm.flat.service.FlatService;
@@ -188,6 +189,20 @@ public class FlatInfoController {
     public  AjaxResponse deleteUser(Flat flat) {
 
         flatService.deleteFlat(flat);
+        AjaxResponse res = new AjaxResponse();
+        res.setSuccessMessageUpdate();
+        return res;
+    }
+
+    /**
+     * 更新房源信息
+     * @param flat
+     * @return
+     */
+    @RequestMapping(value = "/updateFlat", method = RequestMethod.POST)
+    public  AjaxResponse updateFlat(Flat flat) {
+
+        flatService.updateFlat(flat);
         AjaxResponse res = new AjaxResponse();
         res.setSuccessMessageUpdate();
         return res;
