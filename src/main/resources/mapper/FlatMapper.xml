@@ -24,6 +24,30 @@
     <result column="p_name" jdbcType="VARCHAR" property="pName" />
     <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--添加uId-->
   </resultMap>
+  <resultMap id="DetailResultMap" type="com.xsm.flat.entity.FlatDetail">
+    <id column="f_id" jdbcType="INTEGER" property="fId" />
+    <result column="f_name" jdbcType="VARCHAR" property="fName" />
+    <result column="f_type" jdbcType="VARCHAR" property="fType" />
+    <result column="f_habitable" jdbcType="VARCHAR" property="fHabitable" />
+    <result column="f_price" jdbcType="VARCHAR" property="fPrice" />
+    <result column="p_id" jdbcType="VARCHAR" property="pId" />
+    <result column="s_id" jdbcType="VARCHAR" property="sId" />
+    <result column="f_status" jdbcType="VARCHAR" property="fStatus" />
+    <result column="f_street" jdbcType="VARCHAR" property="fStreet" />
+    <result column="f_age" jdbcType="VARCHAR" property="fAge" />
+    <result column="f_details" jdbcType="VARCHAR" property="fDetails" />
+    <result column="f_require" jdbcType="VARCHAR" property="fRequire" />
+    <result column="f_pic" jdbcType="VARCHAR" property="fPic" />
+    <result column="f_area" jdbcType="VARCHAR" property="fArea" />
+    <result column="f_orientation" jdbcType="VARCHAR" property="fOrientation" />
+    <result column="f_floor" jdbcType="VARCHAR" property="fFloor" />
+    <result column="f_toilet" jdbcType="VARCHAR" property="fToilet" />
+    <result column="f_shower" jdbcType="VARCHAR" property="fShower" />
+    <result column="f_heating" jdbcType="VARCHAR" property="fHeating" />
+    <result column="p_name" jdbcType="VARCHAR" property="pName" />
+    <result column="u_id" jdbcType="VARCHAR" property="uId" /><!--添加uId-->
+    <association property="userName" column="u_id" javaType="java.lang.String" select="com.xsm.flat.dao.UserMapper.selectUserNameByUid"/>
+  </resultMap>
   <sql id="Base_Column_List">
     f_id, f_name, f_type, f_habitable, f_price,f_status, p_id, s_id, f_street, f_age, f_details,
     f_require, f_pic, f_area, f_orientation, f_floor, f_toilet, f_shower, f_heating,p_name,u_id
@@ -118,7 +142,7 @@
 
   </select>
   <!--房屋详情页面 按房屋id查询房屋信息-->
-  <select id="selectFlatByfId" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectFlatByfId" parameterType="java.lang.String" resultMap="DetailResultMap">
     select
     <include refid="Base_Column_List" />
     from tb_flat
