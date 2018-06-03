@@ -20,6 +20,9 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.4.3" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf.tool:xmlworker:5.5.13" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:itext-asian:5.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.5.7.RELEASE" level="project" />
