@@ -106,4 +106,9 @@ public class RemarkDetail {
         this.rSendname = rSendname;
         this.rInfo = rInfo;
     }
+
+
+    public RemarkDetail() {
+
+    }
 }

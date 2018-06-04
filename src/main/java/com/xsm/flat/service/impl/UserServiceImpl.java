@@ -6,6 +6,7 @@ import com.xsm.flat.dao.UserMapper;
 import com.xsm.flat.entity.Admin;
 import com.xsm.flat.entity.User;
 import com.xsm.flat.service.UserService;
+import com.xsm.flat.utils.IdGen;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,6 +42,7 @@ public class UserServiceImpl implements UserService{
     public int addUser(User user) {
         JavaWebToken token = new JavaWebToken();
         String javaTocken = token.createJavaWebToken(user.getuName());
+        user.setuId(IdGen.uuid());
         user.setToken(javaTocken);
         return userMapper.insertSelective(user);
     }

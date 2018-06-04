@@ -7,6 +7,8 @@ import com.xsm.flat.dao.ProvinceMapper;
 import com.xsm.flat.dao.StreetMapper;
 import com.xsm.flat.entity.Flat;
 import com.xsm.flat.service.FlatService;
+import com.xsm.flat.utils.IdGen;
+import com.xsm.flat.utils.UUIDUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -44,6 +46,9 @@ public class FlatServiceImpl implements FlatService{
         System.out.println("============>"+flat.getpName());
         String pId = provinceMapper.selectPidBypName(flat.getpName());
         String sId = streetMapper.selectsIdBysName(flat.getsName());
+        List<Flat> flatCount = flatMapper.selectAll();
+        int idCount = flatCount.size();
+        flat.setfId(idCount+1);
         flat.setpId(pId);
         flat.setsId(sId);
         return flatMapper.insertSelective(flat);
