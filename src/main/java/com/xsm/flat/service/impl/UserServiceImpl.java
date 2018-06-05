@@ -42,7 +42,9 @@ public class UserServiceImpl implements UserService{
     public int addUser(User user) {
         JavaWebToken token = new JavaWebToken();
         String javaTocken = token.createJavaWebToken(user.getuName());
-        user.setuId(IdGen.uuid());
+        List<User> idCount = userMapper.selectAll();
+        int  idCountTemp = idCount.size()+1;
+        user.setuId(idCountTemp+"");
         user.setToken(javaTocken);
         return userMapper.insertSelective(user);
     }

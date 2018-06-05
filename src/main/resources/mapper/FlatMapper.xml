@@ -86,7 +86,7 @@
   <update id="updateFlatStatus"  parameterType="com.xsm.flat.entity.Order">
     UPDATE tb_flat
     SET f_status = #{fStatus}
-    WHERE u_id = #{uId} and f_id = #{fId}
+    WHERE f_id = #{fId}
   </update>
   <!--联合查询-->
   <select id="combineSelect" parameterType="com.xsm.flat.entity.Flat" resultMap="BaseResultMap">
