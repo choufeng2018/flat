@@ -3,11 +3,11 @@
 
 爱家公寓后台管理
 
-前后端分离，[后端管理系统](https://github.com/fikyair/house-admin) 
+前后端分离，[爱家公寓中后台管理系统](https://github.com/fikyair/house-admin) 
 
-[前端管理系统](https://github.com/fikyair/rcs-admin)
+[爱家公寓客户端](https://github.com/fikyair/rcs-admin)
 
-本项目为后端接口
+`本项目集成了客户端和管理系统的所有接口`
 
 ### 项目技术栈：
 - springboot
