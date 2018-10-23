@@ -49,7 +49,5 @@
 ### 最后
 
 - 如果觉得不错的话，请star一下吧 😊
-- 欢迎wechat联系
-
-<img src="http://oziqlv1ur.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%90%8D%E7%89%87.jpg" width="100%" height="100%"/>
+- 欢迎wechat联系 13132257682
 
